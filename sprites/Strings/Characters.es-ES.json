@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Pon nombre a tu caballo.",
+        "DefaultHorseName": "Rocinante",
+        "PiecesOfHay": "Cantidad de heno: {0}/{1}",
+        "JunimoTextAboveHead1": "¡Junimo!",
+        "JunimoTextAboveHead2": "¡Estrella!",
+        "JunimoThankYou1": "¡Gracias!",
+        "JunimoThankYou2": "¡Un regalo!",
+        "PetLovesYou": "{0} te quiere mucho. <",
+        "WipedMemory": "Acabas de mudarte a la granja, ¿no?#$e#Me suenas de... No... Seguro que no nos hemos visto antes.",
+        "Henchman1": "¡¡Yiiijaaa!! ¡Un ser humano!#$b#¿...Quieres pasar? Lo siento, pero es propiedad privada.$s",
+        "Henchman2": "Lo siento, pero no puedo dejarte pasar... Perdería mi trabajo.",
+        "Henchman3": "¿Me ofreces eso? Hmmm... No, gracias.$s",
+        "Henchman4": "Mmmm... Parece fresco, pero no, gracias... ¿Por qué no te lo comes tú?",
+        "Henchman5": "*Snif* *Snif*#$b#Ese olor...#$b#No puedo resistirme... ¡Trae pacá!$h",
+        "Henchman6": "Gracias.",
+        "KrobusDarkTalisman": "¿Qué dices...? ¿Que buscas un talismán oscuro?#$b#Hmmm... Ahora que lo dices, yo tenía uno no hace mucho.#$b#Por desgracia, se me cayó mientras exploraba el túnel que hay en la esquina.#$b#Las cosas se pusieron feas, así que me marché de allí y sellé la entrada.#$b#Aunque tú pareces bastante fuerte... Volveré a abrirlo, solo para ti. Pero ten cuidado, ¿vale?",
+        "Divorced_bouquet": "Eh... ¿Acaso intentas hacerme aún más daño?$s",
+        "Divorced_gift": "No pienso aceptar tu regalo.$a",
+        "AbigailInMineFlute": "%Abigail está concentrada en su música...",
+        "AbigailInMineFirst": "Anda, @. ¿Te sorprende? Por fin reuní el valor para venir aquí.#$b#Al principio tenía miedo, pero me esforcé en seguir adelante.#$b#Ahora me siento con mucha más confianza. ¡Esto es muy divertido!$h",
+        "AbigailInMine0": "¡Anda! He llegado muy lejos, ¿verdad?$h",
+        "AbigailInMine1": "¡Vaaaya!$7#$b#¡Ja, ja, ja! ¡Qué susto me has dado! ¡No esperaba encontrarme a otra persona aquí abajo!$h#$e#Lo siento, sudo un montón de la emoción...",
+        "AbigailInMine2": "¡Hola, @! He llegado hasta aquí sin enfrentarme a ningún monstruo...",
+        "AbigailInMine3": "¡Hola! Es un alivio verte aquí abajo...$h#$e#Esto... No le a mi padre que estoy aquí, ¿vale?$9",
+        "AbigailInMine4": "¡Anda! ¿Te has puesto a explorar las minas aprovechando que llueve? ¡Yo también!$h"
+    }
+}

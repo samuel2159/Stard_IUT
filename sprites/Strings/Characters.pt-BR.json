@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Nomeie seu cavalo",
+        "DefaultHorseName": "Guru",
+        "PiecesOfHay": "Pedaços de feno: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Estrela!",
+        "JunimoThankYou1": "Obrigado!",
+        "JunimoThankYou2": "Um presente!",
+        "PetLovesYou": "{0} ama você. <",
+        "Divorced_gift": "Eu não quero um presente seu.$a",
+        "Henchman1": "Irráááá! Humano!#$b#Você quer passar? Desculpe, mas isto é propriedade privada.$s",
+        "Henchman2": "Desculpe, mas se eu deixar você passar, perco o meu emprego.",
+        "Henchman3": "Você está oferecendo isto para mim? Huum... não, obrigado.$s",
+        "Henchman4": "Huum... isto parece fresquinho, mas não, obrigado. Por que você não leva?",
+        "Henchman5": "*Snif, snif*... #$b#Esse cheiro...#$b#Não consigo resistir. Dê-me isso!$h",
+        "Henchman6": "Obrigado.",
+        "WipedMemory": "Você é o fazendeiro novo, não é?^Você é a fazendeira nova, não é?#$e#Você parece... não. Não acho que tenhamos nos conhecido.",
+        "Divorced_bouquet": "O que é isso? Você está tentando me machucar ainda mais?$s",
+        "KrobusDarkTalisman": "O quê? Você está procurando por um talismã das trevas?#$b#Huum... agora que você tocou no assunto, eu tinha um comigo há não muito tempo.#$b#Infelizmente, deixe-o cair enquanto explorava aquele túnel em um canto distante.#$b#As coisas começaram a esquentar ali, então corri e selei a entrada.#$b#Mas você parece bem forte... então vou abrir o caminho de novo para você. Mas tenha cuidado, certo?",
+        "AbigailInMineFlute": "%Abigail perdeu-se em sua música...",
+        "AbigailInMineFirst": "Ei, @. Não esperava? ...Eu finalmente criei coragem para vir até aqui.#$b#A princípio tive medo, mas consegui superar.#$b#Agora estou bem mais confiante. Na verdade foi bem divertido!$h",
+        "AbigailInMine0": "Ei! Consegui ir bem longe, não foi?$h",
+        "AbigailInMine1": "Opa!$7#$b#Hahah! Que belo susto! Eu não esperava ver outra pessoa por aqui!$h#$e#Desculpa, suei bastante depois de tanta emoção...",
+        "AbigailInMine2": "Oi, @! Consegui chegar aqui sem lutar com monstro algum...",
+        "AbigailInMine3": "Ei! É um alívio ver você por aqui...$h#$e#Mmm... não conte ao papai que eu estou aqui, tá bom?$9",
+        "AbigailInMine4": "Ei! Explorando as minas em um dia de chuva, né? Eu também!$h"
+    }
+}

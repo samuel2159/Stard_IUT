@@ -1,0 +1,59 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "5/e 3/v Abigail": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"ねぇ。ああ…きのう、ヘンなことしちゃったのをあやまりたくて。#$b#その、わかってくれるよね…$l#$b#えっと、それじゃ…またね。\"/pause 500/end",
+        "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"よう、@。聞いてくれよ。オレたちのバンド、今夜ズズシティでライブするんだ！#$b#ライブを見たかったら、午後の4時ごろにバス停に来てくれよな。待ってるからな！\"/pause 300/end dialogue Sam \"今夜のライブ、楽しみだけどちょっと緊張するぜ。まあ、きっとうまくいくよな。\"",
+        "2346097/f Abigail 2010/x abbySpiritBoard": "null",
+        "2346096/f Penny 2505/x pennySpa": "null",
+        "2346095/f Elliott 2002/x elliottReading": "null",
+        "2346094/f Elliott 2502/x elliottBoat": "null",
+        "2111194/e 917409/f Emily 2000/x EmilyClothingTherapy": "null",
+        "3333094/e 191393/x pierreHours": "null",
+        "2346093/f Harvey 2502/x harveyBalloon": "null",
+        "2346092/f Sam 2502/x samMessage": "null",
+        "2346091/f Alex 2502/x joshMessage": "null",
+        "2146991/y 3/H": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+        "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"おはよう、@！きょうの午後ってあいてる？#$b#展示会の話がやっとまとまったんだ。それで今日の午後、町の広場で作品の展示会をやるの！$h#$b#午後の3時から5時のあいだにやってるから、見たかったら来てね！\"/pause 300/end dialogue Leah \"ああ、緊張するなあ…$l\"",
+        "63/y 2/t 600 1800/H": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/pause 1500/speak Kent \"あー、おはよう。おれはケント。昨日の夜、谷にもどってきたんだ…海外からな。妻から、おれのいないあいだに越してきた牧場主がいると聞いたんでね。\"/pause 500/speak Kent \"それで、一応あいさつしておこうと思ったんだ…じゃあ、またな。\"/pause 300/end",
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"あー…どうも。おはよう。#$b#あんた最近、岩を割って鉱石を探してるみたいじゃないか。いいね！\"/pause 500/speak Clint \"ただ、見つけた鉱石を最大限活用したかったら溶鉱炉が必要になる。\"/pause 500/speak Clint \"それで、うちでホコリをかぶってた予備の設計図を持ってきたんだ。ほら、つかってくれ。\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"「溶鉱炉」のつくり方を覚えた！\"/pause 800/speak Clint \"溶鉱炉をつかえば、鉱石を溶かしてのべ棒がつくれるようになる。のべ棒はクラフトや建築、どうぐのアップグレードにつかえるぞ。\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"銅ののべ棒をいくつかもって来てくれたら、あんたのどうぐをアップグレードしてやるよ。そうすれば、仕事がもっとラクになるぞ。#$b#それじゃ、おれはこれで。またな。\"/pause 200/addQuest 11/end",
+        "992253/t 600 1130/f Leah 1500/w sunny": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"おはよう、@。いいお天気だね。\"/pause 500/speak Leah \"きょうはプレゼントをもってきたんだ。#$b#彫刻だよ。きみのために彫ったんだ。\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"名づけて…「@へのきもち」気にいってくれるとうれしいな。\"/pause 50/pause 50/end",
+        "65/m 25000/t 600 1200/H": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/speak Demetrius \"おはよう、@！きょうはきみにいいニュースがあるんだ。何日かまえ、このあたりの環境に関する研究で大きな発見をしてね。$h#$b#技術的な細かい話ははぶいて、要点だけ言うと…きみの牧場の西側に、小さな洞窟があるだろう？あそこを活用すれば、わたしたち2人にとっていいことがある。#$b#洞窟のなかを、地域の動植物が暮らしやすい環境にしたいんだ。そうすればわたしは、特定の環境下で動植物を観察できる。そしてきみは、彼らが生み出すものを収穫できるわけだ。#$b#環境なんだが、キノコ類向けとフルーツコウモリ向け、どちらにする？コウモリたちは時折くだものを残していくよ。\"/cave/speak Demetrius \"了解だ！いまから環境をセッティングするよ！そんなに時間はかからないはずだ。$h#$b#許可してくれてありがとう。\"/end dialogue Demetrius \"洞窟がどうなるのか、いまから楽しみだよ。きみはどうだい？#$e#きみがよろこんでくれるといいな。\"",
+        "66/e 295672/t 600 700/H": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/broadcastEvent/pause 1500/speak Gunther \"ああ@さん、おはよう！^ああ@さん、おはよう！#$b#起こしてしまったのでないといいんだが…$s#$b#いや、あなたにお礼が言いたくて立ちよったんだ。寄付してもらった数々のすばらしい発掘品や鉱物…しかも、あれだけの量をひとりで見つけるなんて！$h#$b#実は、地方の文化財保護課から手紙がとどいてね…わたしたちの貢献をたたえて、かの栄誉ある「ゴールデンシャベル賞」が贈ることにしたそうなんだ！#$b#ありがとう、なにもかもあなたのおかげだ！$h#$b#では、わたしはそろそろ…\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"おっと！忘れるところだった！#$b#あなたに渡したいものがあるんだ…これは博物館の金庫に、少なくとも100年はしまってあったものでね。少しさびてはいるが、それでもうつくしいでしょう。$h\"/pause 500/pause 500/playSound reward/message \"「さびたカギ」を手にいれた！アイテムをサイフにしまった。\"/pause 500/rustyKey/end",
+        "690006/n slimeHutchBuilt/H": "continue/64 15/farmer 64 16 2 Marlon 66 15 2/broadcastEvent/pause 1000/move farmer -1 0 2/move farmer 0 1 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"今朝、ばったりロビンに会ってな…なんでも、お前があたらしいスライム小屋を建てたというじゃないか！\"/showFrame Marlon 8/shake Marlon 1600/textAboveHead Marlon \"悪くない！\"/pause 1600/showFrame Marlon 12/pause 500/speak Marlon \"おれもお前くらいの年には、スライム育成にはまっていたものだ。最高の楽しみだが…危険でもある。#$b#おれがなんで片目をなくしたと思う？\"/shake Marlon 1000/showFrame Marlon 12/textAboveHead Marlon \"ハハハ！\"/pause 1000/textAboveHead Marlon \"冗談さ。\"/showFrame Marlon 12/pause 200/showFrame Marlon 7/animate Marlon false false 120 4 5 6 7/pause 800/speak Marlon \"そうだ、お前にこれをやろう。\"/faceDirection farmer 2/itemAboveHead slimeEgg/pause 1000/pause 1000/pause 1300/awardFestivalPrize slimeEgg/pause 300/faceDirection farmer 1 true/pause 500/showFrame Marlon 12/speak Marlon \"スライムのタマゴだ。スライム用ふ卵器にいれればふ化する。#$b#じゃあ、気をつけてタマゴを見はることだ。次にスライム狩りに出るときは、タマゴが落ちていないかよく探すといい。非常にめずらしいが、スライムがたまに落とすはずだ。#$b#ちがう種類のタマゴをあつめれば、スライムのコレクションが充実するぞ！\"/pause 500/end",
+        "68/m 5000/g male/x mom1": "null",
+        "69/m 15000/g male/x mom2": "null",
+        "70/m 32000/g male/x mom3": "null",
+        "71/m 120000/g male/x mom4": "null",
+        "72/m 5000/g female/x dad1": "null",
+        "73/m 15000/g female/x dad2": "null",
+        "74/m 32000/g female/x dad3": "null",
+        "75/m 120000/g female/x dad4": "null",
+        "76/m 27000/x newsstory": "null",
+        "706/u 15/x fertilizers": "null",
+        "707/y 2/x fertilizers2": "null",
+        "1590166/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h cat/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 cat 63 16 2/faceDirection Cat 2/pause 500/animate Cat false false 120 16 17 18/pause 2000/speak Marnie \"おはよう、@さん！$h#$b#ねえ、この猫を見て。\"/faceDirection Marnie 3/pause 400/showFrame Cat 18/playSound cat/pause 1200/faceDirection Marnie 0/speak Marnie \"あなたの牧場の入り口で座ってたのを見つけたの！飼い主はいないと思う…かわいそうにね。$s\"/showFrame Cat 19/pause 500/showFrame Cat 18/playSound cat/shake Cat 150/pause 1500/speak Marnie \"ねえ、この子ここが気にいったんじゃないかな？だから、えっと…牧場でこの猫を世話してあげてくれない？$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"よかったね、%pet…ちゃんといい子にしてるんだよ。…わかった？\"/pause 500/showFrame Cat 19/shake Cat 100/playSound cat/pause 800/animate Cat false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+        "897405/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h dog/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 dog 63 16 2/faceDirection Dog 1/pause 500/animate Dog false false 120 20 21 22 23/pause 2000/speak Marnie \"おはよう、@さん！$h#$b#ねえ、この犬を見て。\"/faceDirection Marnie 3/pause 400/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 600/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/animate Dog false true 200 24 25/playSound dog_pant/pause 400/playSound dog_pant/pause 400/playSound dog_pant/pause 1200/faceDirection Marnie 0/speak Marnie \"あなたの牧場の入り口で座ってたのを見つけたの！飼い主はいないと思う…かわいそうにね。$s\"/pause 500/animate Dog false true 400 23 31/pause 1500/speak Marnie \"ねえ、この子ここが気にいったんじゃないかな？だから、えっと…牧場でこの犬を世話してあげてくれない？$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"よかったね、%pet…ちゃんといい子にしてるんだよ。…わかった？\"/pause 500/stopAnimation Dog/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/globalFade/viewport -1000 -1000/end",
+        "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/speak Marnie \"おはよう、@さん！$h^おはよう、@さん！$h#$b#きょうはお願いがあって来たの。もしよかったら聞いてくれないかしら。#$b#あのね、あたし、ウチのヤギを「こんにちは」って言えるように訓練してるの…でもヤギたちときたら、好物の洞窟ニンジンを持っていかないとこっちを見もしないの！$u#$b#でも…わたしは坑道がこわいから、採りにいけなくて…それで、その、よかったら時間があるときに洞窟ニンジンをとってきてくれない？#$b#空いてるときでいいの…もしとってきてくれたら、午前9時から午後5時のあいだならだいたい家にいるから、その時間帯にもってきてくれるとあたし、すっごくうれしいな。それじゃ。\"/pause 300/end dialogue Marnie \"ウチのヤギ、洞窟ニンジンとなると夢中になるんだよね…なんでなんだろ。さっぱりわかんないや。\"",
+        "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/speak Jodi \"ふぅ…おはよう、@！ふぅ、あぁ…うちからここまで歩いてくるの、すっごく大変だったわ。$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"それは、おいといて…ねえ、今晩うちに夕飯を食べにこない？#$b#来たかったらでいいの、むりにとは言わない…でももし来るなら、来るときにブラックバスを釣ってきてくれない？#$b#…そうよ。湖にいるあのおおきな、ぬるっとした魚。キャセロールをつくるのに使いたいの。$h#$b#えっと、それじゃ…今夜の7時すぎにうちに来て。ブラックバスを忘れないでね！それじゃ、またね。\"/pause 300/end dialogue Jodi \"やっぱり魚のキャセロールはかかせないわね。\"",
+        "102/z spring/z summer/z fall/d Mon Tue Wed Thu Fri Sat/y 1/H": "continue/64 15/farmer 64 16 2 Pierre 64 18 0/broadcastEvent/pause 1500/speak Pierre \"おはようございます、@さん。さて！スターデューバレーでの1年目も、そろそろ終わるころでしょう？#$b#来年もウチの店からタネを仕入れてくれれば、大豊作をお約束しますよ！$h#$b#それできょうはね、あなたがわくわくするようなニュースをお聞かせしたくて…#$b#来年から、あたらしい作物のタネを品ぞろえにくわえることにしたんですよ！季節ごとに1種類ふやしていきますからね。#$b#…では、わたしはこれくらいで。よい一日を。\"/pause 300/move Pierre 0 1 2/pause 1000/faceDirection Pierre 0/speak Pierre \"そうそう…例の店のタネなんて、試してみる価値もないですよ。$u#$b# ピエール商店のタネは「最高品質」ですからね。保証しますよ。$h\"/pause 500/end",
+        "2128292/e 3900074/t 600 630/f Shane 2500/D Shane": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"よお、@！$6\"/pause 1000/speak Shane \"あのよ…今夜のトンネラーズの試合、チケット2枚取れたんだ。$6\"/pause 2000/speak Shane \"もし行きたかったら、午後5時にバス停まで来てくれよな。$6\"/pause 1000/end",
+        "2111294/e 2123243/f Emily 2502/w sunny/D Emily/x EmilyCamping": "null",
+        "2118991/e 3910975/t 600 800": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/speak Shane \"よお…\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"そのさ…あー…なんつったらいいんだ？$s#$b#ガケでの件、ほんと悪かったな。その…なんて言ったらいいか…\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#きみを助けられてよかったよ。#$r -1 -10 event_apologize2#ねえ、真剣に目を覚ましたほうがいいよ。#$r -1 10 event_apologize3#きみがまだ生きてるだけでうれしいよ。\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"おれ、セラピストに会うことにしたんだ。ハーヴィーがあいつの同僚といっしょに、おれに連絡してきてくれてさ…$s\"/pause 500/faceDirection Shane 0/speak Shane \"まあとにかく…おれの面倒見てくれたことの礼を言いにきたんだ。あと、これからは物事と真剣に向きあうよってことを伝えにな。#$b#おれはもう、だれのお荷物にもなりたくねえんだ…\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+        "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"あらあら、 おはよう\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"この辺を 散歩するのは 気持ちいいねえ…この古い農場 久しぶりに 見たわ。$s#$b#記憶よりも ずいぶんきれいに なってるねえ！$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"えっとね、あなたに 渡したい物が あるの。#$b#庭を 愛する人から 愛する人への プレゼントよ。$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"「植木鉢」を受け取った\"/pause 800/speak Evelyn \"この鉢は 便利でねえ。屋内なら どんな季節の 作物も 育てることが できるの！#$b#もちろん 家の外に 出しても大丈夫よ…でもその場合は その季節の 作物しか 育たないけどねえ。\"/pause 500/speak Evelyn \"もっと 欲しかったら、 作るのは 簡単だよ…ほら、 作り方が 書いてあった 古い雑誌の 切り抜きがあるからね。\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"「植木鉢」のレシピを覚えた\"/pause 800/speak Evelyn \"さてと、 もう行くね。決まった時間に オートミールを 作ってあげないと ジョージったら 不機嫌になるからねえ…#$b#それじゃあ、 素敵な 一日をね！$h\"/pause 500/end"
+    }
+}

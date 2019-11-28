@@ -1,0 +1,34 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "Introduction": "哦，陌生人啊！我叫文森特。#$b#妈妈跟我说不要和陌生人说话……但你看来是个好人。",
+        "Mon": "等我长大了，我也要像哥哥一样！$h#$e#好的！再见。",
+        "Mon4": "爸爸总是不在家……好想和他一起玩。$s",
+        "Tue": "*唉* ……妈妈今天不让我再多吃软糖了。$s",
+        "Tue6": "你能为我保守个秘密吗，先生？^你能为我保守个秘密吗，女士？$u#$b#我长大后想娶潘妮小姐为妻。#$e#不要告诉她，好吗？$u",
+        "Wed": "我想去捉虫子，但每次搞得脏兮兮又会被妈妈骂。$u#$b#真是艰难的抉择啊。",
+        "Thu": "好饿啊……妈妈呢？$s",
+        "Thu2": "你不像大多数大人们那么无聊呢！",
+        "Fri": "#$c .3#呃，又是煮甜菜……$s#$e#糟了……我妈今晚会做扁豆汤。$s",
+        "Sat_1": "爸爸就要回来啦！#$b#不知他有没有给我买玩具回来呢。$u",
+        "Sat": "潘妮小姐每周都要求我读一本新书。$s#$b#至少有时候她还会让我来选书！",
+        "Sat8": "爸爸回来之后似乎变了很多。不知出了什么事呢？$s#$b#他都不和我玩了。$s",
+        "Sun": "你好啊，先生！^你好啊，女士。",
+        "Sun10": "你好啊，@叔叔!^嗨，@姑妈!#$e#别告诉我妈……不过大人里面我最喜欢你了。$h"
+    }
+}

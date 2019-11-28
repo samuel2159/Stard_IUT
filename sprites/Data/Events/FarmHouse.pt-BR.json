@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Meu querido netinho...^Minha querida netinha...#$b#Faz muitos anos desde que nos falamos. Você era só um garotinho... Você se lembra?^Faz muitos anos desde que nos falamos. Você era só uma garotinha... Você se lembra?#$b#Olha o quanto você progrediu na vida!#$b#Apesar de ter me esquecido, eu estive aqui o tempo todo.#$b#Sabe... Meu corpo já partiu deste mundo, mas meu coração sempre estará aqui, no Vale do Orvalho.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Você já está aqui há dois anos...\"/grandpaEvaluation/pause 3000/speak Grandpa \"O futuro da fazenda %farm  está em suas mãos.#$b#Até breve!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Meu netinho...^Minha netinha...#$b#Estou feliz de você ter me invocado. Acho que... fui um pouco duro com você da última vez.#$b#Me Perdoe. Você está trabalhando bastante e eu estou muito feliz.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Vejamos...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

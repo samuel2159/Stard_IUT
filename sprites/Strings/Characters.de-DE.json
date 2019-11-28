@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Benenne dein Pferd",
+        "DefaultHorseName": "Fury",
+        "PiecesOfHay": "Heuballen: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Stern!",
+        "JunimoThankYou1": "Danke dir!",
+        "JunimoThankYou2": "Ein Geschenk!",
+        "PetLovesYou": "{0} liebt dich. <",
+        "Divorced_gift": "Ich will kein Geschenk von dir.$a",
+        "Henchman1": "Gweee-ah!! Mensch!#$b#...Du willst vorbei? Tut mir leid, das ist Privateigentum.$s",
+        "Henchman2": "Tut mir leid, ich kann dich nicht vorbeilassen. Ich würde meinen Job verlieren.",
+        "Henchman3": "Du bietest mir das an? Hmm... nein danke.$s",
+        "Henchman4": "Mmmm... das sieht frisch aus, aber nein danke... warum nimmst du's nicht?",
+        "Henchman5": "*schnüff* ... *schnüff* ...#$b#Dieser Geruch...#$b#Ich kann nicht widerstehen... Gib mir das!$h",
+        "Henchman6": "Danke.",
+        "WipedMemory": "Du bist der neue Bauer, oder nicht?#$e#Du scheinst... nein. Ich bin mir sicher, wir haben uns noch nie getroffen.",
+        "Divorced_bouquet": "Das... Versuchst du, mich noch mehr zu verletzen?$s",
+        "KrobusDarkTalisman": "Was sagst du... du suchst nach einem dunklen Talisman?#$b#...Hmmm. Jetzt wo du es erwähnst, ich hatte vor nicht allzu langer Zeit einen in meinem Besitz.#$b#Unglücklicherweise habe ich ihn beim Erkunden dieses Tunnels in der weitesten Ecke fallen lassen.#$b#Die Dinge wurden da drin ziemlich unschön, also habe ich mich beeilt hinauszukommen und den Eingang versiegelt.#$b#Du scheinst aber ziemlich zäh... Also werde ich ihn für dich wieder öffnen. Pass nur auf, okay?",
+        "AbigailInMineFlute": "%Abigail ist in ihrer Musik versunken ...",
+        "AbigailInMineFirst": "Hey, @. Bist du überrascht? Ich habe endlich den Mut aufgebracht, hierher zu kommen.#$b#Zuerst hatte ich Angst, aber ich habe sie überwunden.#$b#Jetzt fühle ich mich schon viel besser. Das macht sogar richtig Spaß!$h",
+        "AbigailInMine0": "Hey! Ich habe es ziemlich weit geschafft, was?$h",
+        "AbigailInMine1": "Huuuch!$7#$b#Hahah! Du hast mich erschreckt! Ich hätte hier unten nicht mit anderen Leuten gerechnet!$h#$e#Entschuldige, ich bin ganz verschwitzt vor lauter Aufregung ...",
+        "AbigailInMine2": "Hi @! Ich habe es bis hier her geschafft, ohne gegen Monster zu kämpfen!",
+        "AbigailInMine3": "Hey! Wie schön, dich hier unten zu sehen ...$h#$e#Öhm ... sag meinem Vater aber nicht, dass ich hier bin, okay?$9",
+        "AbigailInMine4": "Hey! Erkundest du die Minen, weil es regnet? Ich auch!$h"
+    }
+}

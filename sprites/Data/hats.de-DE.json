@@ -1,0 +1,64 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.Int32Reader",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "0": "Cowboy Hat/Das Leder ist alt und rissig, aber erstaunlich geschmeidig. Er riecht modrig./false/true/Cowboyhut",
+        "1": "Bowler Hat/Aus geschmeidigem Filz gemacht./false/true/Bowlerhut",
+        "2": "Top Hat/Der Klassiker eines Gentlemans./false/true/Zylinder",
+        "3": "Sombrero/Ein festlich dekorierter Hut aus gewobenem Stroh./false/true/Sombrero",
+        "4": "Straw Hat/Luftig und kühl, die Freude eines jeden Bauern./false/true/Strohhut",
+        "5": "Official Cap/Sieht so aus, als stamme sie von einem Polizisten oder Briefträger. Jedenfalls ist sie immer noch sehr weich und riecht normal./false/true/Beamtenkappe",
+        "6": "Blue Bonnet/Blicke mit dieser Prärie-Mütze zurück auf einfachere Zeiten./false/true/Blaue Mütze",
+        "7": "Plum Chapeau/Sieht in Ordnung aus./false/true/Pflaumen-Chapeau",
+        "8": "Skeleton Mask/Die roten Augen leuchten auf mysteriöse Weise./true/true/Skelett-Maske",
+        "9": "Goblin Mask/Jage der Nachbarschaft mit dieser gruseligen Maske einen Schrecken ein. Gummiohren für den besten Effekt./true/true/Goblinmaske",
+        "10": "Chicken Mask/Damit bringst du sicher jeden zum Grinsen./true/true/Hühnermaske",
+        "11": "Earmuffs/Halten deine Ohren angenehm warm. Mit weichem Samt aus dem Schlossdorf bestückt./true/false/Ohrenschützer",
+        "12": "Delicate Bow/Kleine pinke Juwelen glitzern bei genauerer Betrachtung./true/false/Feine Schleife",
+        "13": "Tropiclip/Ist wie eine kleine Palme geformt./true/false/Tropiklammer",
+        "14": "Butterfly Bow/Diese Schleife ist sehr weich./true/false/Schmetterlingsschleife",
+        "15": "Hunter's Cap/Das Wollfutter sollte dich selbst tief im Wald noch warm halten./false/true/Jägerkappe",
+        "16": "Trucker Hat/Mit Netzstoff hinten, um deinen Kopf kühl zu halten./false/true/Truckerhut",
+        "17": "Sailor's Cap/Er ist frisch und steif./false/true/Matrosenhut",
+        "18": "Good Ol' Cap/Eine alte Mütze mit geknicktem Schirm. Sie hat wohl eine Menge durchgemacht./false/true/Gute alte Kappe",
+        "19": "Fedora/Die Grundausstattung eines Großstädters./false/true/Fedora",
+        "20": "Cool Cap/Ziemlich verblasst, war aber einst tiefblau./false/true/Coole Kappe",
+        "21": "Lucky Bow/Die Mitte ist aus solidem Gold gefertigt./true/false/Glückbringende Schleife",
+        "22": "Polka Bow/Die hier zieht sicher Aufmerksamkeit auf sich./true/false/Gepunktete Schleife",
+        "23": "Gnome's Cap/Dieser Gnom hatte einen riesigen Kopf./false/true/Gnomkappe",
+        "24": "Eye Patch/Es ist schwer zu sagen, ob sie echt oder aus einem Kostümladen ist./true/true/Augenklappe",
+        "25": "Santa Hat/Feiere diese magische Zeit./false/true/Winterstern-Mütze",
+        "26": "Tiara/Dieser Stirnreif besitzt einen großen Amethysten, umrandet von Gold./true/true/Tiara",
+        "27": "Hard Hat/Zum Beschützen deiner Birne./false/true/Schutzhelm",
+        "28": "Sou'wester/Die Form dieses Huts hält Segler während Stürmen trocken./false/true/Südwester",
+        "29": "Daisy/Ein frisch gepflücktes Gänseblümchen, das man sich in die Haare stecken kann./true/false/Gänseblümchen",
+        "30": "Watermelon Band/Das Farbschema ist inspiriert von der geliebten Sommermelone./true/false/Wassermelonen-Band",
+        "31": "Mouse Ears/Aus synthetischen Fasern hergestellt./true/true/Mauseohren",
+        "32": "Cat Ears/Schnurrhaare inklusive./true/true/Katzenohren",
+        "33": "Cowgal Hat/Das Band ist mit falschen Diamanten bestückt./false/true/Cowgal-Hut",
+        "34": "Cowpoke Hat/Für Milchexperten./false/true/Cowboy-Hut",
+        "35": "Archer's Cap/Modisch, egal ob du ein Bogenschütze bist oder nicht./false/true/Schützenhut",
+        "36": "Panda Hat/A lovely panda hat./false/true/Panda Hat",
+        "37": "Blue Cowboy Hat/Ein Cowboyhut aus Jeans in blau./false/true/Blauer Cowboyhut",
+        "38": "Red Cowboy Hat/Ein auffälliger Cowboyhut aus rotem Samt./false/true/Roter Cowboyhut",
+        "39": "Cone Hat/Eine Kuriosität aus einem fernen Land./false/true/Hütchenhut"
+    }
+}

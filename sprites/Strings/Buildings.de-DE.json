@@ -1,0 +1,28 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "UnderConstruction": "Im Bau",
+        "DismountBeforeEntering": "Vor dem Eintreten absteigen",
+        "PiecesOfHay": "Heuballen: {0}/{1}",
+        "MillFull": "Kein Platz übrig",
+        "CantMill": "Kann nicht gemahlen werden",
+        "AddedHay": "{0} Heuballen zum Silo hinzugefügt.",
+        "NeedSilo": "Benötigt Silo",
+        "CantEnter": "Betreten jetzt nicht möglich"
+    }
+}

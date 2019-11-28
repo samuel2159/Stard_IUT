@@ -1,0 +1,65 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]Stardew Valleyの作成者:",
+        "Eric Barone (ConcernedApe)",
+        " ",
+        "[3]マルチプレイヤーコード:",
+        "ChucklefishのTom Coxon",
+        "",
+        "[3]翻訳:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersi (イタリア語)",
+        "Junho Won (韓国語)",
+        "Not Shalalu (フランス語)",
+        "Gőz Richárd \"TRC\" (ハンガリー語)",
+        "Hüseyin Serhat Çavunt (トルコ語)",
+        "Salih Emircan Ayyıldız (トルコ語)",
+        "Hilmi Furkan Yaşık (トルコ語)",
+        "",
+        "[3]によって公開された:",
+        "ConcernedApe",
+        "Chucklefish (ニンテンドースイッチ & モバイル)",
+        "Amuzio (日本)",
+        "",
+        "[3]マック、Linux、Xbox one、プレイステーション4、PS Vita と任天堂スイッチポート:",
+        "Sickhead Games",
+        "",
+        "[3]iOS ポート:",
+        "The Secret Police",
+        "",
+        "[3]コンソール QA:",
+        "GlobalStep",
+        "",
+        "[3]小売流通:",
+        "505 Games",
+        "",
+        "[3]リテール QA:",
+        "Pipeworks Studio",
+        "",
+        "[1]プレイしていただきありがとうござい <",
+        "",
+        "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4"
+    ]
+}

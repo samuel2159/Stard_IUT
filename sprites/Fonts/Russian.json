@@ -1,0 +1,17 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "BmFont.XmlSourceReader, BmFont, Version=2012.1.7.0, Culture=neutral, PublicKeyToken=null",
+            "version": 0
+        }
+    ],
+    "content": {
+        "export": "Russian.xml"
+    }
+}

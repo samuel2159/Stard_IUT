@@ -1,0 +1,59 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "5/e 3/v Abigail": "continue/64 15/farmer 64 16 2 Abigail 64 18 0/pause 1500/speak Abigail \"嗨 。呃……我为昨天奇怪的举止道歉。#$b#你也许已经明白发生什么了……$l#$b#呃，那好……再见。\"/pause 500/end",
+        "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"嗨 @.你猜怎么着？我们乐队今晚要演出了，就在祖祖城！#$b#今天下午4点在车站等我，然后一起去演出现场。你一定要来啊！\"/pause 300/end dialogue Sam \"我对今晚的演出又兴奋又激动。我相信一定会顺利的。\"",
+        "2346097/f Abigail 2010/x abbySpiritBoard": "null",
+        "2346096/f Penny 2505/x pennySpa": "null",
+        "2346095/f Elliott 2002/x elliottReading": "null",
+        "2346094/f Elliott 2502/x elliottBoat": "null",
+        "2111194/e 917409/f Emily 2000/x EmilyClothingTherapy": "null",
+        "3333094/e 191393/x pierreHours": "null",
+        "2346093/f Harvey 2502/x harveyBalloon": "null",
+        "2346092/f Sam 2502/x samMessage": "null",
+        "2346091/f Alex 2502/x joshMessage": "null",
+        "2146991/y 3/H": "spring_day_ambient/8 7/farmer 64 16 2/broadcastEvent/globalFade/viewport 8 7 clamp true/pause 3000/grandpaCandles/pause 3000/end",
+        "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"嗨 @!今天下午有空吗？#$b#我终于走出泥潭了，今晚我就要在广场表演我的艺术！$h#$b#如果你想来的话，就下午3:00到5:00之间来镇里！\"/pause 300/end dialogue Leah \"我好紧张。$l\"",
+        "63/y 2/t 600 1800/H": "continue/64 15/farmer 64 16 2 Kent 64 18 0/broadcastEvent/pause 1500/speak Kent \"呃，你好啊，我的名字是肯特。我昨晚才回来……从海外回来。我老婆告诉我，在我不在的这段时间有个农夫搬过来了。\"/pause 500/speak Kent \"我只是来自我介绍一下……回头见。\"/pause 300/end",
+        "992553/t 600 1130/n copperFound": "continue/64 15/farmer 64 16 2 Clint 64 18 0/skippable/pause 1500/speak Clint \"啊……嗨。早啊。#$b#我注意到你一直在凿石头找矿石。真的很棒！\"/pause 500/speak Clint \"如果你想尽可能多的找到矿石的话，你需要一个熔炉。\"/pause 500/speak Clint \"正巧我有个闲置的蓝图。给，你收下吧。\"/pause 800/itemAboveHead/playSound getNewSpecialItem/addCraftingRecipe Furnace/pause 3300/message \"学会如何制造'熔炉'。\"/pause 800/speak Clint \"你可以用熔炉来融化金属棒。这些金属棒可以用来锻造，建造，以及升级工具。\"/pause 500/faceDirection Clint 1/pause 500/faceDirection Clint 0/speak Clint \"当你融化一定数量的铜棒时，可以考虑让我给你升级一件工具。你的工作会变得更加轻松。#$b#那好 。我回去了。慢慢来。\"/pause 200/addQuest 11/end",
+        "992253/t 600 1130/f Leah 1500/w sunny": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"嗨， @。今天天气真好啊。\"/pause 500/speak Leah \"我给你带了件礼物。#$b#这是我做的一个雕像，专门为你做的。\"/pause 500/pause 800/itemAboveHead sculpture/pause 3300/pause 800/awardFestivalPrize sculpture/pause 800/pause 50/speak Leah \"它叫……“我对@的感受”。希望你喜欢。\"/pause 50/pause 50/end",
+        "65/m 25000/t 600 1200/H": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/speak Demetrius \"嗨 @!我有好消息要告诉你。前几天，我对本地环境的研究取得了突破。$h#$b#技术细节我就不跟你说了，直接说结果……你知道往西一段距离的那个洞穴吧？我有办法把它变成有用的东西了……对你我都有用。#$b#我想利用那个洞吸引一些本地的物种。这样我就可以在一个更可控的环境下观察它们了。然后不管它们生出来啥都归你了。#$b#我也可以用这个洞吸引食菇蝠或果蝠。这些蝙蝠有时候会给你留下水果。\"/cave/speak Demetrius \"就这么说好了！我现在就给你收拾去！不会花很长时间的！$h#$b#谢谢你给我这次机会。\"/end dialogue Demetrius \"我很期待那个山洞会发生什么事，你也是吧？#$e#希望你对我的工作满意。\"",
+        "66/e 295672/t 600 700/H": "continue/64 15/farmer 64 16 2 Gunther 64 18 0/broadcastEvent/pause 1500/speak Gunther \"早上好啊， @先生！^早上好啊， @小姐！#$b#希望还不算太早……$s#$b#我只是想过来亲自说声谢谢，谢谢你发现的那些美丽的古物和矿物…………都是靠一己之力实在太了不起了！$h#$b#其实，我刚刚收到地区古物秘书寄来的一封信……我们因对地区做出杰出贡献，被授予“金铲子”奖！#$b#这都多亏了你！$h#$b#唔，我不应该再耽误你工作了……\"/pause 500/faceDirection Gunther 2/pause 700/emote Gunther 16/faceDirection Gunther 0/speak Gunther \"噢！我差点忘了。#$b#我有个礼物要给你……这是一把在博物馆金库封藏了至少100年的古老钥匙。虽然有点生锈了，但还是非常漂亮。$h\"/pause 500/pause 500/playSound reward/message \"你获得了“生锈的钥匙”！已经添加到你的钱包\"/pause 500/rustyKey/end",
+        "690006/n slimeHutchBuilt/H": "continue/64 15/farmer 64 16 2 Marlon 66 15 2/broadcastEvent/pause 1000/move farmer -1 0 2/move farmer 0 1 1/pause 500/showFrame Marlon 12/pause 1000/speak Marlon \"今天早上碰到罗宾……她告诉我你建了一个新的史莱姆屋子！\"/showFrame Marlon 8/shake Marlon 1600/textAboveHead Marlon \"不错嘛！\"/pause 1600/showFrame Marlon 12/pause 500/speak Marlon \"我像你这么大的时候也对史莱姆的繁衍很感兴趣。这个爱好很好……但也危险。#$b#你以为我是怎么丢掉这只眼睛的？\"/shake Marlon 1000/showFrame Marlon 12/textAboveHead Marlon \"哈！\"/pause 1000/textAboveHead Marlon \"开玩笑的啦！\"/showFrame Marlon 12/pause 200/showFrame Marlon 7/animate Marlon false false 120 4 5 6 7/pause 800/speak Marlon \"我有东西要给你。\"/faceDirection farmer 2/itemAboveHead slimeEgg/pause 1000/pause 1000/pause 1300/awardFestivalPrize slimeEgg/pause 300/faceDirection farmer 1 true/pause 500/showFrame Marlon 12/speak Marlon \"这是史莱姆的蛋。你可以放在史莱姆孵化器里孵化它。#$b#睁大眼睛好好看看这颗蛋吧。下次你出去找史莱姆的时候就可以简单地找更多的蛋了。它们的蛋虽然很稀有，但史莱姆也是需要繁衍的。#$b#收集不同的史莱姆蛋来丰富所养史莱姆群落的种类！\"/pause 500/end",
+        "68/m 5000/g male/x mom1": "null",
+        "69/m 15000/g male/x mom2": "null",
+        "70/m 32000/g male/x mom3": "null",
+        "71/m 120000/g male/x mom4": "null",
+        "72/m 5000/g female/x dad1": "null",
+        "73/m 15000/g female/x dad2": "null",
+        "74/m 32000/g female/x dad3": "null",
+        "75/m 120000/g female/x dad4": "null",
+        "76/m 27000/x newsstory": "null",
+        "706/u 15/x fertilizers": "null",
+        "707/y 2/x fertilizers2": "null",
+        "1590166/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h cat/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 cat 63 16 2/faceDirection Cat 2/pause 500/animate Cat false false 120 16 17 18/pause 2000/speak Marnie \"嗨， @!$h#$b#你看见这只猫了吗？\"/faceDirection Marnie 3/pause 400/showFrame Cat 18/playSound cat/pause 1200/faceDirection Marnie 0/speak Marnie \"我看到它坐在你的农场门口！它可能是无家可归了……可怜的小东西。$s\"/showFrame Cat 19/pause 500/showFrame Cat 18/playSound cat/shake Cat 150/pause 1500/speak Marnie \"它可能是喜欢这里！唔……你不觉得这个农场需要养只好猫吗？$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"哦，小宠物 %pet……现在你是只好猫咪了……知道吗？\"/pause 500/showFrame Cat 19/shake Cat 100/playSound cat/pause 800/animate Cat false false 120 20 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23 21 22 23/pause 200/globalFade/viewport -1000 -1000/end",
+        "897405/m 1000/t 600 930/d Mon Tue Thu Sat Sun/w sunny/h dog/H": "continue/64 15/farmer 64 15 2 Marnie 65 16 0 dog 63 16 2/faceDirection Dog 1/pause 500/animate Dog false false 120 20 21 22 23/pause 2000/speak Marnie \"嗨， @!$h#$b#你看见这只狗了吗？\"/faceDirection Marnie 3/pause 400/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 600/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/animate Dog false true 200 24 25/playSound dog_pant/pause 400/playSound dog_pant/pause 400/playSound dog_pant/pause 1200/faceDirection Marnie 0/speak Marnie \"我看到它坐在你的农场门口！它可能是无家可归了……可怜的小东西。$s\"/pause 500/animate Dog false true 400 23 31/pause 1500/speak Marnie \"它可能是喜欢这里！唔……你不觉得这个农场需要养只好狗吗？$h\"/catQuestion/pause 1000/faceDirection Marnie 3/speak Marnie \"好吧， %pet……小宠物……现在你是只好狗狗了……知道吗？\"/pause 500/stopAnimation Dog/showFrame Dog 26/playSound dog_bark/pause 200/showFrame Dog 23/pause 1000/globalFade/viewport -1000 -1000/end",
+        "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/speak Marnie \"早上好啊， @先生！$h^早上好啊， @小姐！$h#$b#我来是请你帮忙的，因为你是个善良的邻居。#$b#我在训练我的山羊向人打招呼……但它们的注意力根本不在我身上，除非我用它们最爱的食物山洞胡萝卜来吸引它们！$u#$b#所以……由于我害怕矿山……你有机会的话能不能给我带一根山洞胡萝卜？#$b#不强迫的……但如果你愿帮我的话，上午9:00到下午5:00之间带着山洞胡萝卜来我家就好。你的善举会让一位老姑娘非常开心的。再见。\"/pause 300/end dialogue Marnie \"我家的山羊想山洞胡萝卜都快想疯了……真搞不懂为什么。\"",
+        "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/speak Jodi \"*呼*…………嗨， @!*喘息* 呼咻……真是累死了……走上来真的好累。$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"话说……我是来邀请你与我们共进晚餐的！#$b#你不用……不过如果你来的话，你能带条大嘴鲈鱼吗？#$b#……没错。那种很大的，从湖里捞出来的黏糊糊的鱼。我要用一条大嘴鲈鱼炖砂锅。$h#$b#今晚七点在我们家……不要忘了带大嘴鲈鱼！再见。\"/pause 300/end dialogue Jodi \"砂锅鱼总是很受欢迎。\"",
+        "102/z spring/z summer/z fall/d Mon Tue Wed Thu Fri Sat/y 1/H": "continue/64 15/farmer 64 16 2 Pierre 64 18 0/broadcastEvent/pause 1500/speak Pierre \"你好啊， @。那么！你在星露谷的第一年就要结束了吧？#$b#如果你继续从我这里买种子，我保证明年你的产量会翻一倍！$h#$b#我还有一些振奋人心的消息……#$b#我的店里明年还会卖新品种的种子！每一季度我就会推出1个新品种。#$b#我要说的就这么多。祝你愉快。\"/pause 300/move Pierre 0 1 2/pause 1000/faceDirection Pierre 0/speak Pierre \"你知道吗……我根本不会操心去试用其他同行的种子。$u#$b#皮埃尔商店的种子绝对是最高档的。这我保证。$h\"/pause 500/end",
+        "2128292/e 3900074/t 600 630/f Shane 2500/D Shane": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"嗨， @!$6\"/pause 1000/speak Shane \"呃…我得到了2张今晚的隧道工人游戏门票。$6\"/pause 2000/speak Shane \"如果你有兴趣，今天下午5点左右我们在巴士站碰面。$6\"/pause 1000/end",
+        "2111294/e 2123243/f Emily 2502/w sunny/D Emily/x EmilyCamping": "null",
+        "2118991/e 3910975/t 600 800": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/speak Shane \"嘿……\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"噢，伙计…… 嗯…… 怎么说？$s#$b#关于在悬崖上发生的事情，我很抱歉。 真是…… 令人尴尬……\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#我很高兴我能帮到忙。#$r -1 -10 event_apologize2#你需要一个正式的警钟。#$r -1 10 event_apologize3#我很高兴你还活着。\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"我要去看心理医生。哈维让我与他的同事联系……$s\"/pause 500/faceDirection Shane 0/speak Shane \"无论如何……我只是想谢谢你照顾我。我想让你知道,我要从现在开始认真对待事情。#$b#我不想成为任何人的负担……\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+        "900553/t 600 1130/Hn ccPantry/A cc_Greenhouse/w sunny": "continue/64 15/farmer 64 16 2 Evelyn 64 18 0/skippable/pause 1500/speak Evelyn \"早上好，亲爱的。\"/pause 500/faceDirection Evelyn 3/pause 500/faceDirection Evelyn 2/speak Evelyn \"来这里散个步真好...我很久没有见过这个老农场了。$s#$b#它看起来比我记忆中的还要好！$h\"/pause 500/faceDirection Evelyn 3/faceDirection Evelyn 0/pause 500/speak Evelyn \"给你，我给你带来了些小东西。#$b#一份礼物，一个园丁送给另一个园丁的礼物。$h\"/pause 800/itemAboveHead pot/playSound getNewSpecialItem/pause 3300/awardFestivalPrize pot/pause 200/message \"收到了一个“花盆”\"/pause 800/speak Evelyn \"这些花盆非常方便。你可以用它们在室内种植任何季节的作物！#$b#放在室外，虽然看起来十分美观...但它们只能种当季的作物。\"/pause 500/speak Evelyn \"如果你需要更多这样的花盆，也十分易于制作。我得到一本旧杂志的剪贴，上面有说明，请收下。\"/pause 200/playSound getNewSpecialItem/addCraftingRecipe Garden Pot/pause 500/message \"学会如何制作“花盆”\"/pause 800/speak Evelyn \"好吧，我要走了。如果乔治没有按时吃燕麦片，他就会变得脾气暴躁。#$b#甜心，祝你今天过得愉快！$h\"/pause 500/end"
+    }
+}

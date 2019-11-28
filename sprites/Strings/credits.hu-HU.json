@@ -1,0 +1,66 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]A Stardew Valley készítője:",
+        "Eric Barone (ConcernedApe)",
+        "",
+        "[3]Multiplayer Kód:",
+        "Tom Coxon (a Chucklefish)",
+        "",
+        "[3]Fordítások:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (Olasz)",
+        "Junho Won (Koreai)",
+        "Not Shalalu (Francia) ",
+        "Gőz Richárd \"TRC\" (Magyar)",
+        "Hüseyin Serhat Çavunt (Török)",
+        "Salih Emircan Ayyıldız (Török)",
+        "Hilmi Furkan Yaşık (Török)",
+        "",
+        "[3]Kiadó:",
+        "ConcernedApe",
+        "Chucklefish (Switch & Mobil) ",
+        "Amuzio (Japán)",
+        "",
+        "[3]Mac, Linux, Xbox One, PlayStation 4, PS Vita és Nintendo Switch portok:",
+        "Sickhead Games",
+        "",
+        "[3]iOS port:",
+        "The Secret Police",
+        "",
+        "[3]Konzol Minőségbiztosítása:",
+        "GlobalStep",
+        "",
+        "[3]Kiskereskedelmi Forgalmazás:",
+        "505 Games",
+        "",
+        "[3]Kiskereskedelmi Minőségbiztosítás:",
+        "Pipeworks Studio",
+        "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4",
+        "",
+        "[image] LooseSprites\\\\Cursors 592 333 13 13 4 4",
+        "",
+        "[1]Köszönöm, hogy játszottál! <"
+    ]
+}

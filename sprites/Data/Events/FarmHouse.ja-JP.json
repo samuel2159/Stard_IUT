@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"おじいちゃんのかわいい孫よ…^おじいちゃんのかわいい孫娘よ…#$b#さいごに話したときからずいぶん時がたったね。お前はまだほんの子供だった…覚えているかな？^さいごに話したときからずいぶん時がたったね。お前はまだほんの子供だった…覚えているかな？#$b#時がすぎるのは早いものだ！#$b#お前は忘れてしまっていたかもしれないが、おじいちゃんはずっとここにいたんだよ。#$b#ごらん…おじいちゃんの体はもうこの世にないけれど、心はいつもスターデューバレーにのこっていたんだよ。\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"お前がこの谷で暮らしだしてから、もう2年になるね…\"/grandpaEvaluation/pause 3000/speak Grandpa \"%farm牧場をどうしていくかは、あとはお前の手で決めなさい。#$b#それでは、お別れだ！\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"おじいちゃんのかわいい孫よ…^おじいちゃんのかわいい孫娘よ…#$b#おじいちゃんを呼んでくれてうれしいよ。まえに会ったときは、すこしきつく当たりすぎてしまったかもしれないね。#$b#ゆるしておくれ。お前はいっしょうけんめい働いてきたようだね。おじいちゃんは誇らしいよ。\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"どれどれ…\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

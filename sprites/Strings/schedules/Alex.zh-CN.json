@@ -1,0 +1,24 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "winter_17.000": "你见过美人鱼秀吗？那是我的最爱...",
+        "marriage_Mon.000": "我一整天都将在这里待着。我的祖父母都不再年轻了……",
+        "summer_16.000": "你好。呃，我刚刚把脚扭了。能不能帮我上一下绷带。",
+        "summer_16.001": "嗯，嗯……我很好，医生。就帮我上一下绷带，行吗？"
+    }
+}

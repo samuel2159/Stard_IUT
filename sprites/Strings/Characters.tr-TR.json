@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Atını Adlandır",
+        "WipedMemory": "Sen şu yeni çiftçisin, değil mi?#$e#Sanki... hayır. Daha önce hiç karşılaşmadığımıza eminim.",
+        "DefaultHorseName": "Otlakçı",
+        "PiecesOfHay": "Saman Balyası: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Yıldız!",
+        "JunimoThankYou1": "Teşekkür ederim!",
+        "JunimoThankYou2": "Hediye!",
+        "AbigailInMineFlute": "%Abigail müziğe dalmış...",
+        "AbigailInMineFirst": "Selam, @. Şaşırdın mı? ...Sonunda buraya gelecek cesareti bulabildim.#$b#Başlarda korksamda, sonunda sindirebildim.#$b#Artık kendime daha çok güveniyorum. Aslında çok keyifliymiş!$h",
+        "AbigailInMine0": "Hey! Bayağı ilerledim, değil mi?$h",
+        "AbigailInMine1": "Ah!$7#$b#Hahah! Beni korkuttun! Burada başka birini görmeyi beklemiyordum!$h#$e#Üzgünüm, heyecandan terledim...",
+        "AbigailInMine2": "Merhaba, @! Buraya kadar hiç bir canavarla savaşmadan geldim...",
+        "AbigailInMine3": "Hey! Seni burada görmek beni rahatlattı...$h#$e#Şey... Babama beni burada gördüğümü söyleme, olur mu?$9",
+        "AbigailInMine4": "Hey! Bu yağmurlu günde madenleri mi keşfediyorsun? Ben de!$h",
+        "Henchman1": "Dur! İnsan!#$b#...Geçmek mi istiyorsun? Olmaz, burası özel mülk.$s",
+        "Henchman2": "Üzgünüm, ama geçmene izin veremem... İşimi kaybederim.",
+        "Henchman3": "Bunu bana mı sunuyorsun? Hım... Sağol ama olmaz.$s",
+        "Henchman4": "Hım... Taze görünüyor, sağol ama olmaz... sen neden yemiyorsun?",
+        "Henchman5": "*koklar*...*koklar*...#$b#Bu koku...#$b#Dayanamıyorum... Ver şunu bana!$h",
+        "Henchman6": "Teşekkürler.",
+        "KrobusDarkTalisman": "Bu da ne... karanlık tılsımı mı arıyorsun?#$b#...Hım. Şimdi bahsettin de, çok da uzun olmayan bir süre önce bende bir tane vardı.#$b#Ne yazık ki, şu köşedeki tüneli keşfederken düşürdüm.#$b#İşler kızışmaya başlamıştı. Bu yüzden orayı hızlıca terk edip girişi mühürledim.#$b#Fazlasıyla güçlü görünüyorsun... Orayı senin için tekrar açacağım. Dikkatli ol, tamam mı?",
+        "Divorced_bouquet": "Bu... Beni daha mı fazla incitmeye çalışıyorsun?$s",
+        "Divorced_gift": "Senin hediyeni istemiyorum.$a",
+        "PetLovesYou": "{0} seni seviyor. <"
+    }
+}

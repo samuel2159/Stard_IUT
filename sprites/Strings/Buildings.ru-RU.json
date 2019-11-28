@@ -1,0 +1,28 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "UnderConstruction": "Ведутся строительные работы.",
+        "DismountBeforeEntering": "Чтобы войти сюда, нужно спешиться.",
+        "PiecesOfHay": "Снопов сена:{0}/{1}",
+        "MillFull": "Места больше не осталось.",
+        "CantMill": "Это нельзя cмолоть",
+        "AddedHay": "Снопов сена сложено в башню: {0}",
+        "NeedSilo": "Требуется башня для сена.",
+        "CantEnter": "Сейчас войти нельзя"
+    }
+}

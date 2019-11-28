@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Mein lieber Junge...^Meine liebste Enkelin...#$b#Es ist viele Jahre her, seit wir das letzte Mal gesprochen haben. Du warst noch ein kleiner Junge... Erinnerst du dich?^Es ist viele Jahre her, seit wir das letzte Mal gesprochen haben. Du warst noch ein kleines Mädchen... Erinnerst du dich?#$b#Sieh an, wie weit du gekommen bist!#$b#Du magst mich vielleicht vergessen haben, aber ich war immer hier.#$b#Hör zu... Mein Körper hat diese Welt verlassen, aber mein Herz wird immer im Sternentautal bleiben.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Du bist jetzt schon seit zwei Jahren hier...\"/grandpaEvaluation/pause 3000/speak Grandpa \"Die Zukunft von %farm Hof liegt jetzt in deiner Hand.#$b#Leb wohl!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Mein lieber Junge...^Meine liebste Enkelin...#$b#Es freut mich, dass du mich gerufen hast. Ich... war das letzte Mal vielleicht ein wenig zu hart zu dir.#$b#Vergib mir. Du hast wirklich hart gearbeitet und ich bin stolz auf dich.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Mal sehen...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

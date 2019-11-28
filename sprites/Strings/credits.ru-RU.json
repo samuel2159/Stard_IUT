@@ -1,0 +1,65 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]Stardew Valley, создатель:",
+        "Eric Barone (ConcernedApe)",
+        " ",
+        "[3]многопользовательский кодекс:",
+        "Tom Coxon (из Chucklefish)",
+        "",
+        "[3]переводы:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (Итальянский)",
+        "Junho Won (Корейский)",
+        "Not Shalalu (французский)",
+        "Gőz Richárd \"TRC\" (венгерский)",
+        "Hüseyin Serhat Çavunt (турецкий)",
+        "Salih Emircan Ayyıldız (турецкий)",
+        "Hilmi Furkan Yaşık (турецкий)",
+        "",
+        "[3]опубликовано:",
+        "ConcernedApe",
+        "Chucklefish (коммутатор & мобильный)",
+        "Amuzio (Япония)",
+        "",
+        "[3]Mac, Linux, Xbox One, PlayStation 4, PS Vita и Nintendo порты коммутатора:",
+        "Sickhead Games",
+        "",
+        "[3]порт iOS:",
+        "The Secret Police",
+        " ",
+        "[3]консоль QA:",
+        "GlobalStep",
+        "",
+        "[3]розничное распространение:",
+        "505 Games",
+        "",
+        "[3]розница QA:",
+        "Pipeworks Studio",
+        "",
+        "[1]Благодарим вас за игру <",
+        "",
+        "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"我亲爱的孩子……^我亲爱的孙女……#$b#自从我们最后一次讲话，已经过去了很多年。你那时还很小……记得吗？^自从我们最后一次讲话，已经过去了很多年。你那时还是个小姑娘……记得吗？#$b#你现在已经长大了啊！#$b#虽然你也许已经忘了我，但我一直都陪着你#$b#虽然……我的身体离开了这个世界，但我的心永远留在星露谷。\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"你来到这里已经两年了……\"/grandpaEvaluation/pause 3000/speak Grandpa \"%farm的未来掌握在你手里#$b#再见！\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"我亲爱的孩子……^我亲爱的孙女……#$b#我很高兴你召唤了我。也许上次我对你太严厉了。#$b#请原谅我。你一直那么努力，我真为你感到骄傲。\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"那么……\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

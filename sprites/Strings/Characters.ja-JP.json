@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "ウマの名前",
+        "DefaultHorseName": "グローバー",
+        "PiecesOfHay": "たくわえたほし草：{0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Star!",
+        "JunimoThankYou1": "ありがとう！",
+        "JunimoThankYou2": "プレゼントだ！",
+        "PetLovesYou": "{0}はあなたがだーいすき！♡",
+        "Divorced_gift": "プレゼントなんか欲しくない。",
+        "Henchman1": "ぎゃっ！人間！#$b#…ここを通りたいのか？悪いな、ここは私有地なんだ。$s",
+        "Henchman2": "悪いな、ここは通せない…こっちも、クビになりたくはないんでね。",
+        "Henchman3": "こいつをおれに？ふうん…いや、いらないよ。$s",
+        "Henchman4": "むむむ…うまそうだが、いや、いらない…自分で食べたらどうだ？",
+        "Henchman5": "（クンクン）…#$b#このにおい…#$b#たまんないぜ…なあ、くれよ！$h",
+        "Henchman6": "ありがとよ。",
+        "WipedMemory": "ああ、新しく越してきた牧場主さん？#$e#どこかで見たような…いや、やっぱり初対面かな。",
+        "Divorced_bouquet": "こんなの…つらくなるだけだ。嫌がらせのつもりだろ？^ひどい…嫌がらせのつもりなの？$s",
+        "KrobusDarkTalisman": "えっ、なんだって…おたく、闇のタリスマンを探してるのかい？#$b#…ふーむ。まあ一応、ひとつ持ってたよ。ちょっと昔のことだけど。#$b#残念ながら、このトンネルをうろついるうちに、奥のほうで落っことしちゃったんだよねえ。#$b#そしたらタリスマンが熱くなりだしてさ。あわててそこから離れて、トンネルの入り口を閉じたんだよねえ。#$b#まあ、見たとこ、おたくずいぶん強そうだし…ここ、開けてあげるよ。ま、くれぐれも気をつけてくれよな。",
+        "AbigailInMineFlute": "%アビゲイルは演奏に夢中だ…",
+        "AbigailInMineFirst": "@。おどろいた？ ...ようやく ここまで 下りてくる 勇気が 出たわ。#$b#最初は 怖かったけど、 がんばってみた#$b#今はなんだか 自信がついた 感じかな。むしろ、 楽しく なってきた！$h",
+        "AbigailInMine0": "ふう！けっこう がんばったよ、でしょ？$h",
+        "AbigailInMine1": "うわー！$7#$b#もー！ビックリ させないでよ！ここで 他の人に 会うなんて 思っても みなかった！$h#$e#ああもう、興奮しすぎて 汗だくだ…",
+        "AbigailInMine2": "@！モンスターとは 戦わずに ここまで 来れたよ…",
+        "AbigailInMine3": "あらっ！ここで あなたに 会うなんて ちょっと ホッとするな…$h#$e#あっ、 ここに 来たことは パパには内緒で、お願いね？$9",
+        "AbigailInMine4": "こんな 雨の日に 鉱山探検？ 気が合うね！$h"
+    }
+}

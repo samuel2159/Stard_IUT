@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Drága fiam...^Drága lányom...#$b#Több év telt el legutóbbi beszélgetésünk óta. Akkor még csak kisfiú voltál... Emlékszel?^Több év telt el legutóbbi beszélgetésünk óta. Akkor még csak kislány voltál... Emlékszel?#$b#Nézd, hogy mi lett belőled!#$b#Habár lehet, hogy már réges-régen megfeledkeztél rólam, de én mindig is itt voltam.#$b#Tudod... A testem elhagyta ezt a világot, de a szívem mindig is Stardew Valleyben marad.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Már két éve vagy itt...\"/grandpaEvaluation/pause 3000/speak Grandpa \"%farm Farm jövője már a te kezedben van.#$b#Viszlát!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Drága fiam...^Drága lányom...#$b#Örülök, hogy megidéztél engem. Talán... túlságosan nyers voltam veled legutóbb.#$b#Bocsáss meg nekem. Keményen dolgoztál, és büszke vagyok rád.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Nézzük csak...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

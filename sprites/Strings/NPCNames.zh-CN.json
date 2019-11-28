@@ -1,0 +1,33 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "Gunther": "冈瑟",
+        "Gil": "吉尔",
+        "Morris": "莫里斯",
+        "Marlon": "马龙",
+        "Kel": "凯尔",
+        "OldMariner": "老水手",
+        "MisterQi": "齐先生",
+        "Bouncer": "门卫",
+        "Henchman": "仆从",
+        "Welwick": "维尔维克",
+        "Governor": "州长",
+        "Grandpa": "爷爷",
+        "Bear": "熊"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "winter_17.000": "인어쇼 봤어? 내가 제일 좋아하는 거야...",
+        "marriage_Mon.000": "오늘 하루는 여기서 보내려고. 할머니 할아버지 두 분 다 더 젊어지실 건 아니니까...",
+        "summer_16.000": "안녕. 어, 발목을 삔 것뿐이야. 붕대 감으면 되겠지.",
+        "summer_16.001": "네, 네... 다 괜찮아요 선생님. 그냥 붕대 감아주시면 될 거예요."
+    }
+}

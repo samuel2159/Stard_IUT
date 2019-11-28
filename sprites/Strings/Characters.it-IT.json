@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Nome del cavallo",
+        "WipedMemory": "Tu sei quella persona nuova, vero?#$e#Mi sembri... no. Penso proprio di non averti mai visto.",
+        "DefaultHorseName": "Grover",
+        "PiecesOfHay": "Pezzi di fieno: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Stella!",
+        "JunimoThankYou1": "Grazie!",
+        "JunimoThankYou2": "Un dono!",
+        "AbigailInMineFlute": "%Abigail è persa nella sua musica...",
+        "AbigailInMineFirst": "Ehi, @. Hai visto che sorpresa? ...Ho finalmente trovato il coraggio di scendere quaggiù.#$b#All'inizio avevo paura, ma mi sono fatta forza.#$b#Ora mi sento molto più sicura di me. E pensa, mi sto divertendo un mondo!$h",
+        "AbigailInMine0": "Ehi! Ho fatto parecchia strada, vero?$h",
+        "AbigailInMine1": "Iiih!$7#$b#Hahah! Mi hai spaventata! Non mi aspettavo di trovare un'altra persona quaggiù!$h#$e#Scusa, sono tutta sudata per l'eccitazione...",
+        "AbigailInMine2": "Ciao @! Sono riuscita ad arrivare fin qui senza combattere nessun mostro... ",
+        "AbigailInMine3": "Ehi! È un sollievo trovarti quaggiù...$h#$e#Ehm... non dire a papà che sono qui, ok?$9",
+        "AbigailInMine4": "Ehi! Esplori le miniere in un giorno di pioggia, eh? Anch'io!$h",
+        "Henchman1": "Guiiih-ah!! Umano!#$b#...Vuoi passare? Mi dispiace, questa è proprietà privata.$s",
+        "Henchman2": "Mi dispiace, ma non posso farti passare... Perderei il lavoro.",
+        "Henchman3": "Stai offrendo questa cosa a me? Hmm... no grazie.$s",
+        "Henchman4": "Mmmm... sembra roba fresca, ma no grazie... Perché non te la mangi tu?",
+        "Henchman5": "*sniff*...*sniff*...#$b#Quell'odore...#$b#Non resisto... Dammi qua!$h",
+        "Henchman6": "Grazie.",
+        "KrobusDarkTalisman": "Come dici... Stai cercando un talismano oscuro?#$b#...Hmmm. In effetti, a pensarci bene, ne possedevo uno non molto tempo fa.#$b#Purtroppo mi è caduto mentre esploravo la galleria in quell'angolo laggiù.#$b#Le cose si stavano mettendo male, così me ne sono andato di corsa e ho sigillato l'entrata.#$b#Tu però sembri una persona tosta... Per cui te la riaprirò. Basta che fai attenzione, sì?",
+        "Divorced_bouquet": "Questo... Cerchi di farmi ancora più male?$s",
+        "Divorced_gift": "Non voglio il tuo regalo.$a",
+        "PetLovesYou": "{0} ti vuole bene. <"
+    }
+}

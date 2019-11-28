@@ -1,0 +1,28 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "UnderConstruction": "공사 중.",
+        "DismountBeforeEntering": "말에서 내리고 입장해주세요",
+        "PiecesOfHay": "건초 조각: {0}/{1}",
+        "AddedHay": "저장고에 건초 조각 {0}개를 넣었습니다.",
+        "MillFull": "빈 공간이 없습니다",
+        "CantMill": "가루로 갈 수 없습니다",
+        "NeedSilo": "저장고가 필요합니다",
+        "CantEnter": "지금은 입장할 수 없습니다"
+    }
+}

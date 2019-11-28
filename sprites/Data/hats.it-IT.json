@@ -1,0 +1,64 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.Int32Reader",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "0": "Cowboy Hat/Il cuoio è vecchio e screpolato, ma sorprendentemente flessibile. Odora di stantio./false/true/Cappello da cowboy",
+        "1": "Bowler Hat/Fatta di feltro liscio./false/true/Bombetta",
+        "2": "Top Hat/Un classico del gentiluomo./false/true/Cilindro",
+        "3": "Sombrero/Un festoso cappello decorato, fatto di paglia intrecciata./false/true/Sombrero",
+        "4": "Straw Hat/Fresco e leggero, la delizia del fattore./false/true/Cappello di paglia",
+        "5": "Official Cap/Sembra essere appartenuto a un poliziotto o a un postino. Comunque sia, è molto morbido e ha un buon odore./false/true/Berretto da ufficiale",
+        "6": "Blue Bonnet/Evoca ricordi di tempi più semplici con questa cuffia della prateria./false/true/Cuffia blu",
+        "7": "Plum Chapeau/Sembra a posto./false/true/Chapeau prugna",
+        "8": "Skeleton Mask/Gli occhi rossi mandano un misterioso bagliore./true/true/Maschera da scheletro",
+        "9": "Goblin Mask/Spaventa il quartiere con questa maschera inquietante. Le articolazioni delle orecchie di gomma danno un effetto in più./true/true/Maschera da goblin",
+        "10": "Chicken Mask/Con questa strapperai a tutti un sorriso./true/true/Maschera da pollo",
+        "11": "Earmuffs/Tieni le orecchie al caldo. Rivestiti con velluto artigianale di Castle Village./true/false/Paraorecchie",
+        "12": "Delicate Bow/Esaminandolo, vedi scintillare dei piccoli gioielli rosa./true/false/Fiocco delicato",
+        "13": "Tropiclip/Ha la forma di una piccola palma./true/false/Mollettropicale",
+        "14": "Butterfly Bow/Questo è molto morbido./true/false/Fiocco a farfalla",
+        "15": "Hunter's Cap/Il rivestimento di lana dovrebbe restare caldo anche nei meandri della foresta./false/true/Cappello da cacciatore",
+        "16": "Trucker Hat/Reticella sul retro per tener fresca la testa./false/true/Berretto da camionista",
+        "17": "Sailor's Cap/Fresco e inamidato./false/true/Berretto da marinaio",
+        "18": "Good Ol' Cap/Un vecchio cappello floscio con la visiera sgualcita. Sembra averne passate tante./false/true/Caro vecchio copricapo",
+        "19": "Fedora/Tipico del furbacchione di città./false/true/Borsalino",
+        "20": "Cool Cap/Ora è parecchio sbiadito, ma prima era di un blu acceso./false/true/Cappello ganzo",
+        "21": "Lucky Bow/Il centro è fatto d'oro zecchino./true/false/Fiocco fortunato",
+        "22": "Polka Bow/Questo senz'altro attirerà gli sguardi./true/false/Fiocco a pois",
+        "23": "Gnome's Cap/Questo gnomo aveva un gran bel testone./false/true/Berretto da gnomo",
+        "24": "Eye Patch/Non capisci se sia vera o se provenga da un negozio di costumi./true/true/Benda per occhio",
+        "25": "Santa Hat/Festeggia la magica stagione./false/true/Berretto da Santa Claus",
+        "26": "Tiara/Questa qui ha una grossa ametista incastonata nell'oro./true/true/Tiara",
+        "27": "Hard Hat/Non spaccarti la zucca./false/true/Elmetto",
+        "28": "Sou'wester/La forma aiuta i marinai a restare asciutti durante le tempeste./false/true/Cappello impermeabile",
+        "29": "Daisy/Una fresca margherita primaverile da mettere fra i capelli./true/false/Margherita",
+        "30": "Watermelon Band/La scelta cromatica trae ispirazione dall'amata anguria estiva./true/false/Cerchietto cocomero",
+        "31": "Mouse Ears/Fatte di fibre sintetiche./true/true/Orecchie da topo",
+        "32": "Cat Ears/Baffi inclusi./true/true/Orecchie da gatto",
+        "33": "Cowgal Hat/Il nastro è costellato di diamanti finti./false/true/Cappello da cowgirl",
+        "34": "Cowpoke Hat/Per gli esperti di latte e formaggi./false/true/Cappello da mandriano",
+        "35": "Archer's Cap/Molto alla moda a prescindere, anche se non sei un arciere./false/true/Berretto da arciere",
+        "36": "Panda Hat/Un adorabile berretto da panda./false/true/Berretto da panda",
+        "37": "Blue Cowboy Hat/Un cappello da cowboy in denim blu chiaro./false/true/Cappello da cowboy blu",
+        "38": "Red Cowboy Hat/Un vistoso cappello da cowboy in pelle scamosciata rossa./false/true/Cappello da cowboy rosso",
+        "39": "Cone Hat/Una curiosità da una terra lontana./false/true/Berretto conico"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]Stardew Valley creato da:",
+        "Eric Barone (ConcernedApe)",
+        " ",
+        "[3]Programmazione Network:",
+        "Tom Coxon (di Chucklefish)",
+        "",
+        "[3]Traduzioni:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (Italiano)",
+        "Junho Won (Coreano)",
+        "Not Shalalu (Francese)",
+        "Gőz Richárd \"TRC\" (Ungherese)",
+        "Hüseyin Serhat Çavunt (Turco)",
+        "Salih Emircan Ayyıldız (Turco)",
+        "Hilmi Furkan Yaşık (Turco)",
+        "",
+        "[3]Pubblicato da:",
+        "ConcernedApe",
+        "Chucklefish (Nintendo Switch & Mobile)",
+        "Amuzio (PS4 & Nintendo Switch in Giappone)",
+        "",
+        "[3]Versioni Mac, Linux e console:",
+        "Sickhead Games",
+        "",
+        "[3]Versione iOS:",
+        "The Secret Police",
+        " ",
+        "[3]Console QA:",
+        "GlobalStep",
+        "",
+        "[3]Distribuzione al dettaglio:",
+        "505 Games",
+        "",
+        "[3]QA al dettaglio:",
+        "Pipeworks Studio",
+        "",
+        "[1]Grazie per aver giocato <",
+        "",
+        "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]제작:",
+        "Eric Barone (ConcernedApe)",
+        "",
+        "[3]네트워크 프로그래밍:",
+        "Tom Coxon",
+        "",
+        "[3]현지화 작업:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (이탈리아어)",
+        "Junho Won (한국어)",
+        "Not Shalalu (프랑스어)",
+        "Gőz Richárd \"TRC\" (헝가리어)",
+        "Hüseyin Serhat Çavunt (터키어)",
+        "Salih Emircan Ayyıldız (터키어)",
+        "Hilmi Furkan Yaşık (터키어)",
+        "",
+        "[3]출판:",
+        "ConcernedApe",
+        "Chucklefish(닌텐도 스위치 & 모바일)",
+        "Amuzio (PS4 & 닌텐도 스위치 (일본))",
+        "",
+        "[3]Mac, Linux, 콘솔 포팅:",
+        "Sickhead Games",
+        "",
+        "[3]iOS 포트:",
+        "The Secret Police",
+        " ",
+        "[3]콘솔 QA:",
+        "GlobalStep",
+        "",
+        "[3]소매유통:",
+        "505 Games",
+        "",
+        "[3]소매 품질보증 QA:",
+        "Pipeworks Studio",
+        "",
+        "[1]플레이 해주셔서 감사합니다 <"
+    ]
+}

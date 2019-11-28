@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "말의 이름을 정해주세요",
+        "WipedMemory": "새로 온 농부 맞죠?#$e#낯이... 아니. 분명 처음 뵙는 분이겠죠.",
+        "DefaultHorseName": "그로버",
+        "PiecesOfHay": "건초 조각: {0}/{1}",
+        "JunimoTextAboveHead1": "주니모!",
+        "JunimoTextAboveHead2": "별!",
+        "JunimoThankYou1": "고마워!",
+        "JunimoThankYou2": "선물!",
+        "AbigailInMineFlute": "%애비게일은 음악에 심취해있습니다.",
+        "AbigailInMineFirst": "@, 안녕. 놀랐어? ...드디어 용기를 내서 여기에 내려와봤어.#$b#처음에는 좀 무서웠는데, 계속 밀고 나갔어.#$b#점점 자신감이 생기는 것 같아. 생각보다 재밌어!$h",
+        "AbigailInMine0": "야! 나 그래도 꽤 멀리까지 왔지, 안 그래?$h",
+        "AbigailInMine1": "으악!$7#$b#하하! 깜짝 놀랐잖아! 여기서 다른 사람을 볼 거라고는 생각을 못 했어!$h#$e#미안, 흥분해서 땀이 나네...",
+        "AbigailInMine2": "얀녕 @! 여기까지 괴물이랑 싸우지 않고 왔어...",
+        "AbigailInMine3": "야! 여기서 봐서 다행이야...$h#$e#음... 아빠한테는 나 여기서 봤다고 얘기하지 마, 알았지?$9",
+        "AbigailInMine4": "안녕! 비 오는 날 광산 탐험이구나? 나도!$h",
+        "Henchman1": "귀이이-아!! 인간!#$b#...지나가고 싶다고? 미안하지만 여긴 사유지야.$s",
+        "Henchman2": "미안하지만 지나가게 해줄 수 없어... 내 일자리를 잃게 될 거야.",
+        "Henchman3": "나한테 주는 거야? 흠... 사양할게.$s",
+        "Henchman4": "으음... 신선해 보이지만, 사양할게... 너가 먹지그래?",
+        "Henchman5": "*킁*...*킁*...#$b#그 냄새...#$b#참을 수 없어... 나 줘!$h",
+        "Henchman6": "고마워",
+        "KrobusDarkTalisman": "뭐야... 어둠의 탈리스만을 찾고 있다고?#$b#...흐음. 듣고 보니, 꽤 최근에 내가 하나 가지고 있긴 했지.#$b#안타깝게도, 저쪽 구석에 있는 굴을 탐험하다가 떨어트렸어.#$b#상황이 좀 안 좋아지는 바람에, 서둘러 나와서 입구를 봉인했어.#$b#넌 좀 튼튼해 보이긴 하네... 입구 다시 열어줄 테니까, 조심해, 알았지?",
+        "Divorced_bouquet": "이건... 나한테 더 상처주려고?$s",
+        "Divorced_gift": "선물 같은 건 필요 없어.$a",
+        "PetLovesYou": "{0}은(는) 당신을 사랑합니다."
+    }
+}

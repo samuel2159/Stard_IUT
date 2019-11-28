@@ -1,0 +1,65 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]Stardew Valley erstellt von:",
+        "Eric Barone (ConcernedApe)",
+        "",
+        "[3]Multiplayer-Code:",
+        "Tom Coxon (von Chucklefish)",
+        "",
+        "[3]Übersetzungen:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (Italienisch)",
+        "Junho Won (Koreanisch)",
+        "Not Shalalu (Französisch)",
+        "Gőz Richárd \"TRC\" (Ungarisch)",
+        "Hüseyin Serhat Çavunt (Türkisch)",
+        "Salih Emircan Ayyıldız (Türkisch)",
+        "Hilmi Furkan Yaşık (Türkisch)",
+        "",
+        "[3]Veröffentlicht von:",
+        "ConcernedApe",
+        "Chucklefish (Switch & Mobile)",
+        "Amuzio (Japan)",
+        "",
+        "[3]Ports für Mac, Linux, Xbox One, Playstation 4, PS Vita und Nintendo Switch:",
+        "Sickhead Games",
+        "",
+        "[3]iOS-Port:",
+        "The Secret Police",
+        "",
+        "[3]QA der Konsole:",
+        "GlobalStep",
+        "",
+        "[3]Einzelhandelsverkauf:",
+        "505 Games",
+        "",
+        "[3]Einzelhandels-QA:",
+        "Pipeworks Studio",
+        "",
+        "[1]Vielen Dank, dass Sie gespielt haben <",
+        "",
+        "[image] LooseSprites\\\\Cursors 540 333 13 13 4 4"
+    ]
+}

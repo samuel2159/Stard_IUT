@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IUT-Valley.jnlp">
+  <information>
+    <title>IUT-Valley</title>
+    <vendor>Kevin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IUT-Valley.jar" size="1570560" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="IHM.Main"  name="IUT-Valley" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Nevezd el a lovad",
+        "WipedMemory": "Te az új gazda vagy, ugye?#$e#Te olyan... nem. Még biztosan nem találkoztunk.",
+        "DefaultHorseName": "Grover",
+        "PiecesOfHay": "Széna: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Csillag!",
+        "JunimoThankYou1": "Köszönöm!",
+        "JunimoThankYou2": "Egy ajándék!",
+        "AbigailInMineFlute": "%Abigail belemerült a zenélésbe...",
+        "AbigailInMineFirst": "Hé, @. Meglepődtél? ...Végre elég bátor vagyok ahhoz, hogy lejöjjek ide.#$b#Először féltem, de sikerült leküzdenem.#$b#Most már magabiztosabban érzem magam. Nagyon mókás ez az egész!$h",
+        "AbigailInMine0": "Hé! Jó messzire jutottam, ugye?$h",
+        "AbigailInMine1": "Jáj!$7#$b#Hahah! Megijesztettél! Nem számítottam arra, hogy valaki mással is találkozhatok itt!$h#$e#Elnézést, beleizzadtam az izgalomba...",
+        "AbigailInMine2": "Szia @! Úgy jutottam le ide, hogy egy szörnnyel se harcoltam... ",
+        "AbigailInMine3": "Hé! Megkönnyebbülés itt látni téged...$h#$e#Öhm... kérlek ne mondd meg Apámnak, hogy itt vagyok, jó?$9",
+        "AbigailInMine4": "Hé! Csak nem feltérképezed a bányákat ezen az esős napon? Én is!$h",
+        "Henchman1": "Gyáááááá!! Ember!#$b#...Át akarsz jutni? Sajnálom, ez egy magánterület.$s",
+        "Henchman2": "Sajnálom, de nem engedhetlek át... Elveszíteném a munkámat.",
+        "Henchman3": "Ezt ajánlod fel nekem? Hmm... kösz, nem.$s",
+        "Henchman4": "Mmmm... ez frissnek tűnik, de kösz, nem kérem... miért nem tartod meg?",
+        "Henchman5": "*szimat*...*szimat*...#$b#Ez az illat...#$b#Nem tudok ellenállni... Add csak ide!$h",
+        "Henchman6": "Köszönöm.",
+        "KrobusDarkTalisman": "Mi az... egy sötét talizmánt keresel?#$b#...Hmmm. Most, hogy mondod, volt nálam egy még nem is olyan régen.#$b#Sajnos leejtettem a sarokban lévő alagút felfedezése közben.#$b#Kezdtek kissé bedurvulni a dolgok, így gyorsan leléptem és elzártam a bejáratot.#$b#De te elég keménynek tűnsz... Szóval ismét kinyitom neked. Csak légy óvatos, rendben?",
+        "Divorced_bouquet": "Ez... Te egyre jobban bántani akarsz engem?$s",
+        "Divorced_gift": "Nem kell az ajándékod.$a",
+        "PetLovesYou": "{0} szeret téged. <"
+    }
+}

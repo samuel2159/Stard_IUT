@@ -1,0 +1,64 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.Int32Reader",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "0": "Cowboy Hat/古くてひび割れた革でできているが、おどろくほどしなやか。年季の入ったにおいがする。/false/true/カウボーイハット",
+        "1": "Bowler Hat/つややかなフェルトでできている。/false/true/山高帽",
+        "2": "Top Hat/紳士たちの定番ファッション。/false/true/シルクハット",
+        "3": "Sombrero/陽気なかざりのついた帽子。わらで編まれている。/false/true/ソンブレロ",
+        "4": "Straw Hat/かぶると軽くてすずしい、牧場主の味方。/false/true/むぎわら帽",
+        "5": "Official Cap/郵便屋さんや警察官がかぶっていそうな帽子。いずれにせよ、手入れがよくていまだに清潔。/false/true/オフィシャルなキャップ",
+        "6": "Blue Bonnet/素朴な時代を思い起こさせる、開拓時代のボンネット。/false/true/青いボンネット",
+        "7": "Plum Chapeau/おしゃれな帽子。/false/true/プラム色の帽子",
+        "8": "Skeleton Mask/ミステリアスに光る赤い目付き。/true/true/スケルトンマスク",
+        "9": "Goblin Mask/かぶればご近所さんも震えあがる不気味なマスク。ゴム製の耳で効果倍増。/true/true/ゴブリンマスク",
+        "10": "Chicken Mask/これをかぶれば周りの笑いをとれることうけあい。/true/true/ニワトリのお面",
+        "11": "Earmuffs/耳をぽかぽかに保ってくれる。裏地は、キャッスル村の職人が織ったベルベット。/true/false/耳あて",
+        "12": "Delicate Bow/よく見ると、小さなピンクの宝石があしらわれている。/true/false/優雅なリボン",
+        "13": "Tropiclip/小さなヤシの木の形をしている。/true/false/トロピカルな髪かざり",
+        "14": "Butterfly Bow/とても手ざわりがなめらか。/true/false/蝶ネクタイ",
+        "15": "Hunter's Cap/裏地のウールのおかげで、森の奥でもあたたかい。/false/true/狩人の帽子",
+        "16": "Trucker Hat/うしろに入ったメッシュが頭をすずしく保ってくれる。/false/true/トラック野郎の帽子",
+        "17": "Sailor's Cap/パリッと糊がきいている。/false/true/セーラー帽",
+        "18": "Good Ol' Cap/しわがよったひさしのついた、布地がたるんだ古い帽子。年季の入った様子がうかがえる。/false/true/旧きよきキャップ",
+        "19": "Fedora/シティファッションのスタンダード。/false/true/フェドーラ帽",
+        "20": "Cool Cap/いまはかなり色あせているが、かつては鮮やかなブルーだった。/false/true/クールなキャップ",
+        "21": "Lucky Bow/真ん中のとめ具は純金製。/true/false/ラッキーリボン",
+        "22": "Polka Bow/周囲の注目を浴びることまちがいなし。/true/false/水玉リボン",
+        "23": "Gnome's Cap/この帽子をかぶっていたノームは、頭がすごく大きかったはず。/false/true/ノームの帽子",
+        "24": "Eye Patch/ホンモノなのかコスプレ用品なのか、真相は不明。/true/true/眼帯",
+        "25": "Santa Hat/特別なシーズンのお祝いに。/false/true/サンタの帽子",
+        "26": "Tiara/金でふちどりした大粒のアメシストがはまっている。/true/true/ティアラ",
+        "27": "Hard Hat/頭を危険から守ってくれる。/false/true/ヘルメット",
+        "28": "Sou'wester/船乗りたちの帽子。形のおかげで、嵐のなかでもぬれずにいられる。/false/true/サウスウェスター",
+        "29": "Daisy/春の野からつみとった1輪のデイジー。/true/false/デイジー",
+        "30": "Watermelon Band/みんなが好きなスイカの色にヒントを得てつくられたカチューシャ。/true/false/スイカカチューシャ",
+        "31": "Mouse Ears/化学繊維でつくられたネズミの耳。/true/true/ネズミミ",
+        "32": "Cat Ears/ネコヒゲもセットで付いてくる。/true/true/ネコミミ",
+        "33": "Cowgal Hat/バンドには模造ダイヤのかざり付き。/false/true/カウガールハット",
+        "34": "Cowpoke Hat/乳しぼりのエキスパートへおくられる帽子。/false/true/牛飼いの帽子",
+        "35": "Archer's Cap/あなたが弓を使えなくても、見た目はおしゃれ。/false/true/弓使いの帽子",
+        "36": "Panda Hat/A lovely panda hat./false/true/Panda Hat",
+        "37": "Blue Cowboy Hat/すてきな青みのデニム製のカウボーイハット/false/true/青いカウボーイハット",
+        "38": "Red Cowboy Hat/赤いスエード製の目を引くカウボーイハット/false/true/赤いカウボーイハット",
+        "39": "Cone Hat/遠くからでも目立つことまちがいなし/false/true/コーンハット"
+    }
+}

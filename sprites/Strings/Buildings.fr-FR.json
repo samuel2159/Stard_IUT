@@ -1,0 +1,28 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "UnderConstruction": "En construction.",
+        "DismountBeforeEntering": "Mettre pied à terre avant d’entrer",
+        "PiecesOfHay": "Meules de foin : {0}/{1}",
+        "AddedHay": "{0} meules de foin ajoutées dans le silo.",
+        "MillFull": "Plus d'espace libre",
+        "CantMill": "Ne peut pas être moulu",
+        "NeedSilo": "Silo requis",
+        "CantEnter": "Impossible d’entrer pour l'instant"
+    }
+}

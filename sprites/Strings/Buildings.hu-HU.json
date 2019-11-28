@@ -1,0 +1,28 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "UnderConstruction": "Építés alatt.",
+        "DismountBeforeEntering": "Szállj le, mielőtt bemennél",
+        "PiecesOfHay": "Széna: {0}/{1}",
+        "AddedHay": "{0} széna lett hozzáadva a silóhoz.",
+        "MillFull": "Nincs több hely",
+        "CantMill": "Nem lehet őrölni",
+        "NeedSilo": "Siló szükséges hozzá",
+        "CantEnter": "Most nem mehetsz be"
+    }
+}

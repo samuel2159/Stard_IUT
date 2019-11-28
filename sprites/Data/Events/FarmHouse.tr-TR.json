@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Benim sevgili evladım...^Benim sevgili torunum...#$b#Son konuşmamızın üzerinden uzun yıllar geçti. O zamanlar küçücüktün… Hatırlıyor musun?^ Son konuşmamızın üzerinden uzun yıllar geçti. O zamanlar küçücüktün…Hatırlıyor musun?#$b#Ne kadarda büyük bir mesafe kat etmişsin!#$b#Belki de beni unutmuşsun. Ben hep buradaydım.#$b#Görüyorsun... Bedenim bu dünyadan göçmüş olabilir ama ruhum her zaman Yıldızçiyi Vadisi'ne bağlı olacak. \"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"İki yıldır buradasın...\"/grandpaEvaluation/pause 3000/speak Grandpa \"%farm çiftliğinin kaderi artık senin elinde.#$b#Hoşçakal!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Benim sevgili evladım...^Benim sevgili torunum...#$b#Beni çağırmana sevindim. Ben... En son görüştüğümüzde sana fazla sert davranmış olabilirim.#$b#Lütfen beni affet. Çok çalışıyorsun ve bununla gurur duyuyorum.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Bir bakalım...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

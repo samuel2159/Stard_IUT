@@ -1,0 +1,63 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.ListReader`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": [
+        "[image] LooseSprites\\\\yellowLettersLogo 0 0 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 26 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 52 228 26 3",
+        "[image] LooseSprites\\\\yellowLettersLogo 0 78 228 26 3",
+        "",
+        "[3]星露谷:",
+        "由Eric Barone制作（ConcernedApe)",
+        " ",
+        "[3]多人游戏代码:",
+        "Tom Coxon",
+        "",
+        "翻译:",
+        "Playism",
+        "LocalizeDirect",
+        "Alessio Messersì (意大利语)",
+        "Junho Won (朝鲜的)",
+        "Not Shalalu (法国)",
+        "Gőz Richárd \"TRC\" (匈牙利)",
+        "Hüseyin Serhat Çavunt (土耳其)",
+        "Salih Emircan Ayyıldız (土耳其)",
+        "Hilmi Furkan Yaşık (土耳其)",
+        "",
+        "[3]由...出版:",
+        "ConcernedApe",
+        "Chucklefish (任天堂开关和手机)",
+        "Amuzio (日本)",
+        "",
+        "[3]Mac，Linux，Xbox One，Playstation 4，PS Vita和Nintendo交换机端口:",
+        "Sickhead Games",
+        "",
+        "[3]iOS 端口:",
+        "The Secret Police",
+        " ",
+        "[3]控制台质量保证:",
+        "GlobalStep",
+        "",
+        "[3]零售分销:",
+        "505 Games",
+        "",
+        "[3]零售质量保证:",
+        "Pipeworks Studio",
+        "",
+        "[1]谢谢你玩这个游戏 <"
+    ]
+}

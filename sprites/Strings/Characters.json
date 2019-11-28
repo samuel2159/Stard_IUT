@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "Name Your Horse",
+        "WipedMemory": "You're the new farmer, aren't you?#$e#You seem... no. I'm sure we've never met.",
+        "DefaultHorseName": "Grover",
+        "PiecesOfHay": "Pieces of Hay: {0}/{1}",
+        "JunimoTextAboveHead1": "Junimo!",
+        "JunimoTextAboveHead2": "Star!",
+        "JunimoThankYou1": "Thank you!",
+        "JunimoThankYou2": "A gift!",
+        "AbigailInMineFlute": "%Abigail is lost in her music...",
+        "AbigailInMineFirst": "Hey, @. Surprised? ...I finally found the courage to come down here.#$b#I felt scared at first, but I pushed through.#$b#I feel much more confident now. This is actually really fun!$h",
+        "AbigailInMine0": "Hey! I made it pretty far, didn't I?$h",
+        "AbigailInMine1": "Eep!$7#$b#Hahah! You scared me! I didn't expect to see another person down here!$h#$e#Sorry, I'm all sweaty from excitement...",
+        "AbigailInMine2": "Hi @! I made it here without fighting any monsters... ",
+        "AbigailInMine3": "Hey! It's a relief to see you down here...$h#$e#Um... don't tell my Dad I'm here, okay?$9",
+        "AbigailInMine4": "Hey! Exploring the mines on a rainy day, huh? Me too!$h",
+        "Henchman1": "Gweee-ah!! Human!#$b#...You want to pass? I'm sorry, this is private property.$s",
+        "Henchman2": "I'm sorry, but I can't let you pass... I'd lose my job.",
+        "Henchman3": "You're offering this to me? Hmm... no thanks.$s",
+        "Henchman4": "Mmmm... that looks fresh, but no thanks... why don't you have it?",
+        "Henchman5": "*sniff*...*sniff*...#$b#That smell...#$b#I can't resist... Gimme that!$h",
+        "Henchman6": "Thanks.",
+        "KrobusDarkTalisman": "What's that... you're looking for a dark talisman?#$b#...Hmmm. Now that you mention it, I did have one in my possession not too long ago.#$b#Unfortunately, I dropped it while exploring that tunnel in the far corner.#$b#Things started heating up in there, so I left in a hurry and sealed the entrance.#$b#You seem pretty sturdy, though... So I'll open it back up for you. Just be careful, okay?",
+        "Divorced_bouquet": "This... Are you trying to hurt me even more?$s",
+        "Divorced_gift": "I don't want your gift.$a",
+        "PetLovesYou": "{0} loves you. <"
+    }
+}

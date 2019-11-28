@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Mi querido muchacho...^Mi querida nieta...#$b#Han pasado muchos años desde que hablamos por última vez. Eras solo un niño... ¿Lo recuerdas? ^Han pasado muchos años desde que hablamos por última vez. Eras solo una niña... ¿Lo recuerdas?#$b#¡Mira lo lejos que has llegado!#$b#Aunque a lo mejor te has olvidado de mí, siempre he estado aquí.#$b#¿Sabes...? Mi cuerpo ha abandonado este mundo, pero mi corazón se quedará para siempre en Stardew Valley.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Ya llevas aquí dos años...\"/grandpaEvaluation/pause 3000/speak Grandpa \"El futuro de la granja %farm está en tus manos ahora.#$b#¡Hasta siempre!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Mi querido muchacho...^Mi querida nieta...#$b#Me alegro de que me hayas invocado. A lo mejor... fui demasiado duro contigo la última vez.#$b#Perdóname. Has trabajado muy duro y estoy muy orgulloso.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Veamos...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

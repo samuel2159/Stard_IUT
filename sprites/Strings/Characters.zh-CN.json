@@ -1,0 +1,45 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "NameYourHorse": "给你的马起名",
+        "DefaultHorseName": "格罗佛",
+        "PiecesOfHay": "干草堆：{0}/{1}",
+        "JunimoTextAboveHead1": "祝尼魔！",
+        "JunimoTextAboveHead2": "星星！",
+        "JunimoThankYou1": "非常感谢！",
+        "JunimoThankYou2": "一份礼物！",
+        "PetLovesYou": "{0}爱你。<",
+        "Divorced_gift": "我才不要你的礼物。$a",
+        "Henchman1": "咿哈！！人类！#$b#……你想路过这里？不好意思，这是私有领地。$s",
+        "Henchman2": "对不起，不能让你通过……我可不想丢掉饭碗。",
+        "Henchman3": "这是送我的？嗯……我不能接受，谢啦。$s",
+        "Henchman4": "嗯……好新鲜，不过我不能接受……不如你自己用吧？",
+        "Henchman5": "*嗅嗅*……*嗅嗅*……#$b#这味道……#$b#抗拒不了了……快给我！$h",
+        "Henchman6": "谢啦。",
+        "WipedMemory": "你就是新来那位农场主吧？#$e#你很面熟……不对，我记得从未见过你。",
+        "Divorced_bouquet": "这……你是嫌伤害得我不够深吗？$s",
+        "KrobusDarkTalisman": "那是什么……你在找黑暗护身符？#$b#……嗯。你这么一说，我倒是记得曾经有过个护身符。#$b#不过不久前我在勘察那边那条地道的时候弄丢了。#$b#当时地道里开始升温，所以我就匆匆离开了，走之前还把入口给封了。#$b#你看着挺精壮的，应该能对付得了里面的牛鬼蛇神。我可以为你重新打开入口。你自己小心点，懂吗？",
+        "AbigailInMineFlute": "%阿比盖尔正沉醉在她的音乐里。",
+        "AbigailInMineFirst": "嘿，@。惊喜吗？...我终于鼓起勇气来这里。#$b#起初我感到害怕，但是我做到了。#$b#我现在感觉更加自信了。事实上，这挺有趣的！$h",
+        "AbigailInMine0": "嘿！我挺成功的，不是吗？$h",
+        "AbigailInMine1": "Eep！$7#$b#哈哈！你吓到我了！我没想到会在这里遇到另一个人！$h#$e#对不起，我兴奋得大汗淋漓...",
+        "AbigailInMine2": "嗨 @！我没有和任何怪物交手就到了这里...",
+        "AbigailInMine3": "嘿！看到你在这里，真让人宽慰...$h#$e#呃...不要告诉我爸爸我在这里，好吗？$9",
+        "AbigailInMine4": "嘿！要在雨天里探索矿井，是吗？我也是！$h"
+    }
+}

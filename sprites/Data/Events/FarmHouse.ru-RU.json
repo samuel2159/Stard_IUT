@@ -1,0 +1,22 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "558291/y 3/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Дорогой мой мальчик...^Дорогая моя внучка...#$b#Мы не виделись уже много лет. Ты был ещe совсем маленьким... Помнишь?^Мы не виделись уже много лет. Ты была тогда еще совсем маленькой... Помнишь?#$b#Посмотри, какой длинный путь позади!#$b#Может, ты уже и не помнишь меня, но я был здесь всe это время.#$b#Видишь ли... Телом я покинул этот мир, но душой навсегда остался в долине Стардью.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Ты живeшь здесь уже два года...\"/grandpaEvaluation/pause 3000/speak Grandpa \"Будущее фермы %farm теперь в твоих руках.#$b#Прощай!\"/pause 1000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed",
+        "558292/e 321777/t 600 620/H": "grandpas_theme/-2000 -1000/farmer 13 23 2/broadcastEvent/addTemporaryActor Grandpa 1 1 -100 -100 2 true/skippable/specificTemporarySprite grandpaSpirit/viewport -1000 -1000 true/pause 10000/speak Grandpa \"Дорогой мой мальчик...^Дорогая моя внучка...#$b#Я рад, что ты снова призываешь меня. Возможно, я был... немного резковат в прошлый раз.#$b#Прости меня. Твоя работа на ферме была очень усердной, и я тобой горжусь.\"/specificTemporarySprite grandpaNight/pause 4000/speak Grandpa \"Посмотрим...\"/grandpaEvaluation2/pause 3000/globalFade/removeTemporarySprites/playMusic none/pause 1000/end bed"
+    }
+}

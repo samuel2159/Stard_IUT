@@ -1,0 +1,64 @@
+{
+    "header": {
+        "target": "w",
+        "formatVersion": 5,
+        "hidef": true,
+        "compressed": 128
+    },
+    "readers": [
+        {
+            "type": "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.Int32Reader",
+            "version": 0
+        },
+        {
+            "type": "Microsoft.Xna.Framework.Content.StringReader",
+            "version": 0
+        }
+    ],
+    "content": {
+        "0": "Cowboy Hat/El cuero está desgastado y agrietado, pero aún es flexible. Huele a humedad./false/true/Sombrero de sheriff",
+        "1": "Bowler Hat/Hecho de fieltro suave./false/true/Bombín",
+        "2": "Top Hat/Un clásico entre los caballeros./false/true/Sombrero de copa",
+        "3": "Sombrero/Un sombrero de paja profusamente decorado./false/true/Sombrero mexicano",
+        "4": "Straw Hat/Ligero y fresco, el sueño de todo granjero./false/true/Sombrero de paja",
+        "5": "Official Cap/Pudo haber pertenecido a un policía o un cartero. Es muy suave y no huele mal./false/true/Gorra formal",
+        "6": "Blue Bonnet/Vuelve a una época más sencilla con este casquete de la pradera./false/true/Casquete azul",
+        "7": "Plum Chapeau/No está mal./false/true/Gorro ciruela",
+        "8": "Skeleton Mask/Sus ojos rojos brillan misteriosamente./true/true/Máscara huesuda",
+        "9": "Goblin Mask/Asusta a los vecinos con esta máscara espeluznante. Con orejas puntiagudas para dar más realismo./true/true/Máscara de trasgo",
+        "10": "Chicken Mask/Seguro que con esto puesto haces sonreír a todos./true/true/Máscara de gallina",
+        "11": "Earmuffs/Mantén tus orejas calentitas. Forradas de terciopelo artesanal de Villa Castillo./true/false/Orejeras",
+        "12": "Delicate Bow/Si te fijas bien verás pequeñas joyas rosas que brillan./true/false/Lazo delicado",
+        "13": "Tropiclip/Tiene forma de palmera, pero en miniatura./true/false/Clip tropical",
+        "14": "Butterfly Bow/Es muy suave./true/false/Lazo de mariposa",
+        "15": "Hunter's Cap/El forro de lana se mantiene caliente incluso en lo más profundo del bosque./false/true/Gorra de cazador",
+        "16": "Trucker Hat/Con rejilla en la parte trasera para mantener fresca la cabeza./false/true/Gorra de camionero",
+        "17": "Sailor's Cap/Fresca y almidonada./false/true/Gorra de marinero",
+        "18": "Good Ol' Cap/Una gorra antigua con la visera arrugada. Parece que ha vivido mucho./false/true/Gorra vieja",
+        "19": "Fedora/Todo un clásico entre los urbanitas./false/true/Fedora",
+        "20": "Cool Cap/Está muy descolorida, pero solía ser azul intenso./false/true/Gorra molona",
+        "21": "Lucky Bow/El centro está hecho de oro macizo./true/false/Lazo de la suerte",
+        "22": "Polka Bow/Seguro que atraerás todas las miradas./true/false/Lazo de lunares",
+        "23": "Gnome's Cap/Este gnomo era muy cabezón./false/true/Gorro de gnomo",
+        "24": "Eye Patch/No sabes si es real o de una tienda de disfraces./true/true/Parche",
+        "25": "Santa Hat/Celebra la temporada mágica./false/true/Gorro de Santa",
+        "26": "Tiara/Tiene una gran amatista engarzada en oro./true/true/Tiara",
+        "27": "Hard Hat/Mantén el coco de una sola pieza./false/true/Casco",
+        "28": "Sou'wester/Su forma ayuda a los marinos a mantenerse secos en las tormentas./false/true/Gorro de capitán",
+        "29": "Daisy/Una margarita fresca y primaveral para tu pelo./true/false/Margarita",
+        "30": "Watermelon Band/Su patrón de colores está inspirado en la popular fruta veraniega./true/false/Diadema de sandía",
+        "31": "Mouse Ears/Hechas con fibra sintética./true/true/Orejas de ratón",
+        "32": "Cat Ears/Bigotes incluidos./true/true/Orejas de gato",
+        "33": "Cowgal Hat/La cinta está tachonada con diamantes falsos./false/true/Sombrero de vaquera",
+        "34": "Cowpoke Hat/Para expertos en ganado./false/true/Sombrero de vaquero",
+        "35": "Archer's Cap/Es bonito, seas arquero o no./false/true/Gorro de arquero",
+        "36": "Panda Hat/A lovely panda hat./false/true/Panda Hat",
+        "37": "Blue Cowboy Hat/Un sombrero de vaquero de un color azul muy molón./false/true/Sombrero vaquero azul",
+        "38": "Red Cowboy Hat/Un atractivo sombrero de vaquero de ante rojo./false/true/Sombrero vaquero rojo",
+        "39": "Cone Hat/Una curiosidad de una tierra lejana./false/true/Cono"
+    }
+}
