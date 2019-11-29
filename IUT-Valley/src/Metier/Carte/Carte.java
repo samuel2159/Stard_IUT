@@ -5,8 +5,10 @@
  */
 package Metier.Carte;
 
+import Metier.Objet.Sapin;
 import Metier.Objet.Terre;
 import java.util.HashMap;
+import java.util.Random;
 
 
 /**
@@ -34,6 +36,14 @@ public class Carte {
                 Case c = new Case(coord);
                 c.setObjetCorrespondant(new Terre());
                 cases.put(coord, c);
+                /*
+                Random r = new Random();
+                if(r.nextInt(30)==0){
+                    Case c2 = new Case(coord);
+                    c2.setObjetCorrespondant(new Sapin());
+                    cases.put(coord,c2);
+                }
+                */
             }
         }
     }

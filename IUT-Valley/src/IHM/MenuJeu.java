@@ -37,18 +37,21 @@ public class MenuJeu extends Application{
         primaryStage.setScene(scene);        
         
         //Affichage de la carte
-        GridPane cadrillage = new GridPane();
-        //cadrillage.layoutXProperty().bind(primaryStage.widthProperty());
-        //cadrillage.layoutYProperty().bind(primaryStage.heightProperty());
-        root.getChildren().add(cadrillage);
-        
+       
         //on ajoute toutes les cases de la carte dans le cadreillage
         
         for(Case c : carte.getCases().values()){
-            ImageView uneCase = new ImageView(new Image("Ressources/Map/"+c.getObjetCorrespondant().getType() + ".png"));
-            uneCase.fitHeightProperty().bind(primaryStage.heightProperty().multiply(0.08));
-            uneCase.fitWidthProperty().bind(primaryStage.heightProperty().multiply(0.08));
-            cadrillage.add(uneCase, c.getCoordonnee().getX(), c.getCoordonnee().getY());      
+            Image sprite = new Image("Ressources/Map/"+c.getObjetCorrespondant().getType() + ".png");
+            ImageView uneCase = new ImageView(sprite);
+    
+            uneCase.fitHeightProperty().bind(sprite.heightProperty());
+            uneCase.fitWidthProperty().bind(sprite.widthProperty());
+//            uneCase.fitHeightProperty().setValue(sprite.getHeight()+0.05*scene.getHeight());
+  //          uneCase.fitWidthProperty().setValue(sprite.getWidth()+0.05*scene.getWidth());
+            
+            uneCase.setLayoutX(c.getCoordonnee().getX()*uneCase.getFitWidth());
+            uneCase.setLayoutY(c.getCoordonnee().getY()*uneCase.getFitHeight());
+            root.getChildren().add(uneCase);      
 
         }
 
