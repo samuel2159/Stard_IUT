@@ -6,7 +6,7 @@
 package IHM;
 
 import Metier.Carte.Carte;
-import Metier.Carte.Case;
+import Metier.Carte.Cases.Case;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

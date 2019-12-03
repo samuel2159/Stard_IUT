@@ -3,38 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Carte.Cases;
 
-import Metier.Objet.ObjetNaturel;
-import Metier.Objet.ObjetPlace;
+import Metier.Carte.Coordonnee;
 
 /**
  *
- * @author telli
+ * @author Kevin Lamblin
  */
-public class Terre extends ObjetNaturel {
-    
-    private EtatTerre etat; //Etat de la terre (de base ou bêchée)
+public class CaseHerbe extends Case{
 
-    public Terre() {
+    /**
+     * @author Kevin Lamblin
+     * @param c Coordonnee
+     */
+    public CaseHerbe(Coordonnee c) {
+        super(c);
     }
 
     @Override
-    public void Interagir() {
+    /**
+     * @author Kevin Lamblin
+     */
+    public void InteragirCase() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public String getType() {
-        return "terre";
-    }
-    
     /**
      * @author Kevin Lamblin
-     * @return EtatTerre
      */
-    public EtatTerre getEtat(){
-        return etat;
-    }    
+    public TypeCase getCaseType() {
+        return TypeCase.Herbe;
+    }
     
 }

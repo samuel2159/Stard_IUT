@@ -5,10 +5,8 @@
  */
 package Metier.Carte;
 
-import Metier.Objet.Sapin;
-import Metier.Objet.Terre;
+import Metier.Carte.Cases.Case;
 import java.util.HashMap;
-import java.util.Random;
 
 
 /**
@@ -26,6 +24,7 @@ public class Carte {
     /**
      * @author Kevin Lamblin
      */
+    /*
     private Carte(){
         
         //Double bloucle d'initialisation des cases
@@ -33,9 +32,8 @@ public class Carte {
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);
-                Case c = new Case(coord);
-                c.setObjetCorrespondant(new Terre());
-                cases.put(coord, c);
+                //Case c = new Case(coord) {};
+                //cases.put(coord, c);
                 /*
                 Random r = new Random();
                 if(r.nextInt(30)==0){
@@ -43,10 +41,11 @@ public class Carte {
                     c2.setObjetCorrespondant(new Sapin());
                     cases.put(coord,c2);
                 }
-                */
+                
             }
         }
     }
+    */
     
     /**
      * @author Kevin Lamblin
@@ -62,6 +61,10 @@ public class Carte {
         return instance;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * @return HashMap
+     */
     public HashMap<Coordonnee,Case> getCases(){
         return cases;
     }

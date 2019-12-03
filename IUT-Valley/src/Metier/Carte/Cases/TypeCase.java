@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Carte.Cases;
 
 /**
- * Enumération des différents états de Terre
- * @author Kevin
+ *
+ * @author Kevin Lamblin
  */
-public enum EtatTerre {
-    beche,
-    terre
+public enum TypeCase {
+    Terre,
+    Herbe
 }
