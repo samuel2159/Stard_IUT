@@ -26,8 +26,8 @@ public class CaseTerre extends Case{
      * @author Kevin Lamblin   
      * @return TypeCase
      */
-    public TypeCase getCaseType() {
-        return TypeCase.Terre;
+    public String getCaseType() {
+        return "terre";
     }
 
     @Override

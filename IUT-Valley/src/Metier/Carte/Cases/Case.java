@@ -17,7 +17,6 @@ public abstract class Case {
     
     private Coordonnee position;
     private ObjetPlace objetCorrespondant;
-    private TypeCase type;
     
     /**
      * @author Kevin Lamblin
@@ -71,15 +70,8 @@ public abstract class Case {
      * @author Kevin Lamblin
      * @return TypeCase
      */
-    public abstract TypeCase getCaseType();
+    public abstract String getCaseType();
     
-    /**
-     * @author Kevin Lamblin
-     * @param t TypeCase
-     */
-    public void setTypeCase(TypeCase t){
-        type = t;
-    }
             
 
 }

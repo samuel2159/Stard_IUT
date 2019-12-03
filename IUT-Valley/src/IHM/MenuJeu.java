@@ -41,16 +41,14 @@ public class MenuJeu extends Application{
         //on ajoute toutes les cases de la carte dans le cadreillage
         
         for(Case c : carte.getCases().values()){
-            Image sprite = new Image("Ressources/Map/"+c.getObjetCorrespondant().getType() + ".png");
+            Image sprite = new Image("Ressources/Map/"+c.getCaseType()+ ".png");
             ImageView uneCase = new ImageView(sprite);
     
-            uneCase.fitHeightProperty().bind(sprite.heightProperty());
-            uneCase.fitWidthProperty().bind(sprite.widthProperty());
-//            uneCase.fitHeightProperty().setValue(sprite.getHeight()+0.05*scene.getHeight());
-  //          uneCase.fitWidthProperty().setValue(sprite.getWidth()+0.05*scene.getWidth());
+            uneCase.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
+            uneCase.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
             
-            uneCase.setLayoutX(c.getCoordonnee().getX()*uneCase.getFitWidth());
-            uneCase.setLayoutY(c.getCoordonnee().getY()*uneCase.getFitHeight());
+            uneCase.layoutXProperty().bind(uneCase.fitWidthProperty().multiply(c.getCoordonnee().getX()));
+            uneCase.layoutYProperty().bind(uneCase.fitHeightProperty().multiply(c.getCoordonnee().getY()));
             root.getChildren().add(uneCase);      
 
         }

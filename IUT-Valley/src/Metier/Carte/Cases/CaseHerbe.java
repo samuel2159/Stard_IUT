@@ -33,8 +33,8 @@ public class CaseHerbe extends Case{
     /**
      * @author Kevin Lamblin
      */
-    public TypeCase getCaseType() {
-        return TypeCase.Herbe;
+    public String getCaseType() {
+        return "herbe";
     }
     
 }

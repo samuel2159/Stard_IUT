@@ -6,6 +6,7 @@
 package Metier.Carte;
 
 import Metier.Carte.Cases.Case;
+import Metier.Carte.Cases.CaseTerre;
 import java.util.HashMap;
 
 
@@ -21,10 +22,7 @@ public class Carte {
     public static int Y = 50; //Taille de la carte en longueur (modifier la valeur)
     
     
-    /**
-     * @author Kevin Lamblin
-     */
-    /*
+
     private Carte(){
         
         //Double bloucle d'initialisation des cases
@@ -32,20 +30,12 @@ public class Carte {
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);
-                //Case c = new Case(coord) {};
-                //cases.put(coord, c);
-                /*
-                Random r = new Random();
-                if(r.nextInt(30)==0){
-                    Case c2 = new Case(coord);
-                    c2.setObjetCorrespondant(new Sapin());
-                    cases.put(coord,c2);
-                }
-                
+                CaseTerre c = new CaseTerre(coord);
+                cases.put(coord, c);                                           
             }
         }
     }
-    */
+    
     
     /**
      * @author Kevin Lamblin
