@@ -7,6 +7,9 @@ package Metier.Carte;
 
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.*;
+import Metier.Objet.ObjetPlace;
+import Metier.Objet.Sapin;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -35,6 +38,9 @@ public class Carte {
                     c = new CaseEau(coord);
                 else
                     c = new CaseTerre(coord);
+                if(i==2 && j==2)
+                    c.setObjetCorrespondant(new Sapin());
+                
                 cases.put(coord, c);                                           
             }
         }
@@ -61,6 +67,35 @@ public class Carte {
      */
     public HashMap<Coordonnee,Case> getCases(){
         return cases;
+    }
+    
+    public Case getCase(int x,int y){
+        Case retour = null;
+        for(Case c : cases.values()){
+            if(c.getCoordonnee().getX() == x && c.getCoordonnee().getY() == y)
+                retour = c;
+        }
+        return retour;
+    }
+    
+    /**
+     * Renvoie la liste des objetsCorespondants des cases autour de c
+     * @param c
+     * @return 
+     */
+    public ArrayList<ObjetPlace> getObjetsAdjacentes(Coordonnee c){
+        ArrayList<ObjetPlace> adjacentes = new ArrayList<ObjetPlace>();
+                
+        for(int i=-1;i<=1;i++){                
+                for(int j=-1;j<=1;j++){
+                   Coordonnee coord = new Coordonnee(c.getX()+i,c.getY()+j);
+                   if(this.getCases().get(coord)!=null)
+                        adjacentes.add(this.getCases().get(coord).getObjetCorrespondant());
+                   else
+                       adjacentes.add(null);
+                }                    
+            }
+        return adjacentes;
     }
     
 }

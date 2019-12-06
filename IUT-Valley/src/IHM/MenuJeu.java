@@ -7,6 +7,9 @@ package IHM;
 
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
+import Metier.Carte.Coordonnee;
+import Metier.Objet.ObjetPlace;
+import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -39,28 +42,58 @@ public class MenuJeu extends Application{
         
         //Affichage de la carte
        
-        //on ajoute toutes les cases de la carte dans le cadreillage
-        Image sprite = new Image("Ressources/Map/spring.png");
+        Image sprites = new Image("Ressources/Map/spring.png");
                     
         for(Case c : carte.getCases().values()){
-            //Image sprite = new Image("Ressources/Map/"+c.getCaseType()+ ".png");
-            //affichage du terrain
-            ImageView uneCase = new ImageView(sprite);
+            
+            //----------------Generation du terrain---------------------------------
+            
+            //affectation des sprites des cases
+            ImageView sprite = new ImageView(sprites);
             if(c.getCaseType().equals("terre"))
-                uneCase.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
+                sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
             if(c.getCaseType().equals("eau"))
-                uneCase.setViewport(new Rectangle2D(97,785,14,14));
+                sprite.setViewport(new Rectangle2D(97,785,14,14));                                  
+            //-------------------------------------------------------
             
-    
-            uneCase.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
-            uneCase.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
+            //------------------Binding des sprites--------------
+            sprite.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
+            sprite.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
             
-            uneCase.layoutXProperty().bind(uneCase.fitWidthProperty().multiply(c.getCoordonnee().getX()));
-            uneCase.layoutYProperty().bind(uneCase.fitHeightProperty().multiply(c.getCoordonnee().getY()));
-            root.getChildren().add(uneCase);      
+            sprite.layoutXProperty().bind(sprite.fitWidthProperty().multiply(c.getCoordonnee().getX()));
+            sprite.layoutYProperty().bind(sprite.fitHeightProperty().multiply(c.getCoordonnee().getY()));
+            root.getChildren().add(sprite);
+            
+            
+            //-------------------------------------------------------
+         
+            //--------------------Ajout des objetPlace--------------------------
+            if(c.getObjetCorrespondant() != null){
+                ImageView spriteObjet = new ImageView(sprites);
+                
+                spriteObjet.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
+                spriteObjet.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
 
+                spriteObjet.layoutXProperty().bind(spriteObjet.fitWidthProperty().multiply(c.getCoordonnee().getX()));
+                spriteObjet.layoutYProperty().bind(spriteObjet.fitHeightProperty().multiply(c.getCoordonnee().getY()));
+                           
+                
+                //stockage des objets adjacents                
+                ArrayList<ObjetPlace> adjacentes = carte.getObjetsAdjacentes(c.getCoordonnee());
+
+                //AutoTile du sapin                
+                if(c.getObjetCorrespondant().getType().equals("sapin")){
+                    if(!(adjacentes.get(0).getType().equals("sapin")) && !(adjacentes.get(1).getType().equals("sapin")) && !(adjacentes.get(3).getType().equals("sapin")))
+                        spriteObjet.setViewport(new Rectangle2D(0,0,16,16));
+                }
+                
+                //spriteObjet.setViewport(new Rectangle2D(0,0,16,16));        
+                root.getChildren().add(spriteObjet);
+            }
+            
         }
 
+        
         
 
         
