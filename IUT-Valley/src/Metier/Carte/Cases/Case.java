@@ -106,7 +106,7 @@ public abstract class Case {
     }
     
     public Case getCase(Cote c){
-        Case retour = null;/*
+        Case retour = null;
         switch(c){
             case HautGauche: retour = carte.getCase(position.getX()-1, position.getY()-1);
             break;            
@@ -124,7 +124,7 @@ public abstract class Case {
             break;
             case BasDroit: retour = carte.getCase(position.getX()+1, position.getY()-1);
             break;            
-        }*/
+        }
         
         return retour;
     }

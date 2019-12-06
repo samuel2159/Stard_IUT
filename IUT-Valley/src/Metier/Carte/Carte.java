@@ -5,14 +5,14 @@
  */
 package Metier.Carte;
 
+import Metier.Carte.Cases.CaseTerre;
+import Metier.Carte.Cases.*;
 import Metier.Objet.Sapin;
-import Metier.Objet.Terre;
+import java.util.Collection;
 import java.util.HashMap;
-<<<<<<< Updated upstream
 import java.util.Random;
-=======
 import java.util.Objects;
->>>>>>> Stashed changes
+
 
 
 /**
@@ -27,30 +27,15 @@ public class Carte {
     public static int Y = 50; //Taille de la carte en longueur (modifier la valeur)
     
     
-    /**
-     * @author Kevin Lamblin
-     */
+
     private Carte(){
         
         //Double bloucle d'initialisation des cases
         for(int i = 0; i < X; i++){
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
-                Coordonnee coord = new Coordonnee(i,j);
-
-                Case c = new Case(coord);
-                c.setObjetCorrespondant(new Terre());
-                cases.put(coord, c);
-                /*
-                Random r = new Random();
-                if(r.nextInt(30)==0){
-                    Case c2 = new Case(coord);
-                    c2.setObjetCorrespondant(new Sapin());
-                    cases.put(coord,c2);
-                }
-                */
-
-                Case c;
+                Coordonnee coord = new Coordonnee(i,j);                  
+                Case c = null;                              
                 if(i%15==0)
                     c = new CaseEau(coord,this);
                 else
@@ -80,12 +65,13 @@ public class Carte {
     
     public HashMap<Coordonnee,Case> getCases(){
         return cases;
+
     }
     
-<<<<<<< Updated upstream
-=======
+
     public Case getCase(int x,int y){
         Case retour = null;
+        
         for(Case c : cases.values()){
             if(c.getCoordonnee().getX() == x && c.getCoordonnee().getY() == y)
                 retour = c;
@@ -117,6 +103,5 @@ public class Carte {
         return true;
     }
 
-    
->>>>>>> Stashed changes
+
 }

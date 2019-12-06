@@ -6,19 +6,16 @@
 package IHM;
 
 import Metier.Carte.Carte;
-<<<<<<< Updated upstream
-import Metier.Carte.Case;
-=======
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.Cote;
 import Metier.Carte.Coordonnee;
 import Metier.Objet.ObjetPlace;
 import java.util.ArrayList;
->>>>>>> Stashed changes
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -47,26 +44,16 @@ public class MenuJeu extends Application{
         //Affichage de la carte
        
         //on ajoute toutes les cases de la carte dans le cadreillage
-        
-        for(Case c : carte.getCases().values()){
-            Image sprite = new Image("Ressources/Map/"+c.getObjetCorrespondant().getType() + ".png");
-            ImageView uneCase = new ImageView(sprite);
-    
-            uneCase.fitHeightProperty().bind(sprite.heightProperty());
-            uneCase.fitWidthProperty().bind(sprite.widthProperty());
-//            uneCase.fitHeightProperty().setValue(sprite.getHeight()+0.05*scene.getHeight());
-  //          uneCase.fitWidthProperty().setValue(sprite.getWidth()+0.05*scene.getWidth());
-            
-<<<<<<< Updated upstream
-            uneCase.setLayoutX(c.getCoordonnee().getX()*uneCase.getFitWidth());
-            uneCase.setLayoutY(c.getCoordonnee().getY()*uneCase.getFitHeight());
-            root.getChildren().add(uneCase);      
+        Image sprites = new Image("Ressources/Map/spring.png");
+                
+        for(Case c : carte.getCases().values()){             
 
-=======
+
             //----------------Generation du terrain---------------------------------
             
             //affectation des sprites des cases
             ImageView sprite = new ImageView(sprites);
+            
             if(c.getCaseType().equals("terre"))
                 sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
             if(c.getCaseType().equals("eau"))
@@ -97,17 +84,16 @@ public class MenuJeu extends Application{
               
                 //AutoTile du sapin                
                 if(c.getObjetCorrespondant().getType().equals("sapin")){
-                    if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant() != null) && (c.getCase(Cote.Droit) != null) && !(c.getCase(Cote.Bas) != null)){
-                        if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant().getType().equals("sapin")))
+                    //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant() != null) && (c.getCase(Cote.Droit) != null) && !(c.getCase(Cote.Bas) != null)){
+                        //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant().getType().equals("sapin")))
                             spriteObjet.setViewport(new Rectangle2D(0,0,16,16));
-                    }
-                }
-                
-                //spriteObjet.setViewport(new Rectangle2D(0,0,16,16));        
+                   // }
+                }                
+                       
                 root.getChildren().add(spriteObjet);
             }
             
->>>>>>> Stashed changes
+
         }
 
         

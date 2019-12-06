@@ -19,6 +19,7 @@ public class CaseEau extends Case{
     public CaseEau(Coordonnee c,Carte carte) {
         super(c,carte);
     }
+
     /**
      * @author Tommy Saucey
      */
