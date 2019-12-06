@@ -6,7 +6,7 @@
 package Metier.Carte;
 
 import Metier.Carte.Cases.Case;
-import Metier.Carte.Cases.CaseTerre;
+import Metier.Carte.Cases.*;
 import java.util.HashMap;
 
 
@@ -30,7 +30,11 @@ public class Carte {
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);
-                CaseTerre c = new CaseTerre(coord);
+                Case c;
+                if(i%15==0)
+                    c = new CaseEau(coord);
+                else
+                    c = new CaseTerre(coord);
                 cases.put(coord, c);                                           
             }
         }

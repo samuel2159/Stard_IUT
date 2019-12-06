@@ -11,6 +11,7 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -39,10 +40,17 @@ public class MenuJeu extends Application{
         //Affichage de la carte
        
         //on ajoute toutes les cases de la carte dans le cadreillage
-        
+        Image sprite = new Image("Ressources/Map/spring.png");
+                    
         for(Case c : carte.getCases().values()){
-            Image sprite = new Image("Ressources/Map/"+c.getCaseType()+ ".png");
+            //Image sprite = new Image("Ressources/Map/"+c.getCaseType()+ ".png");
+            //affichage du terrain
             ImageView uneCase = new ImageView(sprite);
+            if(c.getCaseType().equals("terre"))
+                uneCase.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
+            if(c.getCaseType().equals("eau"))
+                uneCase.setViewport(new Rectangle2D(97,785,14,14));
+            
     
             uneCase.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
             uneCase.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
