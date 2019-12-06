@@ -5,8 +5,13 @@
  */
 package Metier.Objet;
 
+<<<<<<< Updated upstream:IUT-Valley/src/Metier/Objet/Terre.java
 import Metier.Objet.ObjetNaturel;
 import Metier.Objet.ObjetPlace;
+=======
+import Metier.Carte.Carte;
+import Metier.Carte.Coordonnee;
+>>>>>>> Stashed changes:IUT-Valley/src/Metier/Carte/Cases/CaseTerre.java
 
 /**
  *
@@ -16,7 +21,16 @@ public class Terre extends ObjetNaturel {
     
     private EtatTerre etat; //Etat de la terre (de base ou bêchée)
 
+<<<<<<< Updated upstream:IUT-Valley/src/Metier/Objet/Terre.java
     public Terre() {
+=======
+    /**
+     * @author Kevin Lamblin
+     * @param c Coordonnee
+     */
+    public CaseTerre(Coordonnee c,Carte carte) {
+        super(c,carte);
+>>>>>>> Stashed changes:IUT-Valley/src/Metier/Carte/Cases/CaseTerre.java
     }
 
     @Override

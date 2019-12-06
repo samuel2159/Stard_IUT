@@ -8,7 +8,11 @@ package Metier.Carte;
 import Metier.Objet.Sapin;
 import Metier.Objet.Terre;
 import java.util.HashMap;
+<<<<<<< Updated upstream
 import java.util.Random;
+=======
+import java.util.Objects;
+>>>>>>> Stashed changes
 
 
 /**
@@ -33,6 +37,7 @@ public class Carte {
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);
+
                 Case c = new Case(coord);
                 c.setObjetCorrespondant(new Terre());
                 cases.put(coord, c);
@@ -44,6 +49,17 @@ public class Carte {
                     cases.put(coord,c2);
                 }
                 */
+
+                Case c;
+                if(i%15==0)
+                    c = new CaseEau(coord,this);
+                else
+                    c = new CaseTerre(coord,this);
+                if(i==2 && j==2)
+                    c.setObjetCorrespondant(new Sapin());
+                
+                cases.put(coord, c);                                           
+
             }
         }
     }
@@ -66,4 +82,41 @@ public class Carte {
         return cases;
     }
     
+<<<<<<< Updated upstream
+=======
+    public Case getCase(int x,int y){
+        Case retour = null;
+        for(Case c : cases.values()){
+            if(c.getCoordonnee().getX() == x && c.getCoordonnee().getY() == y)
+                retour = c;
+        }
+        return retour;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Carte other = (Carte) obj;
+        if (!Objects.equals(this.cases, other.cases)) {
+            return false;
+        }
+        return true;
+    }
+
+    
+>>>>>>> Stashed changes
 }

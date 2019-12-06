@@ -10,6 +10,7 @@ package Metier.Objet;
  * @author telli
  */
 public class Sapin extends Arbre{
+   
 
     @Override
     public void Interagir() {
@@ -19,6 +20,28 @@ public class Sapin extends Arbre{
     @Override
     public String getType() {
         return "sapin";
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;        
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Sapin other = (Sapin) obj;
+
+        return true;
     }
     
 }
