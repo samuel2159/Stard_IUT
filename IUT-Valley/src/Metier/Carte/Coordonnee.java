@@ -6,7 +6,7 @@
 package Metier.Carte;
 
 /**
- * 
+ * Correspond à des coordonnée sur la carte
  * @author Kevin Lamblin
  */
 public class Coordonnee {
@@ -67,24 +67,14 @@ public class Coordonnee {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
+        boolean res = true;
+        if (getClass() != obj.getClass() || obj.equals(null)) {
+            res = false;
         }
         final Coordonnee other = (Coordonnee) obj;
-        if (this.x != other.x) {
-            return false;
+        if (this.x != other.x || this.y != other.y) {
+            res = false;
         }
-        if (this.y != other.y) {
-            return false;
-        }
-        return true;
+        return res;
     }
-    
-    
 }

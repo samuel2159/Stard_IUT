@@ -3,6 +3,7 @@ import Metier.Carte.Coordonnee;
 import Metier.Partie;
 import Metier.Personnage.Joueur;
 import Metier.Personnage.Personnage;
+import java.io.FileNotFoundException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -13,7 +14,7 @@ import static org.junit.Assert.*;
  */
 
 /**
- *
+ * Classe de test pour la classe Partie
  * @author Kevin Lamblin
  */
 public class TestPartie{
@@ -21,19 +22,22 @@ public class TestPartie{
     @Test
     /**
      * @author Kevin Lamblin
+     * @throws java.io.FileNotFoundException
      */
-    public void TestPartie(){
+    public void TestPartie() throws FileNotFoundException{
         Partie p = new Partie();
         
         //Vérifie qu'un joueur est bien créer lors de la création d'une partie
         assertEquals(p.getPersonnages().get(0), p.getJoueur());
     }
+    
     @Test
     /**
      * @author Kevin Lamblin
      * @param perso Personnage
+     * @throws java.io.FileNotFoundException
      */
-    public void TestAddPersonnage(){
+    public void TestAddPersonnage() throws FileNotFoundException{
         
         Partie p = new Partie();
         Personnage perso = new Joueur(new Coordonnee(10,10)); 

@@ -19,15 +19,13 @@ public abstract class Case {
     
     private Coordonnee position;
     private ObjetPlace objetCorrespondant;
-    private Carte carte;
     
     /**
      * @author Kevin Lamblin
      * @param c Coordonnee
      */
-    public Case(Coordonnee c,Carte carte){
+    public Case(Coordonnee c){
         position = c;
-        this.carte = carte;
     }
     
     /**
@@ -86,47 +84,15 @@ public abstract class Case {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
+        boolean res = true;
+
+        if (getClass() != obj.getClass() || obj.equals(null)) {
+            res = false;
         }
         final Case other = (Case) obj;
-        if (!Objects.equals(this.position, other.position)) {
-            return false;
+        if (!Objects.equals(this.position, other.position) || !Objects.equals(this.objetCorrespondant, other.objetCorrespondant)) {
+            res = false;
         }
-        if (!Objects.equals(this.objetCorrespondant, other.objetCorrespondant)) {
-            return false;
-        }
-        return true;
+        return res;
     }
-    
-    public Case getCase(Cote c){
-        Case retour = null;
-        switch(c){
-            case HautGauche: retour = carte.getCase(position.getX()-1, position.getY()-1);
-            break;            
-            case Haut: retour = carte.getCase(position.getX(), position.getY()+1);
-            break;
-            case HautDroit: retour = carte.getCase(position.getX()+1, position.getY()-1);
-            break;
-            case Gauche: retour = carte.getCase(position.getX()-1, position.getY());
-            break;
-            case Droit: retour = carte.getCase(position.getX()+1, position.getY());
-            break;
-            case BasGauche: retour = carte.getCase(position.getX()-1, position.getY()-1);
-            break;  
-            case Bas: retour = carte.getCase(position.getX(), position.getY()-1);
-            break;
-            case BasDroit: retour = carte.getCase(position.getX()+1, position.getY()-1);
-            break;            
-        }
-        
-        return retour;
-    }
-
 }

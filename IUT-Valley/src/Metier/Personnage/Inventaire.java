@@ -6,6 +6,7 @@
 package Metier.Personnage;
 
 import Metier.Personnage.Item.Item;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -13,15 +14,17 @@ import java.util.HashMap;
  * @author Kevin
  */
 public class Inventaire {
-        private Item favoris[];//Liste des objets de la barre de raccourcis
+    
+    private ArrayList<Item> favoris;//Liste des objets de la barre de raccourcis
     private Item ObjetCourant;//Objet courant, dans la liste des favoris
-    private HashMap<Integer,Item> items;//Liste des objets dans l'inventaire(sur 36 emplacements)
+    private ArrayList<Item> items;//Liste des objets dans l'inventaire(sur 36 emplacements)
     
     /**
      * @author Kevin Lamblin
      */
     public Inventaire() {
-        items = new HashMap<>();
+        favoris = new ArrayList<Item>();
+        items = new ArrayList<Item>();        
     }
 
     /**
@@ -30,15 +33,15 @@ public class Inventaire {
      * @param i Integer
      * @param item Item
      */
-    public void supprimer(Integer i,Item item){
-        items.remove(i,item);
+    public void supprimer(Integer i){
+        items.remove(i);
     }
     
     /**
      * @author Thiburce Tommy
      * @return HashMap
      */
-    public HashMap getItem(){  
+    public ArrayList<Item> getItem(){  
         return items;
     }
     
@@ -57,7 +60,7 @@ public class Inventaire {
         }
         //Sinon on ajoute l'Item
         else{
-            items.put(i, item);
+            items.set(i, item);
         }
     }
     

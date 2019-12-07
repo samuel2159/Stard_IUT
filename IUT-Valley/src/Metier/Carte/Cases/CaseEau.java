@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 package Metier.Carte.Cases;
-import Metier.Carte.Carte;
 import Metier.Carte.Coordonnee;
 
 /**
  *
- * @author tommy saucey
+ * @author Tommy Saucey
  */
 public class CaseEau extends Case{
     /**
      * @author Tommy Saucey
-     * @param c 
+     * @param c Coordonnee
      */
-    public CaseEau(Coordonnee c,Carte carte) {
-        super(c,carte);
+    public CaseEau(Coordonnee c) {
+        super(c);
     }
 
     /**
@@ -29,15 +28,10 @@ public class CaseEau extends Case{
     }
     /**
      * @author Tommy Saucey
-     * @return 
+     * @return String
      */
     @Override
     public String getCaseType() {
-        
         return "eau";
     }
-     /**
-     * @author Tommy Saucey
-     * @param c Coordonnee
-     */
 }

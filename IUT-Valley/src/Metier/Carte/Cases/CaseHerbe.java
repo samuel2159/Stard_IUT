@@ -18,8 +18,8 @@ public class CaseHerbe extends Case{
      * @author Kevin Lamblin
      * @param c Coordonnee
      */
-    public CaseHerbe(Coordonnee c,Carte carte) {
-        super(c,carte);
+    public CaseHerbe(Coordonnee c) {
+        super(c);
     }
 
     @Override
@@ -33,6 +33,7 @@ public class CaseHerbe extends Case{
     @Override
     /**
      * @author Kevin Lamblin
+     * @param String
      */
     public String getCaseType() {
         return "herbe";

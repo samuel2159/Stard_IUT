@@ -5,51 +5,36 @@
  */
 package Metier.Carte.Cases;
 
-import Metier.Carte.Carte;
 import Metier.Carte.Coordonnee;
 
 /**
  *
- * @author telli
+ * @author Kevin Lamblin
  */
 public class CaseTerre extends Case{
 
-    public CaseTerre(Coordonnee coord, Carte carte) {
-        super(coord,carte);
+    /**
+     * @author Kevin Lamblin
+     * @param c Coordonnee
+     */
+    public CaseTerre(Coordonnee c) {
+        super(c);
     }
 
     @Override
-    public void InteragirCase() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
+    /**
+     * @author Kevin Lamblin   
+     * @return String
+     */
     public String getCaseType() {
         return "terre";
     }
 
     @Override
-    public int hashCode() {
-        int hash = 5;
-        hash = 67;
-        return hash;
+    /**
+     * @author Kevin Lamblin
+     */
+    public void InteragirCase() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final CaseTerre other = (CaseTerre) obj;
-
-        return true;
-    }
-    
-    
 }
