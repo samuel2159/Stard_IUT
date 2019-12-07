@@ -5,13 +5,13 @@
  */
 package Metier.Carte;
 
-import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Cases.*;
-import Metier.Objet.Sapin;
-import java.util.Collection;
+import static Metier.Carte.Cases.FabriqueCase.CreationCase;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Objects;
+import java.util.Scanner;
 
 
 
@@ -28,7 +28,7 @@ public class Carte {
     
     
 
-    private Carte(){
+    private Carte() throws FileNotFoundException{
         
         //Double bloucle d'initialisation des cases
         for(int i = 0; i < X; i++){
@@ -36,13 +36,25 @@ public class Carte {
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);                  
                 Case c = null;                              
-                if(i%15==0)
-                    c = new CaseEau(coord,this);
-                else
-                    c = new CaseHerbe(coord,this);
-                if(i==7 && j==7)
-                    c.setObjetCorrespondant(new Sapin());
-                
+                Scanner sc = null;
+                try{
+                    try{
+                        sc = new Scanner(new File("Carte.txt"));
+                        while (sc.hasNext()){
+                            for(char car : sc.next().toCharArray()){
+                                cases.put(coord, CreationCase(coord, car));
+                            }
+                        }
+                    }
+                    finally{
+                        if(sc != null){
+                            sc.close();
+                        }
+                    }
+                }
+                catch(FileNotFoundException e){
+                    System.err.println("Fichier introuvable");
+                }
                 cases.put(coord, c);                                           
 
             }
@@ -53,8 +65,9 @@ public class Carte {
      * @author Kevin Lamblin
      * Fonction qui renvoie l'unique instance de la carte
      * @return Carte
+     * @throws java.io.FileNotFoundException
      */
-    public static Carte getCarte(){
+    public static Carte getCarte() throws FileNotFoundException{
         
         //Créer une carte si elle n'éxiste pas déjà
         if(instance == null){
@@ -63,12 +76,20 @@ public class Carte {
         return instance;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * @return HashMap 
+     */
     public HashMap<Coordonnee,Case> getCases(){
         return cases;
-
     }
     
-
+    /**
+     * @author Samuel Tellier
+     * @param x
+     * @param y
+     * @return 
+     */
     public Case getCase(int x,int y){
         Case retour = null;
         
@@ -79,6 +100,43 @@ public class Carte {
         return retour;
     }
 
+    /**
+     * @author Samuel Tellier && Kévin Lamblin
+     * @param c Case   
+     * @param d Direction
+     * @return Case
+     */
+    public Case getCaseProche(Case c, Direction d){
+        Case retour = null;
+        switch(d){
+            case HautGauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()-1);
+                break;            
+            case Haut: 
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()+1);
+                break;
+            case HautDroit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()-1);
+                break;
+            case Gauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY());
+                break;
+            case Droit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY());
+                break;
+            case BasGauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()-1);
+                break;  
+            case Bas: 
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()-1);
+                break;
+            case BasDroit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()-1);
+                break;            
+        }
+        return retour;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 7;
@@ -87,21 +145,14 @@ public class Carte {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
+        boolean res = true;
+        if (getClass() != obj.getClass() || obj.equals(null)) {
+            res = false;
         }
         final Carte other = (Carte) obj;
         if (!Objects.equals(this.cases, other.cases)) {
-            return false;
+            res = false;
         }
-        return true;
+        return res;
     }
-
-
 }

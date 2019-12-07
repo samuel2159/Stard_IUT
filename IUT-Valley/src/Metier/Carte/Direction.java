@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Carte.Cases;
+package Metier.Carte;
 
 /**
  *
- * @author telli
+ * @author Kevin
  */
-public enum Cote {
+public enum Direction {
     HautGauche,Haut,HautDroit,Gauche,Droit,BasGauche,Bas,BasDroit
 }

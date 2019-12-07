@@ -7,7 +7,6 @@ package IHM;
 
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
-import Metier.Carte.Cases.Cote;
 import Metier.Carte.Coordonnee;
 import Metier.Objet.ObjetPlace;
 import java.util.ArrayList;
