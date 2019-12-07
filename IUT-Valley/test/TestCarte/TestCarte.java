@@ -11,12 +11,13 @@ import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Coordonnee;
 import Metier.Objet.ObjetPlace;
 import Metier.Objet.Sapin;
+import java.io.FileNotFoundException;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Classe de test pour la classe Carte
  * @author Kevin
  */
 public class TestCarte {
@@ -24,38 +25,35 @@ public class TestCarte {
     @Test
     /**
      * @author Kevin Lamblin
+     * @throws java.io.FileNotFoundException
      */
     public void TestGetCarte(){
-       // Carte c = Carte.getCarte();
-        
-
-       // assertNotEquals(null, c);
+       Carte c = Carte.getCarte();
+       assertNotEquals(null, c);
     }
-
     
-
     @Test
     /**
-     * @author Samuel Tellier
+     * @author Kevin Lamblin 
      */    
-    public void TestGetCases(){
-      //  Carte c = Carte.getCarte();
-        
-       // assertEquals(c.getCases().get(new Coordonnee(5,5)),new CaseTerre(new Coordonnee(5, 5),c));
-        
+    public void TestGetCases() throws FileNotFoundException{
+        Carte c = Carte.getCarte();
+        assertNotEquals(null, c.getCases());
     }
 
     @Test
     /**
-     * @author Samuel Tellier
+     * @author
      */    
     public void TestGetCase(){
-       //Carte c = Carte.getCarte();        
-       // assertEquals(c.getCase(1,1),new CaseTerre(new Coordonnee(1, 1),c));
         
-      //  CaseTerre ct = new CaseTerre(new Coordonnee(2, 2),c);
-      //  ct.setObjetCorrespondant(new Sapin());
-     //   assertEquals(c.getCase(2,2),ct);
+    }
+    
+    @Test
+    /**
+     * @author
+     */
+    public void TesGetCaseProche(){
         
     }
 

@@ -6,7 +6,7 @@
 package Metier.Carte;
 
 /**
- * 
+ * Correspond à des coordonnée sur la carte
  * @author Kevin Lamblin
  */
 public class Coordonnee {

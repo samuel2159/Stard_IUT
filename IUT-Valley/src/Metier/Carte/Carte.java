@@ -8,7 +8,9 @@ package Metier.Carte;
 import Metier.Carte.Cases.*;
 import static Metier.Carte.Cases.FabriqueCase.CreationCase;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
@@ -28,35 +30,26 @@ public class Carte {
     
     
 
-    private Carte() throws FileNotFoundException{
+    private Carte(){
         
         //Double bloucle d'initialisation des cases
         for(int i = 0; i < X; i++){
             for(int j = 0; j < Y; j++){
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
                 Coordonnee coord = new Coordonnee(i,j);                  
-                Case c = null;                              
-                Scanner sc = null;
+                Case c = null; 
                 try{
-                    try{
-                        sc = new Scanner(new File("Carte.txt"));
-                        while (sc.hasNext()){
-                            for(char car : sc.next().toCharArray()){
-                                c = CreationCase(coord, car);
-                                cases.put(coord, c);
-                            }
-                        }
-                    }
-                    finally{
-                        if(sc != null){
-                            sc.close();
+                    try (FileInputStream file = new FileInputStream("Ressources/Carte.txt")) {
+                        int compt;
+                        while((compt = file.read()) != -1){
+                            c = CreationCase(coord, (char)i);
+                            cases.put(coord, c);
                         }
                     }
                 }
-                catch(FileNotFoundException e){
+                catch(IOException e){
                     System.err.println("Fichier introuvable");
                 }
-                
             }
         }
     }
@@ -65,9 +58,8 @@ public class Carte {
      * @author Kevin Lamblin
      * Fonction qui renvoie l'unique instance de la carte
      * @return Carte
-     * @throws java.io.FileNotFoundException
      */
-    public static Carte getCarte() throws FileNotFoundException{
+    public static Carte getCarte(){
         
         //Créer une carte si elle n'éxiste pas déjà
         if(instance == null){
