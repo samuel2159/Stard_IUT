@@ -42,7 +42,8 @@ public class Carte {
                         sc = new Scanner(new File("Carte.txt"));
                         while (sc.hasNext()){
                             for(char car : sc.next().toCharArray()){
-                                cases.put(coord, CreationCase(coord, car));
+                                c = CreationCase(coord, car);
+                                cases.put(coord, c);
                             }
                         }
                     }
@@ -55,8 +56,7 @@ public class Carte {
                 catch(FileNotFoundException e){
                     System.err.println("Fichier introuvable");
                 }
-                cases.put(coord, c);                                           
-
+                
             }
         }
     }
