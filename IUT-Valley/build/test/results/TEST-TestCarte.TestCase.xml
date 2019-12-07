@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="LAPTOP-9S0KTE93" name="TestCarte.TestCase" skipped="0" tests="8" time="0.081" timestamp="2019-12-06T21:53:51">
+<testsuite errors="0" failures="0" hostname="LAPTOP-9S0KTE93" name="TestCarte.TestCase" skipped="0" tests="8" time="0.463" timestamp="2019-12-07T13:14:38">
   <properties>
     <property name="netbeans.autoupdate.country" value="FR" />
     <property name="javafx.binarycss" value="false" />
@@ -47,7 +47,7 @@
     <property name="libs.eclipselink.src" value="" />
     <property name="user.name" value="telli" />
     <property name="copylibs.rebase" value="true" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestCarte.TestCase skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\test\results\TEST-TestCarte.TestCase.xml crashfile=C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\junitvmwatcher6187578958918980621.properties propsfile=C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\junit3967667555913347200.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestCarte.TestCase skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\test\results\TEST-TestCarte.TestCase.xml crashfile=C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\junitvmwatcher5239197750248605871.properties propsfile=C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\build\junit6703999155237560022.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -84,7 +84,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\null374288606" />
+    <property name="javac.includesfile.binary" value="C:\Users\telli\Desktop\Stard_IUT\IUT-Valley\null2084916397" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value="C:\Program Files\Java\jdk1.8.0_231\jre/lib/javaws.jar:C:\Program Files\Java\jdk1.8.0_231\jre/lib/deploy.jar:C:\Program Files\Java\jdk1.8.0_231\jre/lib/plugin.jar:build/classes:C:\Program Files\netbeans\platform\modules\ext\junit-4.12.jar:C:\Program Files\netbeans\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -338,14 +338,14 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="javafx.deploy.installpermanently" value="false" />
   </properties>
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautGauche" time="0.006" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasGauche" time="0.0" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasDroit" time="0.0" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseGauche" time="0.001" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseBas" time="0.001" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautDroit" time="0.001" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseHaut" time="0.0" />
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseDroit" time="0.001" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautGauche" time="0.031" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasGauche" time="0.002" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasDroit" time="0.004" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseGauche" time="0.003" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseBas" time="0.002" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautDroit" time="0.003" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseHaut" time="0.005" />
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseDroit" time="0.004" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

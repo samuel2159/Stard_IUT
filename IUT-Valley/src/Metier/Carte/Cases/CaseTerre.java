@@ -27,7 +27,7 @@ public class CaseTerre extends Case{
     public String getCaseType() {
         return "terre";
     }
-
+/*
     @Override
     public int hashCode() {
         int hash = 5;
@@ -49,7 +49,7 @@ public class CaseTerre extends Case{
         final CaseTerre other = (CaseTerre) obj;
 
         return true;
-    }
+    }*/
     
     
 }

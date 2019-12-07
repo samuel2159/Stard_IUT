@@ -40,7 +40,7 @@ public class MenuJeu extends Application{
         Scene scene = new Scene(root, 1100, 662);        
         primaryStage.setTitle("Fenetre de jeu");
         primaryStage.setScene(scene);        
-        
+        double percent = 0.08;
         //Affichage de la carte
        
         //on ajoute toutes les cases de la carte dans le cadreillage
@@ -57,12 +57,15 @@ public class MenuJeu extends Application{
             if(c.getCaseType().equals("terre"))
                 sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
             if(c.getCaseType().equals("eau"))
-                sprite.setViewport(new Rectangle2D(97,785,14,14));                                  
+                sprite.setViewport(new Rectangle2D(97,785,14,14)); 
+            if(c.getCaseType().equals("herbe"))
+                sprite.setViewport(new Rectangle2D(0,177,14,14));             
             //-------------------------------------------------------
             
             //------------------Binding des sprites--------------
-            sprite.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
-            sprite.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
+
+            sprite.fitHeightProperty().bind(scene.heightProperty().multiply(percent));
+            sprite.fitWidthProperty().bind(scene.heightProperty().multiply(percent));            
             
             sprite.layoutXProperty().bind(sprite.fitWidthProperty().multiply(c.getCoordonnee().getX()));
             sprite.layoutYProperty().bind(sprite.fitHeightProperty().multiply(c.getCoordonnee().getY()));
@@ -75,8 +78,8 @@ public class MenuJeu extends Application{
             if(c.getObjetCorrespondant() != null){
                 ImageView spriteObjet = new ImageView(sprites);
                 
-                spriteObjet.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
-                spriteObjet.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
+                spriteObjet.fitHeightProperty().bind(scene.heightProperty().multiply(percent));
+                spriteObjet.fitWidthProperty().bind(scene.heightProperty().multiply(percent));
 
                 spriteObjet.layoutXProperty().bind(spriteObjet.fitWidthProperty().multiply(c.getCoordonnee().getX()));
                 spriteObjet.layoutYProperty().bind(spriteObjet.fitHeightProperty().multiply(c.getCoordonnee().getY()));
@@ -84,10 +87,14 @@ public class MenuJeu extends Application{
               
                 //AutoTile du sapin                
                 if(c.getObjetCorrespondant().getType().equals("sapin")){
-                    //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant() != null) && (c.getCase(Cote.Droit) != null) && !(c.getCase(Cote.Bas) != null)){
-                        //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant().getType().equals("sapin")))
+                    if((c.getCase(Cote.BasGauche).getObjetCorrespondant() != null) && (c.getCase(Cote.Gauche).getObjetCorrespondant() != null) && (c.getCase(Cote.Bas).getObjetCorrespondant() != null)){
+                        if(c.getCase(Cote.BasGauche).getObjetCorrespondant().getType().equals("sapin") && c.getCase(Cote.Gauche).getObjetCorrespondant().getType().equals("sapin") && c.getCase(Cote.Bas).getObjetCorrespondant().getType().equals("sapin"))
+                            ;
+                        else
                             spriteObjet.setViewport(new Rectangle2D(0,0,16,16));
-                   // }
+                    }
+                    else
+                        spriteObjet.setViewport(new Rectangle2D(0,0,16,16));
                 }                
                        
                 root.getChildren().add(spriteObjet);

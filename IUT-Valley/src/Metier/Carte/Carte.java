@@ -39,8 +39,8 @@ public class Carte {
                 if(i%15==0)
                     c = new CaseEau(coord,this);
                 else
-                    c = new CaseTerre(coord,this);
-                if(i==2 && j==2)
+                    c = new CaseHerbe(coord,this);
+                if(i==7 && j==7)
                     c.setObjetCorrespondant(new Sapin());
                 
                 cases.put(coord, c);                                           
