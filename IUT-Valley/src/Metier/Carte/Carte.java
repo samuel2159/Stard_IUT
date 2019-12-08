@@ -37,8 +37,8 @@ public class Carte {
                         Case c;
                         while((lettre = file.read()) != -1){ 
                             //ligne += (char)lettre;
-                            for (int i = 1; i <= Y; i++){
-                                for(int j = 1; j <= X; j++){
+                            for (int i = 0; i < Y; i++){
+                                for(int j = 0; j < X; j++){
                                     Coordonnee coord = new Coordonnee(j, i);
                                     c = CreationCase(coord, (char)lettre);
                                     cases.put(coord, c);

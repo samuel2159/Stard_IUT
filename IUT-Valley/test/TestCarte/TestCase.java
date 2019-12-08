@@ -6,9 +6,8 @@
 package TestCarte;
 
 import Metier.Carte.Carte;
-import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Coordonnee;
-import Metier.Objet.Sapin;
+import Metier.Carte.Direction;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -18,72 +17,71 @@ import org.junit.Test;
  */
 
 public class TestCase{
-/*
+
     @Test
     /**
      * @author Samuel Tellier
-     *   
+     */ 
     public void TestGetCaseHautGauche(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(1, 1),c.getCase(2, 2).getCase(Cote.HautGauche));
+        assertEquals(c.getCase(1, 1),c.getCaseProche(c.getCase(2, 2), Direction.HautGauche));
         
     }
     @Test
     /**
      * @author Samuel Tellier
-     *       
+     */     
     public void TestGetCaseHaut(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(2, 3),c.getCase(2, 2).getCase(Cote.Haut));        
+        assertEquals(c.getCase(2, 3),c.getCaseProche(c.getCase(2, 2), Direction.Haut));
     }
     @Test
     /**
      * @author Samuel Tellier
-     *       
+     */      
     public void TestGetCaseHautDroit(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(3, 1),c.getCase(2, 2).getCase(Cote.HautDroit));
+        assertEquals(c.getCase(3, 1),c.getCaseProche(c.getCase(2, 2), Direction.HautDroit));
     }
     @Test
     /**
      * @author Samuel Tellier
-     *       
+     */       
     public void TestGetCaseGauche(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(1, 2),c.getCase(2, 2).getCase(Cote.Gauche));
+        assertEquals(c.getCase(1, 2),c.getCaseProche(c.getCase(2, 2), Direction.Gauche));
     }
     @Test
     /**
      * @author Samuel Tellier
-     *      
+     */      
     public void TestGetCaseDroit(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(3, 2),c.getCase(2, 2).getCase(Cote.Droit));
+        assertEquals(c.getCase(3, 2),c.getCaseProche(c.getCase(2, 2), Direction.Droit));
     }
     @Test
     /**
      * @author Samuel Tellier
-     *       
+     */    
     public void TestGetCaseBasGauche(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(1, 1),c.getCase(2, 2).getCase(Cote.BasGauche));
+        assertEquals(c.getCase(1, 1),c.getCaseProche(c.getCase(2, 2), Direction.BasGauche));
     }
     @Test
     /**
      * @author Samuel Tellier
-     *       
+     */       
     public void TestGetCaseBas(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(2, 1),c.getCase(2, 2).getCase(Cote.Bas));
+        assertEquals(c.getCase(2, 1),c.getCaseProche(c.getCase(2, 2), Direction.Bas));
     }
     @Test
     /**
-     * @author Samuel Tellier
-     *        
+     * @author Samuel Tellier   
+     */
     public void TestGetCaseBasDroit(){
-        Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(3, 1),c.getCase(2, 2).getCase(Cote.BasDroit));
+        Carte c = Carte.getCarte();   
+        //bool res = c.getCase(3, 1).equals(c.getCaseProche(c.getCase(2, 2), Direction.Bas))
+        assertEquals(c.getCase(3, 1),c.getCaseProche(c.getCase(2, 2), Direction.BasDroit));
     }    
-   
-*/  
 }

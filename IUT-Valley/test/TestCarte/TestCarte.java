@@ -6,13 +6,7 @@
 package TestCarte;
 
 import Metier.Carte.Carte;
-import Metier.Carte.Cases.Case;
-import Metier.Carte.Cases.CaseTerre;
-import Metier.Carte.Coordonnee;
-import Metier.Objet.ObjetPlace;
-import Metier.Objet.Sapin;
 import java.io.FileNotFoundException;
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
