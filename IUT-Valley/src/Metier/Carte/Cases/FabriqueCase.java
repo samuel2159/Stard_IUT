@@ -13,7 +13,7 @@ import Metier.Carte.Coordonnee;
  */
 public class FabriqueCase {
     
-    public static Case CreationCase(Coordonnee coord, Character s){
+    public static Case CreationCase(Coordonnee coord, char s){
         Case c;
         
         switch(s){

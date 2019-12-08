@@ -58,8 +58,10 @@ public class MenuJeu extends Application{
             
             if(c.getCaseType().equals("terre"))
                 sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
+            
             if(c.getCaseType().equals("eau"))
                 sprite.setViewport(new Rectangle2D(97,785,14,14));    
+            
             if(c.getCaseType().equals("herbe"))
                 sprite.setViewport(new Rectangle2D(0,112,14,14));                
             //-------------------------------------------------------

@@ -33,19 +33,28 @@ public class Carte {
                 try{
                        FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");//Ouverture du fichier contenant la carte
                         int lettre;//Caractère qui sera lu dans le fichier
-                        //String ligne = "";
-                        Case c;
-                        while((lettre = file.read()) != -1){ 
-                            //ligne += (char)lettre;
-                            for (int i = 0; i <= Y; i++){
-                                for(int j = 0; j <= X; j++){
-                                    Coordonnee coord = new Coordonnee(i, j);
-                                    c = CreationCase(coord, (char)lettre);
-                                    cases.put(coord, c);
+
+                        Case c = null;
+                        Coordonnee coord = null;
+                        int i = 0;                        
+                        
+                            while( i < Y){
+                                int j = 0;                                
+                                while(j < X){
+                                    
+                                    if((lettre = file.read()) != -1){
+                                        coord = new Coordonnee(i, j);
+                                        c = CreationCase(coord, (char)lettre);                                        
+                                    }
+
+                                    if(c != null){
+                                        cases.put(coord, c);
+                                         j++;
+                                    }
                                 }
-                            }
-                        }
-                        //System.out.println(ligne);
+                                i++;
+                            }                        
+
                     }
                 catch(FileNotFoundException e){
                     System.err.println("Fichier introuvable");
@@ -53,7 +62,7 @@ public class Carte {
                 catch(IOException e2){
                     System.err.println("Erreur dans la lecture du fichier");
                 }
-                System.out.println("test");
+
     }
     
     /**
