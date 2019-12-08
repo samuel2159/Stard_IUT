@@ -25,33 +25,41 @@ public class Carte {
 
     private HashMap<Coordonnee,Case> cases = new HashMap(); //Liste des cases composant la carte du jeu
     private static Carte instance = null; //Unique instance de la carte
-    public static int X = 50; //Taille de la carte en largeur (modifier la valeur)
-    public static int Y = 50; //Taille de la carte en longueur (modifier la valeur)
+    public static int X = 20; //Taille de la carte en largeur (modifier la valeur)
+    public static int Y = 20; //Taille de la carte en longueur (modifier la valeur)
     
     
 
     private Carte(){
         
-        //Double bloucle d'initialisation des cases
-        for(int i = 0; i < X; i++){
-            for(int j = 0; j < Y; j++){
+
                 //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
-                Coordonnee coord = new Coordonnee(i,j);                  
+                                 
                 Case c = null; 
                 try{
-                    try (FileInputStream file = new FileInputStream("Ressources/Carte.txt")) {
+                       FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");
                         int compt;
+                        char buffer;
                         while((compt = file.read()) != -1){
-                            c = CreationCase(coord, (char)i);
-                            cases.put(coord, c);
+                            //c = CreationCase(coord, (char)compt);
+                            
+                            //cases.put(coord, c);
+                            for(int i = 0; i < X; i++){
+                                for(int j = 0; j < Y; j++){
+                                    Coordonnee coord = new Coordonnee(i,j); 
+                                    System.out.println((char)compt);
+                                }
+                                System.out.println("\n");
+                            }
+                            
                         }
                     }
-                }
-                catch(IOException e){
+                catch(FileNotFoundException e){
                     System.err.println("Fichier introuvable");
                 }
-            }
-        }
+                catch(IOException e2){
+                    System.err.println("Erreur dans la lecture du fichier");
+                }
     }
     
     /**

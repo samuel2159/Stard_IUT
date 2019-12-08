@@ -5,6 +5,7 @@
  */
 package IHM;
 
+import IHM.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.Cote;
@@ -28,6 +29,7 @@ import javafx.stage.Stage;
 /**
  *
  * @author Astérisk
+ * @modify Vincent Tantet
  */
 public class MenuJeu extends Application{
     
@@ -39,7 +41,7 @@ public class MenuJeu extends Application{
         Group root = new Group();
         Scene scene = new Scene(root, 1100, 662);        
         primaryStage.setTitle("Fenetre de jeu");
-        primaryStage.setScene(scene);        
+        primaryStage.setScene(scene);    
         
         //Affichage de la carte
        
@@ -96,21 +98,14 @@ public class MenuJeu extends Application{
 
         }
 
-        
-
-        
-        /*Ajout du perso*/
-        ImageView perso = new ImageView(new Image("Ressources/Map/perso.png"));
-        //liaison des dimensions avec celles de la fenetre
-        perso.fitWidthProperty().bind(scene.widthProperty().multiply(0.12));
-        perso.fitHeightProperty().bind(scene.heightProperty().multiply(0.12));
-        //On ajuste la position du perso :
-        perso.layoutXProperty().bind(scene.widthProperty().multiply(0.8));
-        perso.layoutYProperty().bind(scene.widthProperty().multiply(0.3));
+        //ajout du perso
+        VuePersonnage perso = new VuePersonnage(scene);
+        perso.getPerso().fitHeightProperty().bind(scene.heightProperty().multiply(0.16));
+        perso.getPerso().fitWidthProperty().bind(scene.heightProperty().multiply(0.16));
         root.getChildren().add(perso);
-
- 
+        
         
         primaryStage.show();
+        perso.requestFocus();
     }
 }
