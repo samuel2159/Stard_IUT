@@ -32,7 +32,7 @@ public class TestCase{
      */     
     public void TestGetCaseHaut(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(2, 3),c.getCaseProche(c.getCase(2, 2), Direction.Haut));
+        assertEquals(c.getCase(2, 1),c.getCaseProche(c.getCase(2, 2), Direction.Haut));
     }
     @Test
     /**
@@ -64,7 +64,7 @@ public class TestCase{
      */    
     public void TestGetCaseBasGauche(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(1, 1),c.getCaseProche(c.getCase(2, 2), Direction.BasGauche));
+        assertEquals(c.getCase(1, 3),c.getCaseProche(c.getCase(2, 2), Direction.BasGauche));
     }
     @Test
     /**
@@ -72,7 +72,7 @@ public class TestCase{
      */       
     public void TestGetCaseBas(){
         Carte c = Carte.getCarte();     
-        assertEquals(c.getCase(2, 1),c.getCaseProche(c.getCase(2, 2), Direction.Bas));
+        assertEquals(c.getCase(2, 3),c.getCaseProche(c.getCase(2, 2), Direction.Bas));
     }
     @Test
     /**
@@ -80,6 +80,6 @@ public class TestCase{
      */
     public void TestGetCaseBasDroit(){
         Carte c = Carte.getCarte();   
-        assertEquals(c.getCase(3, 1),c.getCaseProche(c.getCase(2, 2), Direction.BasDroit));
+        assertEquals(c.getCase(3, 3),c.getCaseProche(c.getCase(2, 2), Direction.BasDroit));
     }    
 }

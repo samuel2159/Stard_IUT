@@ -32,18 +32,18 @@ public class Carte {
                 //Génération de la carte
                 try{
                        FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");//Ouverture du fichier contenant la carte
-                        int lettre;//Caractère qui sera lu dans le fichier
+                       int lettre;//Caractère qui sera lu dans le fichier
 
                         Case c = null;
                         Coordonnee coord = null;
                         int i = 0;                        
                         
-                            while( i < Y){
+                            while( i < X){
                                 int j = 0;                                
-                                while(j < X){
+                                while(j < Y){
                                     
                                     if((lettre = file.read()) != -1){
-                                        coord = new Coordonnee(i, j);
+                                        coord = new Coordonnee(j, i);
                                         c = CreationCase(coord, (char)lettre);                                        
                                     }
 
@@ -116,7 +116,7 @@ public class Carte {
                 retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()-1);
                 break;            
             case Haut: 
-                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()+1);
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()-1);
                 break;
             case HautDroit: 
                 retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()-1);
@@ -128,13 +128,13 @@ public class Carte {
                 retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY());
                 break;
             case BasGauche: 
-                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()-1);
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()+1);
                 break;  
             case Bas: 
-                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()-1);
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()+1);
                 break;
             case BasDroit: 
-                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()-1);
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()+1);
                 break;            
         }
         return retour;

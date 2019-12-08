@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package IHM.Vue;
+package IHM.Vue.Cases;
 
-import javafx.geometry.Rectangle2D;
+import Metier.Carte.Cases.CaseTerre;
 import javafx.scene.image.ImageView;
 
 /**
  *
  * @author telli
  */
-public class VueCaseTerre {
-    
-    public VueCaseTerre(ImageView sprite){
-         sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));        
+public abstract class CaseVue {
+
+    public CaseVue(){
+        
     }
+    
 }

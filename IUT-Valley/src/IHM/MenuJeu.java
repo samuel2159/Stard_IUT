@@ -5,10 +5,16 @@
  */
 package IHM;
 
+import IHM.Vue.Cases.CaseVue;
+import IHM.Vue.Cases.VueCaseEau;
+import IHM.Vue.Cases.VueCaseHerbe;
+import IHM.Vue.Cases.VueCaseTerre;
 import IHM.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
-import Metier.Carte.Cases.Cote;
+import Metier.Carte.Cases.CaseEau;
+import Metier.Carte.Cases.CaseHerbe;
+import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Coordonnee;
 import Metier.Objet.ObjetPlace;
 import java.util.ArrayList;
@@ -56,14 +62,17 @@ public class MenuJeu extends Application{
             //affectation des sprites des cases
             ImageView sprite = new ImageView(sprites);
             
+            CaseVue casevue;
+            
             if(c.getCaseType().equals("terre"))
-                sprite.setViewport(new Rectangle2D(16+1,7*16+1,14,14));
+                casevue = new VueCaseTerre((CaseTerre) c,sprite);
             
             if(c.getCaseType().equals("eau"))
-                sprite.setViewport(new Rectangle2D(97,785,14,14));    
+                casevue = new VueCaseEau((CaseEau) c,sprite);                   
             
             if(c.getCaseType().equals("herbe"))
-                sprite.setViewport(new Rectangle2D(0,112,14,14));                
+                casevue = new VueCaseHerbe((CaseHerbe) c,sprite);
+                               
             //-------------------------------------------------------
             
             //------------------Binding des sprites--------------
