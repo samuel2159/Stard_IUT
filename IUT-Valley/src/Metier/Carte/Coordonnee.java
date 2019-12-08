@@ -68,7 +68,7 @@ public class Coordonnee {
     @Override
     public boolean equals(Object obj) {
         boolean res = true;
-        if (getClass() != obj.getClass() || obj.equals(null)) {
+        if (getClass() != obj.getClass() || obj == null) {
             res = false;
         }
         final Coordonnee other = (Coordonnee) obj;

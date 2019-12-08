@@ -141,7 +141,7 @@ public class Carte {
     @Override
     public boolean equals(Object obj) {
         boolean res = true;
-        if (getClass() != obj.getClass() || obj.equals(null)) {
+        if (getClass() != obj.getClass() || obj == null) {
             res = false;
         }
         final Carte other = (Carte) obj;
