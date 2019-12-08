@@ -63,7 +63,7 @@ public abstract class Case {
     
     /**
      * @author Kevin
-     * @return 
+     * @return Coordonnee
      */
     public Coordonnee getCoordonnee(){
         return position;

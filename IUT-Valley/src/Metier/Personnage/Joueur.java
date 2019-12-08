@@ -8,7 +8,7 @@ package Metier.Personnage;
 import Metier.Carte.Coordonnee;
 
 /**
- *
+ * Correspond au joueur
  * @author Kevin Lamblin 
  */
 public class Joueur extends Personnage{
@@ -34,12 +34,13 @@ public class Joueur extends Personnage{
     public int getEnergie(){
         return energie;
     }
+    
     /**
      * @author Kevin Lamblin
      * Définit l'énergie du joueur
      * @param e int
      */
-    public void setEnergie(int e){
+    public final void setEnergie(int e){
         energie = e;
     }
 }
