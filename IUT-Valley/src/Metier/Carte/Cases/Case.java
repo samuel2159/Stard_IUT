@@ -7,6 +7,7 @@ package Metier.Carte.Cases;
 
 import Metier.Carte.Carte;
 import Metier.Carte.Coordonnee;
+import Metier.Carte.Direction;
 import Metier.Objet.ObjetPlace;
 import java.util.Objects;
 
@@ -66,6 +67,16 @@ public abstract class Case {
      */
     public Coordonnee getCoordonnee(){
         return position;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * @param d Direction
+     * @return Case
+     */
+    public Case getVoisine(Direction d){
+        Case c = Carte.getCarte().getCaseProche(this, d);
+        return c;
     }
     
     /**
