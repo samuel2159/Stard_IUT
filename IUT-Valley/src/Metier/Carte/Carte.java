@@ -35,11 +35,19 @@ public class Carte {
                 try{
                        FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");//Ouverture du fichier contenant la carte
                         int lettre;//Caractère qui sera lu dans le fichier
-                        String ligne = "";
+                        //String ligne = "";
+                        Case c;
                         while((lettre = file.read()) != -1){ 
-                            ligne += (char)lettre;
+                            //ligne += (char)lettre;
+                            for (int i = 1; i <= Y; i++){
+                                for(int j = 1; j <= X; j++){
+                                    Coordonnee coord = new Coordonnee(X, Y);
+                                    c = CreationCase(coord, (char)lettre);
+                                    cases.put(coord, c);
+                                }
+                            }
                         }
-                        System.out.println(ligne);
+                        //System.out.println(ligne);
                     }
                 catch(FileNotFoundException e){
                     System.err.println("Fichier introuvable");
