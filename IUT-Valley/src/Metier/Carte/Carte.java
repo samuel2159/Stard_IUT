@@ -31,28 +31,15 @@ public class Carte {
     
 
     private Carte(){
-        
-
-                //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
-                                 
-                Case c = null; 
+                //Génération de la carte
                 try{
-                       FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");
-                        int compt;
-                        char buffer;
-                        while((compt = file.read()) != -1){
-                            //c = CreationCase(coord, (char)compt);
-                            
-                            //cases.put(coord, c);
-                            for(int i = 0; i < X; i++){
-                                for(int j = 0; j < Y; j++){
-                                    Coordonnee coord = new Coordonnee(i,j); 
-                                    System.out.println((char)compt);
-                                }
-                                System.out.println("\n");
-                            }
-                            
+                       FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");//Ouverture du fichier contenant la carte
+                        int lettre;//Caractère qui sera lu dans le fichier
+                        String ligne = "";
+                        while((lettre = file.read()) != -1){ 
+                            ligne += (char)lettre;
                         }
+                        System.out.println(ligne);
                     }
                 catch(FileNotFoundException e){
                     System.err.println("Fichier introuvable");
