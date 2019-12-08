@@ -10,7 +10,6 @@ import static Metier.Carte.Carte.getCarte;
 import Metier.Carte.Coordonnee;
 import Metier.Personnage.Joueur;
 import Metier.Personnage.Personnage;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 /**
@@ -28,7 +27,7 @@ public class Partie {
      * Crée une partie avec une carte et un joueur
      * @throws java.io.FileNotFoundException
      */
-    public Partie() throws FileNotFoundException{
+    public Partie(){
         this.carte = getCarte();
         player = new Joueur(new Coordonnee(10,10));
         addPersonnage(player);

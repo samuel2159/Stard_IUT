@@ -7,13 +7,11 @@ package Metier.Carte;
 
 import Metier.Carte.Cases.*;
 import static Metier.Carte.Cases.FabriqueCase.CreationCase;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Objects;
-import java.util.Scanner;
 
 
 
