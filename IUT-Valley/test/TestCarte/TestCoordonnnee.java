@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
- *
+ * Classe de test pour la classe Coordonnee
  * @author Kevin Lamblin
  */
 public class TestCoordonnnee {

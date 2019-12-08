@@ -28,7 +28,7 @@ public class MenuPerso extends Application {
         //Creation de la scene
         Pane monLayout = new Pane();
         Scene scene = new Scene(monLayout, 1100, 662);        
-        primaryStage.setTitle("Menu Personnage");
+        primaryStage.setTitle("Stardew Valley");
         primaryStage.setScene(scene);          
         
 //IMAGES------------------------------------------------------------------------------------            

@@ -5,10 +5,14 @@
  */
 package Metier.Carte;
 
-import Metier.Objet.Sapin;
-import Metier.Objet.Terre;
+import Metier.Carte.Cases.*;
+import static Metier.Carte.Cases.FabriqueCase.CreationCase;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
-import java.util.Random;
+import java.util.Objects;
+
 
 
 /**
@@ -19,33 +23,46 @@ public class Carte {
 
     private HashMap<Coordonnee,Case> cases = new HashMap(); //Liste des cases composant la carte du jeu
     private static Carte instance = null; //Unique instance de la carte
-    public static int X = 50; //Taille de la carte en largeur (modifier la valeur)
-    public static int Y = 50; //Taille de la carte en longueur (modifier la valeur)
+    public static int X = 20; //Taille de la carte en largeur (modifier la valeur)
+    public static int Y = 20; //Taille de la carte en longueur (modifier la valeur)
     
     
-    /**
-     * @author Kevin Lamblin
-     */
+
     private Carte(){
-        
-        //Double bloucle d'initialisation des cases
-        for(int i = 0; i < X; i++){
-            for(int j = 0; j < Y; j++){
-                //Créer une nouvelle case et l'ajoute à la liste de cases avec ses coordonnées
-                Coordonnee coord = new Coordonnee(i,j);
-                Case c = new Case(coord);
-                c.setObjetCorrespondant(new Terre());
-                cases.put(coord, c);
-                /*
-                Random r = new Random();
-                if(r.nextInt(30)==0){
-                    Case c2 = new Case(coord);
-                    c2.setObjetCorrespondant(new Sapin());
-                    cases.put(coord,c2);
+                //Génération de la carte
+                try{
+                       FileInputStream file = new FileInputStream("src/Ressources/Carte.txt");//Ouverture du fichier contenant la carte
+                       int lettre;//Caractère qui sera lu dans le fichier
+
+                        Case c = null;
+                        Coordonnee coord = null;
+                        int i = 0;                        
+                        
+                            while( i < X){
+                                int j = 0;                                
+                                while(j < Y){
+                                    
+                                    if((lettre = file.read()) != -1){
+                                        coord = new Coordonnee(j, i);
+                                        c = CreationCase(coord, (char)lettre);                                        
+                                    }
+
+                                    if(c != null){
+                                        cases.put(coord, c);
+                                         j++;
+                                    }
+                                }
+                                i++;
+                            }                        
+
+                    }
+                catch(FileNotFoundException e){
+                    System.err.println("Fichier introuvable");
                 }
-                */
-            }
-        }
+                catch(IOException e2){
+                    System.err.println("Erreur dans la lecture du fichier");
+                }
+
     }
     
     /**
@@ -62,8 +79,83 @@ public class Carte {
         return instance;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * @return HashMap 
+     */
     public HashMap<Coordonnee,Case> getCases(){
         return cases;
     }
     
+    /**
+     * @author Samuel Tellier
+     * @param x
+     * @param y
+     * @return 
+     */
+    public Case getCase(int x,int y){
+        Case retour = null;
+        
+        for(Case c : cases.values()){
+            if(c.getCoordonnee().getX() == x && c.getCoordonnee().getY() == y)
+                retour = c;
+        }
+        return retour;
+    }
+
+    /**
+     * @author Samuel Tellier && Kévin Lamblin
+     * @param c Case   
+     * @param d Direction
+     * @return Case
+     */
+    public Case getCaseProche(Case c, Direction d){
+        Case retour = null;
+        switch(d){
+            case HautGauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()-1);
+                break;            
+            case Haut: 
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()-1);
+                break;
+            case HautDroit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()-1);
+                break;
+            case Gauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY());
+                break;
+            case Droit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY());
+                break;
+            case BasGauche: 
+                retour = getCase(c.getCoordonnee().getX()-1, c.getCoordonnee().getY()+1);
+                break;  
+            case Bas: 
+                retour = getCase(c.getCoordonnee().getX(), c.getCoordonnee().getY()+1);
+                break;
+            case BasDroit: 
+                retour = getCase(c.getCoordonnee().getX()+1, c.getCoordonnee().getY()+1);
+                break;            
+        }
+        return retour;
+    }
+    
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        boolean res = true;
+        if (getClass() != obj.getClass() || obj == null) {
+            res = false;
+        }
+        final Carte other = (Carte) obj;
+        if (!Objects.equals(this.cases, other.cases)) {
+            res = false;
+        }
+        return res;
+    }
 }
