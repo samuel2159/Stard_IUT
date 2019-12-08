@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="8" failures="0" hostname="MSI" name="TestCarte.TestCase" skipped="0" tests="8" time="0.088" timestamp="2019-12-08T13:08:29">
+<testsuite errors="8" failures="0" hostname="MSI" name="TestCarte.TestCase" skipped="0" tests="8" time="0.09" timestamp="2019-12-08T13:19:56">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="FR" />
@@ -71,7 +71,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestCarte.TestCase skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\GitHub\Stard_IUT\IUT-Valley\build\test\results\TEST-TestCarte.TestCase.xml crashfile=D:\GitHub\Stard_IUT\IUT-Valley\build\junitvmwatcher9112103937608636784.properties propsfile=D:\GitHub\Stard_IUT\IUT-Valley\build\junit844019010531518380.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestCarte.TestCase skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\GitHub\Stard_IUT\IUT-Valley\build\test\results\TEST-TestCarte.TestCase.xml crashfile=D:\GitHub\Stard_IUT\IUT-Valley\build\junitvmwatcher6875540300046535785.properties propsfile=D:\GitHub\Stard_IUT\IUT-Valley\build\junit4214699068819278744.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -119,7 +119,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="D:\GitHub\Stard_IUT\IUT-Valley\null1611147717" />
+    <property name="javac.includesfile.binary" value="D:\GitHub\Stard_IUT\IUT-Valley\null1487049883" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value="D:\Requirement\jdk1.8.0_231\jre/lib/javaws.jar:D:\Requirement\jdk1.8.0_231\jre/lib/deploy.jar:D:\Requirement\jdk1.8.0_231\jre/lib/plugin.jar:build/classes:D:\Developpement\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:D:\Developpement\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -465,52 +465,52 @@
     <property name="javafx.deploy.installpermanently" value="false" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="D:\Developpement\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautGauche" time="0.024">
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseHautGauche" time="0.026">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseHautGauche(TestCase.java:27)
+	at TestCarte.TestCase.TestGetCaseHautGauche(TestCase.java:26)
 </error>
   </testcase>
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasGauche" time="0.004">
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseBasGauche" time="0.0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseBasGauche(TestCase.java:68)
+	at TestCarte.TestCase.TestGetCaseBasGauche(TestCase.java:67)
 </error>
   </testcase>
   <testcase classname="TestCarte.TestCase" name="TestGetCaseBasDroit" time="0.0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseBasDroit(TestCase.java:84)
+	at TestCarte.TestCase.TestGetCaseBasDroit(TestCase.java:83)
 </error>
   </testcase>
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseGauche" time="0.0">
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseGauche" time="0.004">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseGauche(TestCase.java:52)
+	at TestCarte.TestCase.TestGetCaseGauche(TestCase.java:51)
 </error>
   </testcase>
   <testcase classname="TestCarte.TestCase" name="TestGetCaseBas" time="0.0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseBas(TestCase.java:76)
+	at TestCarte.TestCase.TestGetCaseBas(TestCase.java:75)
 </error>
   </testcase>
   <testcase classname="TestCarte.TestCase" name="TestGetCaseHautDroit" time="0.0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseHautDroit(TestCase.java:44)
+	at TestCarte.TestCase.TestGetCaseHautDroit(TestCase.java:43)
 </error>
   </testcase>
-  <testcase classname="TestCarte.TestCase" name="TestGetCaseHaut" time="0.0">
+  <testcase classname="TestCarte.TestCase" name="TestGetCaseHaut" time="0.004">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseHaut(TestCase.java:36)
+	at TestCarte.TestCase.TestGetCaseHaut(TestCase.java:35)
 </error>
   </testcase>
   <testcase classname="TestCarte.TestCase" name="TestGetCaseDroit" time="0.0">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at Metier.Carte.Carte.getCase(Carte.java:90)
-	at TestCarte.TestCase.TestGetCaseDroit(TestCase.java:60)
+	at TestCarte.TestCase.TestGetCaseDroit(TestCase.java:59)
 </error>
   </testcase>
   <system-out><![CDATA[]]></system-out>

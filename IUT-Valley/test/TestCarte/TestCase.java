@@ -6,7 +6,6 @@
 package TestCarte;
 
 import Metier.Carte.Carte;
-import Metier.Carte.Coordonnee;
 import Metier.Carte.Direction;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -81,7 +80,7 @@ public class TestCase{
      */
     public void TestGetCaseBasDroit(){
         Carte c = Carte.getCarte();   
-        //bool res = c.getCase(3, 1).equals(c.getCaseProche(c.getCase(2, 2), Direction.Bas))
-        assertEquals(c.getCase(3, 1),c.getCaseProche(c.getCase(2, 2), Direction.BasDroit));
+        boolean res = c.getCase(3, 1).equals(c.getCaseProche(c.getCase(2, 2), Direction.Bas));
+        assertEquals(true,res);
     }    
 }
