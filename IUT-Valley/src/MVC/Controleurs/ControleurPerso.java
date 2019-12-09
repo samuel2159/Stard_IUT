@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MVC;
+package MVC.Controleurs;
+
+import MVC.Controleurs.Controleur;
 
 /**
  *
@@ -13,6 +15,6 @@ public class ControleurPerso extends Controleur {
 
     @Override
     public void Update() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 }

@@ -24,7 +24,7 @@ public class Carte {
     private HashMap<Coordonnee,Case> cases = new HashMap(); //Liste des cases composant la carte du jeu
     private static Carte instance = null; //Unique instance de la carte
     public static int X = 20; //Taille de la carte en largeur (modifier la valeur)
-    public static int Y = 20; //Taille de la carte en longueur (modifier la valeur)
+    public static int Y = 25; //Taille de la carte en longueur (modifier la valeur)
     
     
 

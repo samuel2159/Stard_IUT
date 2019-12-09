@@ -8,7 +8,7 @@ package Metier.Personnage;
 import Metier.Carte.Coordonnee;
 
 /**
- * Correspond aux personnages du jeu IUT Valley
+ *
  * @author Kevin Lamblin 
  */
 public abstract class Personnage {
@@ -18,25 +18,22 @@ public abstract class Personnage {
     
     /**
      * @author Kevin Lamblin
-     * Crée un personnage
      * @param c Coordonnee
      */
     public Personnage(Coordonnee c){
         position = c;
         inventaire = new Inventaire();
     }
-    
     /**
      * @author Tommy Saucey && @modify Kevin Lamblin
-     * Modifie les coordonnées du personnage
      * @param c Coordonnee
+     * Modifie les coordonnées du personnage
      */
     public void Deplacer(Coordonnee c){
         
         position.setX(position.getX() + c.getX());
         position.setY(position.getY() + c.getY());
     }
-    
     /**
      * @author Kevin Lamblin
      * Renvoie la position du personnage 
@@ -44,14 +41,5 @@ public abstract class Personnage {
      */
     public Coordonnee getPosition(){
         return position;
-    }
-    
-    /**
-     * @author Kevin Lamblin
-     * Donne l'inventaire d'un personnage
-     * @return Inventaire
-     */
-    public Inventaire getInventaire(){
-        return inventaire;
     }
 }

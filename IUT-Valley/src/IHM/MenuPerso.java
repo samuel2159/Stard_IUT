@@ -5,7 +5,6 @@
  */
 package IHM;
 
-import MVC.ControleurLogo;
 import MVC.Listener.HandlerPerso;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -47,7 +46,7 @@ public class MenuPerso extends Application {
             //HANDLER
                 HandlerPerso handlerperso = new HandlerPerso(this);
                 perso.setOnMouseClicked(handlerperso);
-                handlerperso.ajouterControleur(new ControleurLogo());
+                
             //CENTRER LE LOGO
                 perso.translateXProperty().bind(scene.widthProperty().subtract(perso.fitWidthProperty()).divide(2));
                 monLayout.getChildren().add(perso);

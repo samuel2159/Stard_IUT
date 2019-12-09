@@ -7,7 +7,7 @@ package MVC.Listener;
 
 import IHM.MenuPerso;
 import IHM.MenuPrincipal;
-import MVC.Controleur;
+import MVC.Controleurs.Controleur;
 import java.util.ArrayList;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;

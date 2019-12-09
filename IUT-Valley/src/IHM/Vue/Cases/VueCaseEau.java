@@ -18,7 +18,7 @@ public class VueCaseEau extends CaseVue{
     
     public VueCaseEau(CaseEau c,ImageView sprite){
         super();
-        sprite.setViewport(new Rectangle2D(97,785,14,14)); 
+        sprite.setViewport(new Rectangle2D(96,832,14,14)); 
         /* if(Carte.getCarte().getCaseProche(c, Direction.Gauche).getCaseType().equals("herbe"))
             sprite.setViewport(new Rectangle2D(0,144,14,14)); ;*/
     }       
