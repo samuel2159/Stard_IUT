@@ -55,7 +55,7 @@ public class Inventaire {
             if(item.equals(i.getItem())){ //Ajoute l'item si il est déjà dans l'inventaire
                 i.ajoutQuantite(1);
             }
-            else if (items.size() == 36){ //Si l'inventaire est plein : erreur
+            else if (items.size() == 35){ //Si l'inventaire est plein : erreur
                 throw new Exception("Inventory full");
             }
             else{
@@ -109,6 +109,9 @@ public class Inventaire {
         int positionItem = 0;
         ItemInInventory tempExistant = item;
         boolean res = false;
+        
+        
+        
         do{
             
         }while(res = false);

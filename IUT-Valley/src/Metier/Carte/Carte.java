@@ -12,12 +12,13 @@ import java.util.HashMap;
  */
 public class Carte {
 
-    private HashMap<String, Niveaux> lNiveaux;
+    private HashMap<String, Niveaux> lNiveaux = new HashMap();
     private Niveaux niveauActuel;
     private static Carte instance = null; //Unique instance de la carte
 
     private Carte(){
-        lNiveaux.put("Ferme", new Niveaux("Ferme", "Ferme.txt", 20, 20));
+        Niveaux lvlFerme = new Niveaux("Ferme","Ferme.txt", 25, 25);
+        lNiveaux.put("Ferme", lvlFerme);
         niveauActuel = lNiveaux.get("Ferme");
     }
     

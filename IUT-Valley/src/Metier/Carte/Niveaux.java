@@ -22,11 +22,11 @@ public class Niveaux {
     private HashMap<Coordonnee,Case> cases = new HashMap(); //Liste des cases composant la carte du niveau
     private String nom;
     
-    public Niveaux(String nom, String s, int x, int y){
-         this.nom = nom;
+    public Niveaux(String nom,String fichier, int x, int y){
+        this.nom = nom;
          //Génération du niveau
                 try{
-                       FileInputStream file = new FileInputStream("src/Ressources/Niveaux/"+s);//Ouverture du fichier contenant le niveau
+                       FileInputStream file = new FileInputStream("src/Ressources/Niveaux/"+fichier);//Ouverture du fichier contenant le niveau
                        int lettre;//Caractère qui sera lu dans le fichier
 
                         Case c = null;

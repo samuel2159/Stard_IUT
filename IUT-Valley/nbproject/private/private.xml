@@ -4,19 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Carte/Carte.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Carte/Niveaux/Niveaux.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Carte/Niveaux/NiveauFerme.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Carte/Cases/Case.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Personnage/Personnage.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/MenuJeu.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Observables/Observable.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/MenuPrincipal.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Observers/Observer.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/MenuPerso.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Controleurs/Controleur.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/Vue/VuePersonnage.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/Vue/VuePerso.java</file>
-            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Controleurs/ControleurPerso.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Carte/Niveaux.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Personnage/Inventaire.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Partie.java</file>
         </group>
     </open-files>
 </project-private>
