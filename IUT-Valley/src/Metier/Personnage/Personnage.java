@@ -9,7 +9,7 @@ import static Metier.Carte.Carte.getCarte;
 import Metier.Carte.Coordonnee;
 
 /**
- * Correspond aux personnages du jeu IUT Valley
+ *
  * @author Kevin Lamblin 
  */
 public abstract class Personnage {
@@ -19,19 +19,17 @@ public abstract class Personnage {
     
     /**
      * @author Kevin Lamblin
-     * Crée un personnage
      * @param c Coordonnee
      */
     public Personnage(Coordonnee c){
         position = c;
         inventaire = new Inventaire();
     }
-    
     /**
      * @author Tommy Saucey && @modify Kevin Lamblin
-     * Modifie les coordonnées du personnage
      * @param c Coordonnee
      * @throws java.lang.Exception
+     * Modifie les coordonnées du personnage
      */
     public void Deplacer(Coordonnee c) throws Exception{
         if(estPossible(c)){
@@ -42,7 +40,6 @@ public abstract class Personnage {
             throw new Exception("Déplacement impossible");
         }
     }
-    
     /**
      * @author Kevin Lamblin
      * Renvoie la position du personnage 
@@ -51,6 +48,7 @@ public abstract class Personnage {
     public Coordonnee getPosition(){
         return position;
     }
+
     
     /**
      * @author Kevin Lamblin
@@ -75,4 +73,5 @@ public abstract class Personnage {
         }   
         return res;
     }
+
 }

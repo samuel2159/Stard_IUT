@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MVC;
+package MVC.Observers;
 
 /**
  *
- * @author Astérisk
+ * @author telli
  */
-public abstract class Controleur {
+public interface Observer {
+
+    public void update(Observer o);
     
-    public abstract void Update();
 }

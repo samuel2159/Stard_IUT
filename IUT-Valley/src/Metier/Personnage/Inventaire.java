@@ -7,18 +7,20 @@ package Metier.Personnage;
 
 import Metier.Personnage.Item.Item;
 import java.util.HashMap;
+
 /**
  *
  * @author Kevin
  */
 public class Inventaire {
     
+
     private Item objetCourant; //Objet courant, dans la liste des favoris
     private HashMap<Integer, ItemInInventory> items; //Liste des objets dans l'inventaire(sur 36 emplacements)
+
     
     /**
      * @author Kevin Lamblin
-     * Crée un inventaire
      */
     public Inventaire() {
         items = new HashMap<>();
@@ -26,21 +28,19 @@ public class Inventaire {
     }
 
     /**
-     * @author Kevin Lamblin
-     * Donne la liste des items
-     * @return HashMap
-     */
-    public HashMap getItems(){
-        return items;
-    }
-    
-    /**
-     * @author Kevin Lamblin
-     * Donne l'objetCourant
+     * @author Thiburce Tommy
+     * Donne l'objet courant
      * @return Item
      */
     public Item getObjetCourant(){
         return objetCourant;
+    }
+    /**
+     * @author Thiburce Tommy
+     * @return HashMap
+     */
+    public HashMap<Integer, ItemInInventory> getItem(){  
+        return items;
     }
     
     /**
@@ -72,7 +72,6 @@ public class Inventaire {
             }
         }
     }
-    
     /**
      * @author Thiburce Tommy && Kevin Lamblin
      * Supprime un item de l'inventaire

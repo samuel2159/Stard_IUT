@@ -13,7 +13,7 @@ import Metier.Personnage.Personnage;
 import java.util.ArrayList;
 
 /**
- * Correspond à une partie du jeu IUT Valley
+ * Correspond à une partie du jeu
  * @author Kevin Lamblin
  */
 public class Partie {
@@ -25,6 +25,7 @@ public class Partie {
     /**
      * @author Kevin Lamblin
      * Crée une partie avec une carte et un joueur
+     * @throws java.io.FileNotFoundException
      */
     public Partie(){
         this.carte = getCarte();
@@ -37,7 +38,7 @@ public class Partie {
      * Fonction qui ajoute un personnage à la liste de personnages de la partie
      * @param p Personnage
      */
-    public final void addPersonnage(Personnage p){
+    public void addPersonnage(Personnage p){
         personnages.add(p);
     }  
     
@@ -58,13 +59,5 @@ public class Partie {
     public Personnage getJoueur(){
         return player;
     }
-    
-    /**
-     * @author Kevin Lamblin
-     * Renvoie la carte stocké dans la partie
-     * @return Carte
-     */
-    public Carte getCarteOfPartie(){
-        return carte;
-    }
+
 }

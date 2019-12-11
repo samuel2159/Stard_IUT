@@ -9,6 +9,7 @@ import IHM.Vue.Cases.CaseVue;
 import IHM.Vue.Cases.VueCaseEau;
 import IHM.Vue.Cases.VueCaseHerbe;
 import IHM.Vue.Cases.VueCaseTerre;
+import IHM.Vue.VuePerso;
 import IHM.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
@@ -17,6 +18,8 @@ import Metier.Carte.Cases.CaseHerbe;
 import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Coordonnee;
 import Metier.Objet.ObjetPlace;
+import Metier.Personnage.Joueur;
+import Metier.Personnage.Personnage;
 import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -118,6 +121,9 @@ public class MenuJeu extends Application{
         perso.getPerso().fitWidthProperty().bind(scene.heightProperty().multiply(0.16));
         root.getChildren().add(perso);
         
+       /* ImageView spriteJoueur = new ImageView(new Image("Ressources/Personnages/Sebastian.png"));
+        VuePerso joueur = new VuePerso(new Joueur(new Coordonnee(5,5)),spriteJoueur);        
+        root.getChildren().add(spriteJoueur);*/
         
         primaryStage.show();
         perso.requestFocus();
