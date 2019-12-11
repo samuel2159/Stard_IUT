@@ -106,24 +106,28 @@ public class Inventaire {
      * @param item Item
      */
     public void deplacer(Integer i, ItemInInventory item){
-        int positionItem = 0;
         ItemInInventory tempExistant = item;
-        boolean res = false;
+        int positionExistant = 0;
+        int intTemp = 0;
         
-        
-        
-        do{
-            
-        }while(res = false);
+        for(ItemInInventory it : items.values()){
+            if(item.equals(it)){
+                positionExistant = intTemp;
+            }
+            intTemp += 1;
+        }
         
         if(items.get(i).getItem().equals(null)){
-            
+
             items.get(i).setItem(tempExistant.getItem());
             items.get(i).setQuantite(tempExistant.getQuantite());
-            
+            items.remove(positionExistant, item);
         }
         else{
-            
+            items.get(positionExistant).setItem(items.get(i).getItem());
+            items.get(positionExistant).setQuantite(items.get(i).getQuantite());
+            items.get(i).setItem(tempExistant.getItem());
+            items.get(i).setQuantite(tempExistant.getQuantite());
         }
     }
 }
