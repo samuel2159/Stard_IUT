@@ -45,10 +45,28 @@ public class ItemInInventory {
     
     /**
      * @author Kevin Lamblin
-     * Modifie la quantité d'un objet
+     * Modifie la valeur de item
+     * @param i int
+     */
+    public void setItem(Item i){
+        item = i;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Modifie la quantité
      * @param i int
      */
     public void setQuantite(int i){
+        nbItem = i;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Ajoute une quantité à un objet
+     * @param i int
+     */
+    public void ajoutQuantite(int i){
         nbItem += i;
     }
 }

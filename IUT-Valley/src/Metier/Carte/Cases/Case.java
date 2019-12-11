@@ -8,6 +8,7 @@ package Metier.Carte.Cases;
 import Metier.Carte.Carte;
 import Metier.Carte.Coordonnee;
 import Metier.Carte.Direction;
+import Metier.Carte.Niveaux;
 import Metier.Objet.ObjetPlace;
 import java.util.Objects;
 
@@ -75,7 +76,8 @@ public abstract class Case {
      * @return Case
      */
     public Case getVoisine(Direction d){
-        Case c = Carte.getCarte().getCaseProche(this, d);
+        Niveaux n = Carte.getCarte().getNiveauActuel();
+        Case c = n.getCaseProche(this, d);
         return c;
     }
     
@@ -106,4 +108,6 @@ public abstract class Case {
         }
         return res;
     }
+    
+
 }

@@ -13,8 +13,7 @@ import java.util.HashMap;
  */
 public class Inventaire {
     
-    private HashMap<Integer, ItemInInventory> favoris; //Liste des objets de la barre de raccourcis
-    private Item ObjetCourant; //Objet courant, dans la liste des favoris
+    private Item objetCourant; //Objet courant, dans la liste des favoris
     private HashMap<Integer, ItemInInventory> items; //Liste des objets dans l'inventaire(sur 36 emplacements)
     
     /**
@@ -22,8 +21,8 @@ public class Inventaire {
      * Crée un inventaire
      */
     public Inventaire() {
-        favoris = new HashMap<>();
         items = new HashMap<>();
+        objetCourant = items.get(1).getItem();
     }
 
     /**
@@ -41,28 +40,7 @@ public class Inventaire {
      * @return Item
      */
     public Item getObjetCourant(){
-        return ObjetCourant;
-    }
-    
-    /**
-     * @author Kevin Lamblin
-     * Donne les favoris
-     * @return HashMap
-     */
-    public HashMap getFavoris(){
-        return favoris;
-    }
-    
-    /**
-     * @author Kevin Lamblin
-     * Actualise l'inventaire pour les emplacement notamment
-     */
-    public void actualiserInventaire(){
-        favoris.clear(); //Clear la liste des favoris
-        for(int i = 0; i < 12; i++){
-            ItemInInventory item = items.get(i); //Récupère les 12 premiers items de l'invantaire
-            favoris.put(i, item); //Et le place dans les favoris
-        }
+        return objetCourant;
     }
     
     /**
@@ -72,23 +50,26 @@ public class Inventaire {
      * @throws Exception
      */
     public void ajouter(Item item) throws Exception{
-        
-        //Si l'inventaire est plein on renvoie une exception
-        if(items.size() >= 36){
-            throw new Exception("Inventory full");
-        }
-        //Sinon on ajoute l'Item là ou il y a de la place
-        else{
-            int j = 1;
-            boolean res = false;
-            do{
-                if(items.get(j) == null){ //Si il y a de la place à cet emplacement
-                    ItemInInventory NItem = new ItemInInventory(item); //Créer l'item
-                    items.put(j, NItem); //L'ajoute à la liste
-                    res = true; //Sort de la boucle
-                }
-                j += 1;
-            }while(res == false);
+       
+        for(ItemInInventory i : items.values()){
+            if(item.equals(i.getItem())){ //Ajoute l'item si il est déjà dans l'inventaire
+                i.ajoutQuantite(1);
+            }
+            else if (items.size() == 36){ //Si l'inventaire est plein : erreur
+                throw new Exception("Inventory full");
+            }
+            else{
+                int j = 1;
+                boolean res = false;
+                do{
+                    if(items.get(j) == null){ //Si il y a de la place à cet emplacement
+                       ItemInInventory NItem = new ItemInInventory(item); //Créer l'item
+                        items.put(j, NItem); //L'ajoute à la liste
+                        res = true; //Sort de la boucle
+                    }
+                    j += 1;
+                }while(res == false);
+            }
         }
     }
     
@@ -97,35 +78,50 @@ public class Inventaire {
      * Supprime un item de l'inventaire
      * @param item Item
      * @param Quantite int
+     * @throws java.lang.Exception
      */
-    public void supprimer(Item item, int Quantite){
+    public void supprimer(Item item, int Quantite) throws Exception{
         boolean res = false;
         int j = 1;
         do{
             if(item == items.get(j).getItem()){
-                items.get(j).setQuantite(Quantite);
-                res = true;
+                if(items.get(j).getQuantite() >= Quantite){
+                    items.get(j).ajoutQuantite(Quantite);
+                    if(items.get(j).getQuantite() == 0){
+                        items.get(j).setItem(null);
+                    }
+                    res = true;
+                }
+                else{
+                    throw new Exception("Pas assez d'objets à supprimer");
+                }
             }
             j += 1;
         }while(res == false);
     }
     
-    
-    
-    
     /**
      * @author Kevin Lamblin
+     * Déplace un item dans l'inventaire
      * @param i Integer
      * @param item Item
      */
-    /*
-    public void deplacer(Integer i, Item item){
-        if(items.get(i).equals(null)){
+    public void deplacer(Integer i, ItemInInventory item){
+        int positionItem = 0;
+        ItemInInventory tempExistant = item;
+        boolean res = false;
+        do{
+            
+        }while(res = false);
+        
+        if(items.get(i).getItem().equals(null)){
+            
+            items.get(i).setItem(tempExistant.getItem());
+            items.get(i).setQuantite(tempExistant.getQuantite());
             
         }
         else{
             
         }
     }
-    */
 }

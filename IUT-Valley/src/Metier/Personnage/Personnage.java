@@ -5,6 +5,7 @@
  */
 package Metier.Personnage;
 
+import static Metier.Carte.Carte.getCarte;
 import Metier.Carte.Coordonnee;
 
 /**
@@ -30,11 +31,16 @@ public abstract class Personnage {
      * @author Tommy Saucey && @modify Kevin Lamblin
      * Modifie les coordonnées du personnage
      * @param c Coordonnee
+     * @throws java.lang.Exception
      */
-    public void Deplacer(Coordonnee c){
-        
-        position.setX(position.getX() + c.getX());
-        position.setY(position.getY() + c.getY());
+    public void Deplacer(Coordonnee c) throws Exception{
+        if(estPossible(c)){
+            position.setX(position.getX() + c.getX());
+            position.setY(position.getY() + c.getY());
+        }
+        else{
+            throw new Exception("Déplacement impossible");
+        }
     }
     
     /**
@@ -53,5 +59,20 @@ public abstract class Personnage {
      */
     public Inventaire getInventaire(){
         return inventaire;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Indique si le déplacement est possible
+     * @param c Coordonne
+     * @return boolean
+     */
+    public boolean estPossible(Coordonnee c){
+        boolean res = true;
+        
+        if(getCarte().getNiveauActuel().getCase(c.getX(), c.getY()).getCaseType().equals("eau")){
+            res = false;
+        }   
+        return res;
     }
 }
