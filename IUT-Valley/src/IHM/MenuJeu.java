@@ -9,30 +9,18 @@ import IHM.Vue.Cases.CaseVue;
 import IHM.Vue.Cases.VueCaseEau;
 import IHM.Vue.Cases.VueCaseHerbe;
 import IHM.Vue.Cases.VueCaseTerre;
-import IHM.Vue.VuePerso;
 import IHM.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.CaseEau;
 import Metier.Carte.Cases.CaseHerbe;
 import Metier.Carte.Cases.CaseTerre;
-import Metier.Carte.Coordonnee;
-import Metier.Objet.ObjetPlace;
-import Metier.Personnage.Joueur;
-import Metier.Personnage.Personnage;
-import java.util.ArrayList;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -57,7 +45,7 @@ public class MenuJeu extends Application{
         //on ajoute toutes les cases de la carte dans le cadreillage
         Image sprites = new Image("Ressources/Map/spring.png");
                 
-        for(Case c : carte.getCases().values()){             
+        for(Case c : carte.getNiveauActuel().getCases().values()){             
 
 
             //----------------Generation du terrain---------------------------------

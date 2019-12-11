@@ -7,7 +7,6 @@ package IHM.Vue.Cases;
 
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.CaseHerbe;
-import Metier.Carte.Cases.CaseTerre;
 import Metier.Carte.Direction;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
@@ -53,20 +52,20 @@ public class VueCaseHerbe extends CaseVue{
                 //----------------A changer
         }   
         //terre à droite
-        else if((Carte.getCarte().getCaseProche(c, Direction.Droit) != null) && Carte.getCarte().getCaseProche(c, Direction.Droit).getCaseType().equals("terre"))
+        else if((Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Droit) != null) && Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Droit).getCaseType().equals("terre"))
              sprite.setViewport(new Rectangle2D(0,144,14,14));      
         
         //terre à gauche
-        else if((Carte.getCarte().getCaseProche(c, Direction.Gauche) != null) && Carte.getCarte().getCaseProche(c, Direction.Gauche).getCaseType().equals("terre"))
+        else if((Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Gauche) != null) && Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Gauche).getCaseType().equals("terre"))
             sprite.setViewport(new Rectangle2D(48,144,14,14));
           
         //terre en bas
-        else if((Carte.getCarte().getCaseProche(c, Direction.Bas) != null) && Carte.getCarte().getCaseProche(c, Direction.Bas).getCaseType().equals("terre")){
+        else if((Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Bas) != null) && Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Bas).getCaseType().equals("terre")){
                 sprite.setViewport(new Rectangle2D(48,144,14,14));
                 sprite.setRotate(270);
         }   
         //terre en haut
-        else if((Carte.getCarte().getCaseProche(c, Direction.Haut) != null) && Carte.getCarte().getCaseProche(c, Direction.Haut).getCaseType().equals("terre")){
+        else if((Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Haut) != null) && Carte.getCarte().getNiveauActuel().getCaseProche(c, Direction.Haut).getCaseType().equals("terre")){
                 sprite.setViewport(new Rectangle2D(48,144,14,14));
                sprite.setRotate(90);
         }

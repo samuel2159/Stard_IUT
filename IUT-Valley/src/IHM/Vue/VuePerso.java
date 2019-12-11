@@ -11,8 +11,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import MVC.Observers.Observer;
 
@@ -22,9 +20,9 @@ import MVC.Observers.Observer;
  */
 public class VuePerso implements KeyListener,Observer{
     
-    private ArrayList<Integer> touches = new ArrayList<Integer>();
+    private ArrayList<Integer> touches = new ArrayList<>();
     private Personnage personnage;    
-    
+    /*
     public VuePerso(Personnage p,ImageView sprite){
         personnage = p;      
         sprite.setViewport(new Rectangle2D(0, 0, 16, 32));
@@ -50,7 +48,7 @@ public class VuePerso implements KeyListener,Observer{
         }       
         
     }
-    
+    */
     private void animationHaut(){
         
     }
