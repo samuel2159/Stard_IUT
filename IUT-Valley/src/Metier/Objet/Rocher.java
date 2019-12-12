@@ -9,12 +9,11 @@ package Metier.Objet;
  *
  * @author Kevin Lamblin
  */
-public class Sapin extends Arbre{
+public class Rocher extends ObjetNaturel{
 
-    public Sapin() {
+    public Rocher() {
         super();
     }
-   
 
     @Override
     public void Interagir() {
@@ -23,15 +22,8 @@ public class Sapin extends Arbre{
 
     @Override
     public String getType() {
-        return "Sapin";
+        return "Rocher";
     }
-
-    @Override
-    public int hashCode() {
-        int hash = 7;        
-        return hash;
-    }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -43,9 +35,14 @@ public class Sapin extends Arbre{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Sapin other = (Sapin) obj;
+        final Rocher other = (Rocher) obj;
 
         return true;
     }
-    
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        return hash;
+    }
 }

@@ -7,8 +7,12 @@ package Metier.Objet;
 
 /**
  *
- * @author telli
+ * @author Kevin Lamblin
  */
 public abstract class Arbre extends ObjetNaturel{
+    
+    public Arbre() {
+        super();
+    }
     
 }
