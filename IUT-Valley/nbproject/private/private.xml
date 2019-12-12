@@ -7,8 +7,9 @@
             <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Personnage/Inventaire.java</file>
             <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/ObjetPlace.java</file>
             <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/Rocher.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/Arbre.java</file>
-            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/Sapin.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/Arbres/Sapin.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/Arbres/Arbre.java</file>
+            <file>file:/D:/GitHub/Stard_IUT/IUT-Valley/src/Metier/Objet/HerbeSauvage.java</file>
         </group>
     </open-files>
 </project-private>
