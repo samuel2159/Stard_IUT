@@ -17,7 +17,7 @@ public class Carte {
     private static Carte instance = null; //Unique instance de la carte
 
     private Carte(){
-        Niveaux lvlFerme = new Niveaux("Ferme","Ferme.txt", 25, 25);
+        Niveaux lvlFerme = new Niveaux("Ferme","Ferme.txt", 20, 45);
         lNiveaux.put("Ferme", lvlFerme);
         niveauActuel = lNiveaux.get("Ferme");
     }

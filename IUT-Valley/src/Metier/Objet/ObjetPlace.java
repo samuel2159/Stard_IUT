@@ -7,14 +7,10 @@ package Metier.Objet;
 
 /**
  *
- * @author Kevin Lamblin
+ * @author Kevin
  */
 public abstract class ObjetPlace {
 
     public abstract void Interagir();
     public abstract String getType();
-    
-    public ObjetPlace(){
-    }
-
 }

@@ -13,19 +13,25 @@ import java.util.ArrayList;
  * @author telli
  */
 public class Observable {
-    private ArrayList<Observer> observers = new ArrayList<Observer>();
+    
+    private ArrayList<Observer> inscrits;
+    
+    public void update(String message){
+        for(Observer o : inscrits){
+            o.update(message);
+        }
+    }
     
     public void register(Observer o){
-        observers.add(o);
+        inscrits.add(o);
     }
     
     public void unregister(Observer o){
-        observers.remove(o);
+        inscrits.remove(o);
     }
     
-    public void Notify(){
-        for(Observer o : observers)
-            o.update(o);
+    public void notifyObserver(){
+        
     }
     
 }

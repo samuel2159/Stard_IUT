@@ -28,7 +28,7 @@ public class HandlerPerso implements EventHandler<MouseEvent>{
     
     private void avertirControleur() {
         for(Controleur c : this.listeControleur) {
-            c.Update();
+            c.update("");
         }
     }
     public void ajouterControleur(Controleur c){

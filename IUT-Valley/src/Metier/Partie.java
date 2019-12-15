@@ -25,6 +25,7 @@ public class Partie {
     /**
      * @author Kevin Lamblin
      * Crée une partie avec une carte et un joueur
+     * @throws java.io.FileNotFoundException
      */
     public Partie(){
         this.carte = getCarte();
@@ -58,4 +59,5 @@ public class Partie {
     public Personnage getJoueur(){
         return player;
     }
+
 }

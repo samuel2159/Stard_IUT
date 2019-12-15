@@ -5,6 +5,7 @@
  */
 package IHM.Vue.Cases;
 
+import MVC.Vue.Arbres.VueObjetPlace;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.CaseEau;
 import Metier.Carte.Direction;
@@ -15,15 +16,15 @@ import javafx.scene.image.ImageView;
  *
  * @author telli
  */
-public class VueCaseEau extends CaseVue{
+public class VueCaseEau extends VueObjetPlace{
     
     public VueCaseEau(CaseEau c,ImageView sprite){
         super();
-        sprite.setViewport(new Rectangle2D(49,1249,16,16)); 
+        sprite.setViewport(new Rectangle2D(0,0,16,16)); 
         /* if(Carte.getCarte().getCaseProche(c, Direction.Gauche).getCaseType().equals("herbe"))
             sprite.setViewport(new Rectangle2D(0,144,14,14)); ;*/
         
-        
+        /*
         //terre angle haut droit
         if((c.getVoisine(Direction.Gauche) != null) && (c.getVoisine(Direction.Gauche).getCaseType().equals("eau")) && (c.getVoisine(Direction.Haut) != null) && (c.getVoisine(Direction.Haut).getCaseType().equals("eau")) && (c.getVoisine(Direction.HautGauche) != null) && (c.getVoisine(Direction.HautGauche).getCaseType().equals("terre"))){
              sprite.setViewport(new Rectangle2D(81,1217,16,16)); 
@@ -55,7 +56,12 @@ public class VueCaseEau extends CaseVue{
         // terre droite, angle bas droit, bas
         else if((c.getVoisine(Direction.Droit) != null) && (c.getVoisine(Direction.Droit).getCaseType().equals("terre")) && (c.getVoisine(Direction.Bas) != null) && (c.getVoisine(Direction.Bas).getCaseType().equals("terre")) && (c.getVoisine(Direction.BasDroit) != null) && (c.getVoisine(Direction.BasDroit).getCaseType().equals("terre"))){
              sprite.setViewport(new Rectangle2D(64,1231,16,16));  
-        }
+        }*/
     }       
+
+    @Override
+    public void Update() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

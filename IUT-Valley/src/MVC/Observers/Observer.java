@@ -11,6 +11,6 @@ package MVC.Observers;
  */
 public interface Observer {
 
-    public void update(Observer o);
+    public void update(String message);
     
 }

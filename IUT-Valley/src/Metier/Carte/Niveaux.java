@@ -7,6 +7,9 @@ package Metier.Carte;
 
 import Metier.Carte.Cases.Case;
 import static Metier.Carte.Cases.FabriqueCase.CreationCase;
+import Metier.Objet.HerbeSauvage;
+import Metier.Objet.Rocher;
+import Metier.Objet.Sapin;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -39,7 +42,15 @@ public class Niveaux {
                                     
                                     if((lettre = file.read()) != -1){
                                         coord = new Coordonnee(j, i);
-                                        c = CreationCase(coord, (char)lettre);                                        
+                                        c = CreationCase(coord, (char)lettre); 
+                                        if(i == 15 && j == 12)
+                                            c.setObjetCorrespondant(new Sapin());
+                                        if(i == 12 && j == 10)
+                                            c.setObjetCorrespondant(new Sapin());
+                                        if(i == 10 && j == 10)
+                                            c.setObjetCorrespondant(new Rocher());
+                                        if(i == 10 && j == 12)
+                                            c.setObjetCorrespondant(new HerbeSauvage());                                        
                                     }
 
                                     if(c != null){

@@ -7,14 +7,10 @@ package Metier.Objet;
 
 /**
  *
- * @author Kevin
+ * @author telli
  */
 public class HerbeSauvage extends ObjetNaturel{
 
-    public HerbeSauvage() {
-        super();
-    }
-    
     @Override
     public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -22,7 +18,7 @@ public class HerbeSauvage extends ObjetNaturel{
 
     @Override
     public String getType() {
-        return "HerbeSauvage";
+       return "herbe";
     }
     
 }

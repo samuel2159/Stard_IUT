@@ -6,6 +6,9 @@
 package MVC.Controleurs;
 
 import MVC.Observables.Observable;
+import MVC.Observers.Observer;
+import MVC.Vue.Vue;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,5 +16,5 @@ import MVC.Observables.Observable;
  */
 public abstract class Controleur extends Observable{
     
-    public abstract void Update();
+
 }

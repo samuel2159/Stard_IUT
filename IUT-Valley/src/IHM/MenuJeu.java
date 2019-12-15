@@ -5,22 +5,42 @@
  */
 package IHM;
 
-import IHM.Vue.Cases.CaseVue;
-import IHM.Vue.Cases.VueCaseEau;
-import IHM.Vue.Cases.VueCaseHerbe;
-import IHM.Vue.Cases.VueCaseTerre;
-import IHM.Vue.VuePersonnage;
+import MVC.Controleurs.ControleurPerso;
+import MVC.Observers.Observer;
+import MVC.Vue.Arbres.VueObjetPlace;
+import MVC.Vue.Arbres.VueSapin;
+import MVC.Vue.Cases.CaseVue;
+import MVC.Vue.Cases.VueCaseEau;
+import MVC.Vue.Cases.VueCaseHerbe;
+import MVC.Vue.Cases.VueCaseTerre;
+import MVC.Vue.VueObjetPlace.VueHerbe;
+import MVC.Vue.VueInventaire;
+import MVC.Vue.VueObjetPlace.VueRocher;
+import MVC.Vue.VuePerso;
+import MVC.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.CaseEau;
 import Metier.Carte.Cases.CaseHerbe;
 import Metier.Carte.Cases.CaseTerre;
+import Metier.Carte.Coordonnee;
+import Metier.Objet.ObjetPlace;
+import Metier.Objet.Sapin;
+import Metier.Personnage.Joueur;
+import Metier.Personnage.Personnage;
+import java.util.ArrayList;
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -28,14 +48,16 @@ import javafx.stage.Stage;
  * @author Astérisk
  * @modify Vincent Tantet
  */
-public class MenuJeu extends Application{
+public class MenuJeu extends Application implements Observer{
     
     Carte carte = Carte.getCarte();
+    private Group root;
+    private ImageView spriteJoueur = new ImageView(new Image("Ressources/Personnages/Sebastian.png"));
     
     public void start(Stage primaryStage) {
         
         //Creation de la scene
-        Group root = new Group();
+        root = new Group();
         Scene scene = new Scene(root, 1100, 662);        
         primaryStage.setTitle("Stardew Valley");
         primaryStage.setScene(scene);    
@@ -43,7 +65,7 @@ public class MenuJeu extends Application{
         //Affichage de la carte
        
         //on ajoute toutes les cases de la carte dans le cadreillage
-        Image sprites = new Image("Ressources/Map/spring.png");
+        Image sprites = new Image("Ressources/Map/spring.png"); 
                 
         for(Case c : carte.getNiveauActuel().getCases().values()){             
 
@@ -63,41 +85,46 @@ public class MenuJeu extends Application{
             
             if(c.getCaseType().equals("herbe"))
                 casevue = new VueCaseHerbe((CaseHerbe) c,sprite);
-                               
+            sprite.setSmooth(true);
             //-------------------------------------------------------
             
             //------------------Binding des sprites--------------
-            sprite.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
-            sprite.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
+            sprite.fitHeightProperty().bind(scene.heightProperty().multiply(0.05));
+            sprite.fitWidthProperty().bind(scene.heightProperty().multiply(0.05));
             
             sprite.layoutXProperty().bind(sprite.fitWidthProperty().multiply(c.getCoordonnee().getX()));
             sprite.layoutYProperty().bind(sprite.fitHeightProperty().multiply(c.getCoordonnee().getY()));
             root.getChildren().add(sprite);
+        }    
             
-            
-            //-------------------------------------------------------
-         
-            //--------------------Ajout des objetPlace--------------------------
-            if(c.getObjetCorrespondant() != null){
-                ImageView spriteObjet = new ImageView(sprites);
-                
-                spriteObjet.fitHeightProperty().bind(scene.heightProperty().multiply(0.08));
-                spriteObjet.fitWidthProperty().bind(scene.heightProperty().multiply(0.08));
+            //-------------------------------------------------------         
+                          
+                //--------------------Ajout des objetPlace--------------------------
+            for(Case c : carte.getNiveauActuel().getCases().values()){ 
+                if(c.getObjetCorrespondant() != null){
+                    VueObjetPlace objetVue = null;
+                    //ImageView spriteObjet = new ImageView(sprites);                  
 
-                spriteObjet.layoutXProperty().bind(spriteObjet.fitWidthProperty().multiply(c.getCoordonnee().getX()));
-                spriteObjet.layoutYProperty().bind(spriteObjet.fitHeightProperty().multiply(c.getCoordonnee().getY()));
-                           
-              
-                //AutoTile du sapin                
-                if(c.getObjetCorrespondant().getType().equals("sapin")){
-                    //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant() != null) && (c.getCase(Cote.Droit) != null) && !(c.getCase(Cote.Bas) != null)){
-                        //if(!(c.getCase(Cote.BasDroit).getObjetCorrespondant().getType().equals("sapin")))
-                            spriteObjet.setViewport(new Rectangle2D(0,0,16,16));
-                   // }
-                }                
-                       
-                root.getChildren().add(spriteObjet);
-            }
+                   // spriteObjet.fitWidthProperty().bind(scene.widthProperty().multiply(0.05));
+                   // spriteObjet.fitHeightProperty().bind(scene.widthProperty().multiply(0.05));                                   
+                         
+                    
+                    if(c.getObjetCorrespondant().getType().equals("sapin"))
+                       objetVue = new VueSapin(scene,sprites);
+                    
+                    if(c.getObjetCorrespondant().getType().equals("herbe"))
+                       objetVue = new VueHerbe(scene,sprites);
+                    
+                    if(c.getObjetCorrespondant().getType().equals("rocher"))
+                       objetVue = new VueRocher(scene,sprites);       
+                    
+                    objetVue.layoutXProperty().bind(scene.heightProperty().multiply(0.05).multiply(c.getCoordonnee().getX()));
+                    objetVue.layoutYProperty().bind(scene.heightProperty().multiply(0.05).multiply(c.getCoordonnee().getY()));
+                    
+
+                    root.getChildren().add(objetVue);
+                }
+            
             
 
         }
@@ -109,11 +136,29 @@ public class MenuJeu extends Application{
         perso.getPerso().fitWidthProperty().bind(scene.heightProperty().multiply(0.16));
         root.getChildren().add(perso);
         
-       /* ImageView spriteJoueur = new ImageView(new Image("Ressources/Personnages/Sebastian.png"));
-        VuePerso joueur = new VuePerso(new Joueur(new Coordonnee(5,5)),spriteJoueur);        
-        root.getChildren().add(spriteJoueur);*/
+        //ImageView spriteInventaire = new ImageView(new Image("Ressources/Personnages/inventaire.png"));
+        //test inventaire
+       // VueInventaire i = new VueInventaire(spriteInventaire,scene);
+        //root.getChildren().add(spriteInventaire);
         
+        /*
+        Joueur j = new Joueur(new Coordonnee(5,5));
+        ControleurPerso cp = new ControleurPerso(j);
+        //cp.register(this);
+        VuePerso joueur = new VuePerso(j,scene,spriteJoueur,cp);    
+        
+        root.getChildren().add(spriteJoueur);
+*/
         primaryStage.show();
+       // joueur.requestFocus();
         perso.requestFocus();
     }
+    
+    public void update(String message){
+        if(message.equals("joueur")){/*
+            root.getChildren().remove(spriteJoueur); 
+            root.getChildren().add(spriteJoueur);*/
+        }
+    }
+    
 }

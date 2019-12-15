@@ -7,13 +7,9 @@ package Metier.Objet;
 
 /**
  *
- * @author Kevin Lamblin
+ * @author telli
  */
 public class Rocher extends ObjetNaturel{
-
-    public Rocher() {
-        super();
-    }
 
     @Override
     public void Interagir() {
@@ -22,27 +18,7 @@ public class Rocher extends ObjetNaturel{
 
     @Override
     public String getType() {
-        return "Rocher";
+        return "rocher";
     }
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Rocher other = (Rocher) obj;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        return hash;
-    }
+    
 }

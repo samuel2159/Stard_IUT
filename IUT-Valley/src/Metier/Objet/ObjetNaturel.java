@@ -5,12 +5,14 @@
  */
 package Metier.Objet;
 
+import Metier.Objet.ObjetPlace;
+
 /**
  *
- * @author Kevin Lamblin
+ * @author telli
  */
 public abstract class ObjetNaturel extends ObjetPlace{
-
-    public ObjetNaturel(){
-    }
+    
+   
+    
 }
