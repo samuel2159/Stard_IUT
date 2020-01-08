@@ -5,13 +5,10 @@
  */
 package IHM.Vue;
 
-import Metier.Carte.Coordonnee;
 import Metier.Personnage.Personnage;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
-import javafx.geometry.Rectangle2D;
-import javafx.scene.image.ImageView;
 import MVC.Observers.Observer;
 
 /**
@@ -82,8 +79,12 @@ public class VuePerso implements KeyListener,Observer{
         touches.remove((Integer)e.getKeyCode());        
     }
 
-    @Override
     public void update(Observer o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void update(String message) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

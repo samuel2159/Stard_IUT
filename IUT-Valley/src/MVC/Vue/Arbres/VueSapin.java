@@ -5,8 +5,6 @@
  */
 package MVC.Vue.Arbres;
 
-import Metier.Carte.Cases.CaseEau;
-import Metier.Objet.Sapin;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;

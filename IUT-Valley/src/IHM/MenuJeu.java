@@ -5,7 +5,6 @@
  */
 package IHM;
 
-import MVC.Controleurs.ControleurPerso;
 import MVC.Observers.Observer;
 import MVC.Vue.Arbres.VueObjetPlace;
 import MVC.Vue.Arbres.VueSapin;
@@ -14,33 +13,18 @@ import MVC.Vue.Cases.VueCaseEau;
 import MVC.Vue.Cases.VueCaseHerbe;
 import MVC.Vue.Cases.VueCaseTerre;
 import MVC.Vue.VueObjetPlace.VueHerbe;
-import MVC.Vue.VueInventaire;
 import MVC.Vue.VueObjetPlace.VueRocher;
-import MVC.Vue.VuePerso;
 import MVC.Vue.VuePersonnage;
 import Metier.Carte.Carte;
 import Metier.Carte.Cases.Case;
 import Metier.Carte.Cases.CaseEau;
 import Metier.Carte.Cases.CaseHerbe;
 import Metier.Carte.Cases.CaseTerre;
-import Metier.Carte.Coordonnee;
-import Metier.Objet.ObjetPlace;
-import Metier.Objet.Sapin;
-import Metier.Personnage.Joueur;
-import Metier.Personnage.Personnage;
-import java.util.ArrayList;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
