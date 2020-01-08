@@ -7,7 +7,7 @@ package Metier.Personnage.Item;
 
 /**
  *
- * @author Kevin
+ * @author Kevin Lamblin
  */
 public abstract class Item {
     
