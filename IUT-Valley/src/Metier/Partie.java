@@ -21,11 +21,11 @@ public class Partie {
     private Carte carte; //Récupère la carte du jeu
     private ArrayList<Personnage> personnages = new ArrayList(); //Listes des personnages
     private Joueur player; //Garde le joueur de la partie
+    private Partie partie = new Partie();
     
     /**
      * @author Kevin Lamblin
      * Crée une partie avec une carte et un joueur
-     * @throws java.io.FileNotFoundException
      */
     public Partie(){
         this.carte = getCarte();
@@ -56,8 +56,17 @@ public class Partie {
      * Renvoie le joueur de la partie
      * @return Personnage
      */
-    public Personnage getJoueur(){
+    public Joueur getJoueur(){
         return player;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Renvoie la partie de jeu
+     * @return Partie
+     */
+    public Partie getPartie(){
+        return partie;
     }
 
 }

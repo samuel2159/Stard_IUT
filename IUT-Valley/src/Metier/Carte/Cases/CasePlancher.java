@@ -9,33 +9,22 @@ import Metier.Carte.Coordonnee;
 
 /**
  *
- * @author Kevin Lamblin
+ * @author Kevin
  */
-public class CaseHerbe extends Case{
+public class CasePlancher extends Case{
 
-    /**
-     * @author Kevin Lamblin
-     * @param c Coordonnee
-     */
-    public CaseHerbe(Coordonnee c) {
+    public CasePlancher(Coordonnee c) {
         super(c);
     }
 
     @Override
-    /**
-     * @author Kevin Lamblin
-     */
     public void InteragirCase() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    /**
-     * @author Kevin Lamblin
-     * @param String
-     */
     public String getCaseType() {
-        return "herbe";
+        return "plancher";
     }
     
 }

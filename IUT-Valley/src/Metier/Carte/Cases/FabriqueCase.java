@@ -26,6 +26,9 @@ public class FabriqueCase {
             case 'E' : 
                 c = new CaseEau(coord);
                 break;
+            case 'P' :
+                c = new CasePlancher(coord);
+                break;
             default :
                 c = null;
                 break;
