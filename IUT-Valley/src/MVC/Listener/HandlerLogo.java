@@ -6,7 +6,7 @@
 package MVC.Listener;
 
 import IHM.MenuPrincipal;
-import MVC.Controleur;
+import MVC.Controleurs.Controleur;
 import java.util.ArrayList;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
@@ -27,7 +27,7 @@ public class HandlerLogo implements EventHandler<MouseEvent>{
     
     private void avertirControleur() {
         for(Controleur c : this.listeControleur) {
-            c.Update();
+            c.update("");
         }
     }
     public void ajouterControleur(Controleur c){

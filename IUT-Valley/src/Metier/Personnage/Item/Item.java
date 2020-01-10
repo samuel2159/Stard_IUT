@@ -11,4 +11,6 @@ package Metier.Personnage.Item;
  */
 public abstract class Item {
     
+    public abstract String getType();
+    
 }

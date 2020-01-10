@@ -3,9 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/IUT-Valley/src/Metier/Objet/Arbre.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/IUT-Valley/src/Metier/Carte/Carte.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/IUT-Valley/src/Metier/Objet/Sapin.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/MenuJeu.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Vue/VueItem.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Objet/Lit.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Personnage/Item/Panais.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Personnage/Inventaire.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Vue/VueInventaire.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/IHM/MenuPerso.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Personnage/Item/Mais.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Vue/VueObjetPlace/VueLit.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Personnage/Item/Item.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/MVC/Vue/VuePersonnage.java</file>
+            <file>file:/C:/Users/telli/Desktop/Nouveau%20dossier/IUT-Valley/src/Metier/Personnage/Joueur.java</file>
         </group>
     </open-files>
 </project-private>

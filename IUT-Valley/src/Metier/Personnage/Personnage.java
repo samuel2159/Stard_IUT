@@ -42,4 +42,8 @@ public abstract class Personnage {
     public Coordonnee getPosition(){
         return position;
     }
+    
+    public Inventaire getInventaire(){
+        return inventaire;
+    }
 }
