@@ -3,23 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Objet.Arbres;
 
 /**
- *
- * @author telli
+ * Sapin du jeu
+ * @author Kevin Lamblin
  */
 public class Sapin extends Arbre{
-   
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     */
     public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     * @return String
+     */
     public String getType() {
-        return "sapin";
+        return "Sapin";
     }
 
     @Override

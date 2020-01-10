@@ -6,20 +6,17 @@
 package Metier.Personnage.Item;
 
 /**
- *
- * @author telli
+ * Panais sous forme d'item
+ * @author Kevin Lamblin
  */
 public class Panais extends Item{
-
-    public Panais(){
-        
+    
+    /**
+     * @author Kevin Lamblin
+     * Créer un panais
+     */
+    public Panais() {
+        super("panais");
     }
-    
-    @Override
-    public String getType() {
-        return "Panais";
-    }
-    
-    
     
 }

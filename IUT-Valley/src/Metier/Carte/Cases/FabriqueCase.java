@@ -8,8 +8,8 @@ package Metier.Carte.Cases;
 import Metier.Carte.Coordonnee;
 
 /**
- *
- * @author Kevin
+ * Fabrique les cases
+ * @author Kevin Lamblin
  */
 public class FabriqueCase {
     
@@ -25,6 +25,9 @@ public class FabriqueCase {
                 break;
             case 'E' : 
                 c = new CaseEau(coord);
+                break;
+            case 'P' :
+                c = new CasePlancher(coord);
                 break;
             default :
                 c = null;

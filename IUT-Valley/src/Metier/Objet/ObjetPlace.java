@@ -6,8 +6,8 @@
 package Metier.Objet;
 
 /**
- *
- * @author Kevin
+ * Objet placé sur la carte
+ * @author Kevin Lamblin
  */
 public abstract class ObjetPlace {
 

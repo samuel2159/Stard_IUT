@@ -7,42 +7,46 @@ package Metier.Personnage;
 
 import Metier.Personnage.Item.Item;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
- *
- * @author Kevin
+ * Inventaire
+ * @author Kevin Lamblin
  */
 public class Inventaire {
     
-    private ArrayList<Item> favoris;//Liste des objets de la barre de raccourcis
-    private Item ObjetCourant;//Objet courant, dans la liste des favoris
-    private ArrayList<Item> items;//Liste des objets dans l'inventaire(sur 36 emplacements)
+    private Item ObjetCourant;//Objet courant
+    private ArrayList<Stack> items;//Liste des objets dans l'inventaire(sur 36 emplacements)
     
     /**
+     * Constructeur d'inventaire
      * @author Kevin Lamblin
      */
     public Inventaire() {
-        favoris = new ArrayList<Item>();
-        items = new ArrayList<Item>();        
+        items = new ArrayList<>();        
     }
-    
+
     /**
      * @author Thiburce Tommy
-     * @return HashMap
+     * @return ArrayList
      */
-    public ArrayList<Item> getItems(){  
+    public ArrayList<Stack> getItem(){  
         return items;
     }
     
     /**
      * @author Thiburce Tommy && Kevin Lamblin
      * ajoute un item a l'inventaire
-     * @param i Integer
      * @param item Item
      * @throws Exception
      */
-    public void ajouter(Integer i, Item item) throws Exception{
+    public void ajouter(Item item) throws Exception{
+        
+        //Si l'item est déjà dans l'inventaire
+        for(Stack s : items){
+            if(s.getItem().getType().equals(item.getType())){
+                s.ajoutQuantite(s.getQuantite()+1);
+            }
+        }
         
         //Si l'inventaire est plein on renvoie une exception
         if(items.size() >= 36){
@@ -50,27 +54,24 @@ public class Inventaire {
         }
         //Sinon on ajoute l'Item
         else{
-            items.add(item);
+            Stack stack = new Stack(item);
+            items.add(stack);
         }
     }
-
-    public void supprimer(Item i) {
-        items.remove(i);
+    
+    /**
+     * @author Thiburce Tommy && Kevin Lamblin
+     * Supprime un stack de l'inventaire
+     * @param s Stack
+     */
+    public void supprimer(Stack s){
+        items.remove(s);
     }
     
     /**
      * @author Kevin Lamblin
-     * @param i Integer
-     * @param item Item
      */
-    /*
-    public void deplacer(Integer i, Item item){
-        if(items.get(i).equals(null)){
-            
-        }
-        else{
-            
-        }
+    public void deplacer(){
+        
     }
-    */
 }

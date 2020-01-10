@@ -7,7 +7,7 @@ package Metier.Carte;
 
 /**
  *
- * @author Kevin
+ * @author Kevin Lamblin
  */
 public enum Direction {
     HautGauche,Haut,HautDroit,Gauche,Droit,BasGauche,Bas,BasDroit

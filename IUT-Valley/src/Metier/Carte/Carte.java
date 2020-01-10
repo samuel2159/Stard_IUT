@@ -18,6 +18,7 @@ public class Carte {
 
     private Carte(){
         Niveaux lvlFerme = new Niveaux("Ferme","Ferme.txt", 20, 45);
+        Niveaux lvlMaison = new Niveaux("Maison", "Maison.txt", 10, 10);
         lNiveaux.put("Ferme", lvlFerme);
         niveauActuel = lNiveaux.get("Ferme");
     }

@@ -8,7 +8,7 @@ package Metier.Carte.Cases;
 import Metier.Carte.Coordonnee;
 
 /**
- *
+ * Case de terre
  * @author Kevin Lamblin
  */
 public class CaseTerre extends Case{

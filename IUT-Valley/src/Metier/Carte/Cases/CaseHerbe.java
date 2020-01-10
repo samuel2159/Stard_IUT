@@ -5,11 +5,10 @@
  */
 package Metier.Carte.Cases;
 
-import Metier.Carte.Carte;
 import Metier.Carte.Coordonnee;
 
 /**
- *
+ * Case herbe
  * @author Kevin Lamblin
  */
 public class CaseHerbe extends Case{

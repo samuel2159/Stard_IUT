@@ -6,20 +6,17 @@
 package Metier.Personnage.Item;
 
 /**
- *
- * @author telli
+ * Mais sous forme item
+ * @author Kevin Lamblin
  */
 public class Mais extends Item{
-
-    public Mais(){
-        
+    
+    /**
+     * @author Kevin Lamblin
+     * Créer un mais
+     */
+    public Mais() {
+        super("mais");
     }
-    
-    @Override
-    public String getType() {
-        return "Mais";
-    }
-    
-    
     
 }

@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Carte.Cases;
+package Metier.Objet.Arbres;
+
+import Metier.Objet.ObjetNaturel;
 
 /**
- *
- * @author telli
+ * Arbre du jeu
+ * @author Kevin Lamblin
  */
-public enum Cote {
-    HautGauche,Haut,HautDroit,Gauche,Droit,BasGauche,Bas,BasDroit
+
+public abstract class Arbre extends ObjetNaturel{
+
 }

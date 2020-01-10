@@ -5,18 +5,28 @@
  */
 package Metier.Objet;
 
+import Metier.Carte.Carte;
+
 /**
  *
- * @author Kevin Lamblin
+ * @author Kevin Lamblin 
  */
-public class Lit extends ObjetPlace{
+public class Porte extends ObjetPlace{
 
     @Override
     /**
      * @author Kevin Lamblin
      */
     public void Interagir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals("Ferme"))
+        {
+            Carte.getCarte().setNiveauActuel("Maison");
+        }
+        else if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals("Maison"))
+        {
+            Carte.getCarte().setNiveauActuel("Maison");
+        }
+        
     }
 
     @Override
@@ -25,7 +35,7 @@ public class Lit extends ObjetPlace{
      * @return String
      */
     public String getType() {
-        return "lit";
+        return "porte";
     }
     
 }

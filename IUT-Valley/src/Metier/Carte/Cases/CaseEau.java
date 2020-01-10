@@ -7,7 +7,7 @@ package Metier.Carte.Cases;
 import Metier.Carte.Coordonnee;
 
 /**
- *
+ * Case d'eau
  * @author Tommy Saucey
  */
 public class CaseEau extends Case{

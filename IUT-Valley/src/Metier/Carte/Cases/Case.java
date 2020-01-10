@@ -14,7 +14,7 @@ import java.util.Objects;
 
 
 /**
- *
+ * Case général
  * @author Kevin Lamblin 
  */
 public abstract class Case {
@@ -31,7 +31,7 @@ public abstract class Case {
     }
     
     /**
-     * @author Kevin LAmblin
+     * @author Kevin Lamblin
      * Appel la fonction interagir de l'objet placé sur la case
      */
     public void InteragirObjet(){
