@@ -21,15 +21,17 @@ public class Partie {
     private Carte carte; //Récupère la carte du jeu
     private ArrayList<Personnage> personnages = new ArrayList(); //Listes des personnages
     private Joueur player; //Garde le joueur de la partie
+    private static Partie partie; //Permet de stocker la partie.
     
     /**
      * @author Kevin Lamblin
      * Crée une partie avec une carte et un joueur
      */
-    public Partie(){
+    private Partie(){
         this.carte = getCarte();
         player = new Joueur(new Coordonnee(10,10));
         addPersonnage(player);
+        partie = this;
     }   
     
     /**
@@ -57,5 +59,16 @@ public class Partie {
      */
     public Joueur getJoueur(){
         return player;
+    }
+    /**
+     * Renvoie la partie.
+     * @author Vincent Tantet
+     * @return Partie
+     */
+    public static Partie getPartie(){
+        if (partie == null){
+            Partie p = new Partie();
+        }
+        return partie;
     }
 }
