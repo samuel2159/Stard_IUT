@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Personnage.Item;
+package Metier.Personnage.Item.Plantes;
+
+import Metier.Personnage.Item.Item;
 
 /**
  * Panais sous forme d'item
  * @author Kevin Lamblin
  */
-public class Panais extends Item{
+public class Panais extends Plante{
     
     /**
      * @author Kevin Lamblin

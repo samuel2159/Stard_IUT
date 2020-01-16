@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Personnage.Item.Outils;
+package Metier.Personnage.Item.Plantes;
 
 import Metier.Personnage.Item.Item;
 
@@ -11,13 +11,15 @@ import Metier.Personnage.Item.Item;
  *
  * @author Vincent Tantet
  */
-public abstract class Outil extends Item{
-    public Outil(String type) {
+public class Plante extends Item{
+    
+    public Plante(String type){
         super(type);
     }
     
     @Override
-    public String getFamille(){
-        return "outils";
+    public String getFamille() {
+        return "plantes";
     }
+    
 }
