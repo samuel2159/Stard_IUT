@@ -15,14 +15,14 @@ import java.util.HashMap;
 public class Inventaire {
     
     private Item ObjetCourant;//Objet courant
-    private HashMap<Integer, Stack> items;//Liste des objets dans l'inventaire(sur 36 emplacements)
+    private HashMap<Integer, Stack> stacks;//Liste des stacks dans l'inventaire(sur 36 emplacements)
     
     /**
      * Constructeur d'inventaire
      * @author Kevin Lamblin
      */
     public Inventaire() {
-        items = new HashMap<>();        
+        stacks = new HashMap<>();        
     }
 
     /**
@@ -30,8 +30,8 @@ public class Inventaire {
      * Renvoie la liste des items de l'inventaire
      * @return HashMap
      */
-    public HashMap<Integer, Stack> getItem(){  
-        return items;
+    public HashMap<Integer, Stack> getStacks(){  
+        return stacks;
     }
     
     /**
@@ -44,17 +44,17 @@ public class Inventaire {
         
         //Si l'item est déjà dans l'inventaire
         for(int i = 1; i<=36; i++){
-            if((items.get(i) != null) && (items.get(i).getItem().getType().equals(item.getType()))){
-                items.get(i).ajoutQuantite(1);
+            if((stacks.get(i) != null) && (stacks.get(i).getItem().getType().equals(item.getType()))){
+                stacks.get(i).ajoutQuantite(1);
             }
             //Si l'inventaire est plein on renvoie une exception
-            else if(items.size() >= 36){
+            else if(stacks.size() >= 36){
                 throw new Exception("Inventory full");
             }
             //Sinon on ajoute l'Item
             else{
                 Stack stack = new Stack(item);
-                items.put(i, stack);
+                stacks.put(i, stack);
             }
         }  
     }
@@ -72,8 +72,8 @@ public class Inventaire {
         }
         else if(s.getQuantite() == quantite){
             for(int i = 1; i<= 36; i++){
-                if(items.get(1).equals(s)){
-                    items.remove(i);
+                if(stacks.get(1).equals(s)){
+                    stacks.remove(i);
                 }
             }
         }
@@ -94,19 +94,19 @@ public class Inventaire {
         Stack newStack;
         
         for(int j = 1; j <= 36; j++){
-            if(items.get(j).equals(s)){
+            if(stacks.get(j).equals(s)){
                 oldPos = j;
             }
         }
         
-        if(items.get(i).equals(null)){
-            items.put(i, s);
-            items.remove(oldPos);
+        if(stacks.get(i).equals(null)){
+            stacks.put(i, s);
+            stacks.remove(oldPos);
         }
         else{
-            newStack = items.get(i);
-            items.replace(i, s);
-            items.replace(oldPos, newStack);
+            newStack = stacks.get(i);
+            stacks.replace(i, s);
+            stacks.replace(oldPos, newStack);
         }
     }
 }
