@@ -5,8 +5,8 @@
  */
 package TestPersonnage.TestItem;
 
-import Metier.Personnage.Item.Mais;
-import Metier.Personnage.Item.Panais;
+import Metier.Personnage.Item.Plantes.Mais;
+import Metier.Personnage.Item.Plantes.Panais;
 import Metier.Personnage.Stack;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

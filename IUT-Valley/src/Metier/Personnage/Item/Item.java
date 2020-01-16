@@ -30,4 +30,6 @@ public abstract class Item {
     public String getType(){
         return type;
     }
+    
+    abstract public String getFamille(); 
 }

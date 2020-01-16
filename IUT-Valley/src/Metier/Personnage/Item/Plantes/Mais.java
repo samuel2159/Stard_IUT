@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Personnage.Item;
+package Metier.Personnage.Item.Plantes;
+
+import Metier.Personnage.Item.Item;
 
 /**
  * Mais sous forme item
  * @author Kevin Lamblin
  */
-public class Mais extends Item{
+public class Mais extends Plante{
     
     /**
      * @author Kevin Lamblin
