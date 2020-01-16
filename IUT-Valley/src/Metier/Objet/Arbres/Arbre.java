@@ -14,6 +14,12 @@ import Metier.Objet.ObjetNaturel;
 
 public abstract class Arbre extends ObjetNaturel{
     
+    /**
+     * @author Kevin Lamblin
+     * Donne la famille arbre
+     * @return String
+     */
+    @Override
     public String getFamille(){
         return "arbre";
     }

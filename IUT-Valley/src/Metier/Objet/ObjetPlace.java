@@ -13,4 +13,13 @@ public abstract class ObjetPlace {
 
     public abstract void Interagir();
     public abstract String getType();
+    
+    /**
+     * @author Kevin Lamblin
+     * Donne la famille objet
+     * @return String
+     */
+    public String getFamille(){
+        return "objet";
+    }
 }
