@@ -44,7 +44,7 @@ public class Inventaire {
         
         //Si l'item est déjà dans l'inventaire
         for(int i = 1; i<=36; i++){
-            if(items.get(i).getItem().getType().equals(item.getType())){
+            if((items.get(i) != null) && (items.get(i).getItem().getType().equals(item.getType()))){
                 items.get(i).ajoutQuantite(1);
             }
             //Si l'inventaire est plein on renvoie une exception

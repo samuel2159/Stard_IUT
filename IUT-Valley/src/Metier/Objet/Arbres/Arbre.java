@@ -13,5 +13,8 @@ import Metier.Objet.ObjetNaturel;
  */
 
 public abstract class Arbre extends ObjetNaturel{
-
+    
+    public String getFamille(){
+        return "arbre";
+    }
 }
