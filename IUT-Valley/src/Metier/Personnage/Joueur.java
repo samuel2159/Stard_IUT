@@ -34,6 +34,7 @@ public class Joueur extends Personnage{
     public int getEnergie(){
         return energie;
     }
+    
     /**
      * @author Kevin Lamblin
      * Définit l'énergie du joueur

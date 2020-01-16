@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Personnage.Objet;
+package Metier.Objet.Arbres;
+
+import Metier.Objet.ObjetNaturel;
 
 /**
- *
- * @author Kevin
+ * Arbre du jeu
+ * @author Kevin Lamblin
  */
-public abstract class Objet {
-    
+
+public abstract class Arbre extends ObjetNaturel{
+
 }

@@ -8,7 +8,7 @@ package Metier.Personnage;
 import Metier.Carte.Coordonnee;
 
 /**
- *
+ * Personnage du jeu
  * @author Kevin Lamblin 
  */
 public abstract class Personnage {
@@ -41,5 +41,14 @@ public abstract class Personnage {
      */
     public Coordonnee getPosition(){
         return position;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Renvoie l'inventaire
+     * @return Inventaire
+     */
+    public Inventaire getInventaire(){
+        return inventaire;
     }
 }

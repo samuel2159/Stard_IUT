@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MVC;
+package MVC.Controleurs;
+
+import MVC.Observables.Observable;
+import MVC.Observers.Observer;
+import MVC.Vue.Vue;
+import java.util.ArrayList;
 
 /**
  *
  * @author Astérisk
  */
-public abstract class Controleur {
+public abstract class Controleur extends Observable{
     
-    public abstract void Update();
+
 }

@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package IHM.Vue.Cases;
+
+import Metier.Carte.Cases.CaseTerre;
+import javafx.scene.image.ImageView;
 
 /**
- * Objet placé sur la carte
- * @author Kevin Lamblin
+ *
+ * @author telli
  */
-public abstract class ObjetPlace {
+public abstract class CaseVue {
 
-    public abstract void Interagir();
-    public abstract String getType();
+    public CaseVue(){
+        
+    }
+    
 }

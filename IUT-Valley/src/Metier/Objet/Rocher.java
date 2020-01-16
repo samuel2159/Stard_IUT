@@ -7,18 +7,25 @@ package Metier.Objet;
 
 /**
  *
- * @author telli
+ * @author Lamblin Kévin
  */
-public class Sapin extends Arbre{
+public class Rocher extends ObjetNaturel{
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     */
     public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     * @return String
+     */
     public String getType() {
-        return "sapin";
+        return "rocher";
     }
     
 }

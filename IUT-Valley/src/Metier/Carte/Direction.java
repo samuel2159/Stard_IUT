@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Carte;
 
 /**
  *
- * @author telli
+ * @author Kevin Lamblin
  */
-public abstract class Arbre extends ObjetNaturel{
-    
+public enum Direction {
+    HautGauche,Haut,HautDroit,Gauche,Droit,BasGauche,Bas,BasDroit
 }

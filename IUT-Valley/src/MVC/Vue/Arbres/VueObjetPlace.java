@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package MVC.Vue.Arbres;
+
+import MVC.Vue.Vue;
 
 /**
- * Enumération des différents états de Terre
- * @author Kevin
+ *
+ * @author telli
  */
-public enum EtatTerre {
-    beche,
-    terre
+public abstract class VueObjetPlace extends Vue{
+    
 }

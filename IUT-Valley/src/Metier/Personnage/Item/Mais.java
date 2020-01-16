@@ -3,14 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Personnage.Item;
 
 /**
- * Objet placé sur la carte
+ * Mais sous forme item
  * @author Kevin Lamblin
  */
-public abstract class ObjetPlace {
-
-    public abstract void Interagir();
-    public abstract String getType();
+public class Mais extends Item{
+    
+    /**
+     * @author Kevin Lamblin
+     * Créer un mais
+     */
+    public Mais() {
+        super("mais");
+    }
+    
 }

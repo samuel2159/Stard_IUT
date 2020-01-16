@@ -3,12 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package Metier.Personnage.Item;
 
 /**
- * Objet naturel sur la carte
+ * Panais sous forme d'item
  * @author Kevin Lamblin
  */
-public abstract class ObjetNaturel extends ObjetPlace{
+public class Panais extends Item{
+    
+    /**
+     * @author Kevin Lamblin
+     * Créer un panais
+     */
+    public Panais() {
+        super("panais");
+    }
     
 }

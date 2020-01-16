@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package MVC.Vue;
+
+import javafx.scene.Parent;
 
 /**
- * Objet placé sur la carte
- * @author Kevin Lamblin
+ *
+ * @author telli
  */
-public abstract class ObjetPlace {
+public abstract class Vue extends Parent{
 
-    public abstract void Interagir();
-    public abstract String getType();
+    public abstract void Update();
+    
 }

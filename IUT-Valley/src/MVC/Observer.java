@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Metier.Objet;
+package MVC;
 
 /**
- * Objet placé sur la carte
- * @author Kevin Lamblin
+ *
+ * @author telli
  */
-public abstract class ObjetPlace {
-
-    public abstract void Interagir();
-    public abstract String getType();
+public interface Observer {
+    public void update();
 }

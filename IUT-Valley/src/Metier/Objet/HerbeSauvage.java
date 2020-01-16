@@ -3,16 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MVC;
+package Metier.Objet;
 
 /**
- *
- * @author ea058452
+ * Herbe sauvage du jeu
+ * @author Kevin Lamblin
  */
-public class ControleurPerso extends Controleur {
+public class HerbeSauvage extends ObjetNaturel{
 
     @Override
-    public void Update() {
+    /**
+     * @author Kevin Lamblin
+     */
+    public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    /**
+     * @author Kevin Lamblin
+     * @return String
+     */
+    public String getType() {
+       return "herbe";
+    }
+    
 }

@@ -5,36 +5,27 @@
  */
 package Metier.Objet;
 
-import Metier.Objet.ObjetNaturel;
-import Metier.Objet.ObjetPlace;
-
 /**
  *
- * @author telli
+ * @author Kevin Lamblin
  */
-public class Terre extends ObjetNaturel {
-    
-    private EtatTerre etat; //Etat de la terre (de base ou bêchée)
-
-    public Terre() {
-    }
+public class Lit extends ObjetPlace{
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     */
     public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public String getType() {
-        return "terre";
-    }
-    
     /**
      * @author Kevin Lamblin
-     * @return EtatTerre
+     * @return String
      */
-    public EtatTerre getEtat(){
-        return etat;
-    }    
+    public String getType() {
+        return "lit";
+    }
     
 }

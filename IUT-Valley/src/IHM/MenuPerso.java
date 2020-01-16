@@ -5,7 +5,6 @@
  */
 package IHM;
 
-import MVC.ControleurLogo;
 import MVC.Listener.HandlerPerso;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -14,7 +13,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -28,7 +26,7 @@ public class MenuPerso extends Application {
         //Creation de la scene
         Pane monLayout = new Pane();
         Scene scene = new Scene(monLayout, 1100, 662);        
-        primaryStage.setTitle("Menu Personnage");
+        primaryStage.setTitle("Stardew Valley");
         primaryStage.setScene(scene);          
         
 //IMAGES------------------------------------------------------------------------------------            
@@ -48,7 +46,7 @@ public class MenuPerso extends Application {
             //HANDLER
                 HandlerPerso handlerperso = new HandlerPerso(this);
                 perso.setOnMouseClicked(handlerperso);
-                handlerperso.ajouterControleur(new ControleurLogo());
+                
             //CENTRER LE LOGO
                 perso.translateXProperty().bind(scene.widthProperty().subtract(perso.fitWidthProperty()).divide(2));
                 monLayout.getChildren().add(perso);

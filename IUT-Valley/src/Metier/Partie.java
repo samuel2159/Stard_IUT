@@ -13,22 +13,25 @@ import Metier.Personnage.Personnage;
 import java.util.ArrayList;
 
 /**
- *
+ * Correspond à une partie du jeu
  * @author Kevin Lamblin
  */
 public class Partie {
     
-    private Carte carte = getCarte(); //Récupère la carte du jeu
+    private Carte carte; //Récupère la carte du jeu
     private ArrayList<Personnage> personnages = new ArrayList(); //Listes des personnages
     private Joueur player; //Garde le joueur de la partie
     
     /**
      * @author Kevin Lamblin
+     * Crée une partie avec une carte et un joueur
      */
     public Partie(){
+        this.carte = getCarte();
         player = new Joueur(new Coordonnee(10,10));
         addPersonnage(player);
     }   
+    
     /**
      * @author Kevin Lamblin
      * Fonction qui ajoute un personnage à la liste de personnages de la partie
@@ -37,6 +40,7 @@ public class Partie {
     public void addPersonnage(Personnage p){
         personnages.add(p);
     }  
+    
     /**
      * @author Kevin Lamblin
      * Renvoie les personnages de la partie
@@ -45,13 +49,13 @@ public class Partie {
     public ArrayList<Personnage> getPersonnages(){
         return personnages;
     }
+    
     /**
      * @author Kevin Lamblin
      * Renvoie le joueur de la partie
      * @return Personnage
      */
-    public Personnage getJoueur(){
+    public Joueur getJoueur(){
         return player;
     }
-
 }
