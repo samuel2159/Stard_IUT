@@ -16,4 +16,7 @@ public abstract class Outil extends Item{
         super(type);
     }
     
+    public String getFamille(){
+        return "outils";
+    }
 }
