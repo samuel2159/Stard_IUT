@@ -11,18 +11,21 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Kevin
+ * @author Kevin Lamblin & Vincent Tantet
  */
 public class TestCarte {
     
     @Test
-    /**
-     * @author Kevin Lamblin
-     */
     public void TestGetCarte(){
         Carte c = Carte.getCarte();
         
         assertNotEquals(null, c);
     }
     
+    @Test
+    public void TestGetNiveauActuel(){
+        Carte c = Carte.getCarte();
+        
+        assertNotEquals(null, c.getNiveauActuel());
+    }
 }

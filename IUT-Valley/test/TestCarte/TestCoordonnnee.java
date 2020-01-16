@@ -16,9 +16,6 @@ import org.junit.Test;
 public class TestCoordonnnee {
     
     @Test
-    /**
-     * @author Kevin Lamblin
-     */
     public void TestGetSetXY(){
         //Création d'une coodonnee
         Coordonnee c = new Coordonnee(1,2);
