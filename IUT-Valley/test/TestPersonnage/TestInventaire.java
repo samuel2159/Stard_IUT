@@ -5,30 +5,60 @@
  */
 package TestPersonnage;
 
-import static org.junit.Assert.fail;
+import Metier.Personnage.Inventaire;
+import Metier.Personnage.Item.Mais;
+import Metier.Personnage.Item.Panais;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 /**
  *
- * @author Kevin Lamblin
+ * @author ab899799
  */
 public class TestInventaire{
     
-    public void TestSupprimer(){
-        fail("Not supported yet");
-
+    @Test
+    public void TestAjouter1() throws Exception{
+        
+    
+        Mais m = new Mais();
+        Mais m1 = new Mais();
+        Inventaire inv = new Inventaire();
+        inv.ajouter(m);
+        inv.ajouter(m1);
+        
+         for(int i = 1; i<=36; i++)
+         {
+             if (inv.getStacks().get(i).getItem().getType().equals(m.getType()))
+             {
+                 assertEquals(2,inv.getStacks().get(i).getQuantite());
+                
+             }
+         }
     }
     
-    public void TestAjouter(){
-        fail("Not supported yet");
+      @Test
+    public void TestAjouter2() throws Exception{
+        
+    
+        Mais m = new Mais();
+        Panais p = new Panais();
+        Inventaire inv = new Inventaire();
+        inv.ajouter(p);
+        inv.ajouter(m);
+        
+        assertEquals(m, inv.getStacks().get(2).getItem());/*
+         for(int i = 1; i<=36; i++)
+         {
+             if (inv.getItem().get(i).getItem().getType().equals(m.getType()))
+             {
+                 //assertEquals(1,inv.getItem().get(i).getQuantite());
+                 
+             }
+         }*/
+    }
+        
         
     }
     
-    public void TestDeplacer(){
-        fail("Not supported yet");
-    }
-    
-    public void TestGetObjets(){
-        fail("Not supported yet");
-        
-    }
-}
+   
