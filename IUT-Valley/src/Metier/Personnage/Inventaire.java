@@ -14,7 +14,7 @@ import java.util.HashMap;
  */
 public class Inventaire {
     
-    private Item ObjetCourant;//Objet courant
+    private Stack ObjetCourant;//Objet courant
     private HashMap<Integer, Stack> stacks;//Liste des stacks dans l'inventaire(sur 36 emplacements)
     
     /**
@@ -32,6 +32,15 @@ public class Inventaire {
      */
     public HashMap<Integer, Stack> getStacks(){  
         return stacks;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Renvoie l'objet courant
+     * @return Stack
+     */
+    public Stack getObjetCourant(){
+        return ObjetCourant;
     }
     
     /**
