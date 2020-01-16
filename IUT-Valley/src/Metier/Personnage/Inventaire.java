@@ -42,10 +42,18 @@ public class Inventaire {
      */
     public void ajouter(Item item) throws Exception{
         
-        //Si l'item est déjà dans l'inventaire
+        int pos = 0;
+        
+        
         for(int i = 1; i<=36; i++){
-            if((stacks.get(i) != null) && (stacks.get(i).getItem().getType().equals(item.getType()))){
-                stacks.get(i).ajoutQuantite(1);
+             if((stacks.get(i) != null) && (stacks.get(i).getItem().getType().equals(item.getType()))){
+                pos = i;
+            }
+        }  
+        
+        //Si l'item est déjà dans l'inventaire
+        if((stacks.get(pos) != null) && (stacks.get(pos).getItem().getType().equals(item.getType()))){
+                stacks.get(pos).ajoutQuantite(1);
             }
             //Si l'inventaire est plein on renvoie une exception
             else if(stacks.size() >= 36){
@@ -54,9 +62,8 @@ public class Inventaire {
             //Sinon on ajoute l'Item
             else{
                 Stack stack = new Stack(item);
-                stacks.put(i, stack);
+                stacks.put(pos, stack);
             }
-        }  
     }
     
     /**
