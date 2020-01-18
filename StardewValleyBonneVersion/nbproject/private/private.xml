@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Controlers/Observable.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/Cases/VueCaseHerbe.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Metier/Carte/Carte.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/Cases/VueCaseFabrique.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Scenes/pSceneMenu/Composants/BoutonCreerPartie.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/Cases/VueCaseEau.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Metier/Carte/Niveau.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Scenes/pSceneMenu/SceneMenu.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/VueCarteObjets.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Scenes/ScenePerso.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Ressources/GestionnaireImages.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/VueCarte.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/VueCarteFond.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Controlers/Controler.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Controlers/ControlerDeplacementClavier.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Scenes/pScenePartie/ScenePartie.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Main.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Metier/Personnages/Personnage.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Listeners/ListenerClavier.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/Cases/VueCaseTerre.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Vues/Carte/Cases/VueCase.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Listeners/Controlable.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/Metier/Partie.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Controlers/ControleurCreerPartie.java</file>
+            <file>file:/C:/Users/simonetma/Desktop/StardewValleyV2/src/stardewvalley/ControleursObservateurs/Observers/ObeserverChangementScene.java</file>
+        </group>
+    </open-files>
+</project-private>
