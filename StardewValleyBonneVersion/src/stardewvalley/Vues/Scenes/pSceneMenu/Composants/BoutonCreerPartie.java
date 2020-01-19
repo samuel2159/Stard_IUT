@@ -7,16 +7,13 @@ package stardewvalley.Vues.Scenes.pSceneMenu.Composants;
 
 import java.util.ArrayList;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import stardewvalley.ControleursObservateurs.Controlers.Controler;
 import stardewvalley.ControleursObservateurs.Controlers.ControleurCreerPartie;
-import stardewvalley.ControleursObservateurs.Controlers.Observable;
 import stardewvalley.ControleursObservateurs.Listeners.Controlable;
 import stardewvalley.ControleursObservateurs.Observers.ObeserverChangementScene;
-import stardewvalley.Main;
 import stardewvalley.Vues.Ressources.GestionnaireImages;
 import stardewvalley.Vues.Scenes.pSceneMenu.SceneMenu;
 import stardewvalley.Vues.Scenes.pScenePartie.ScenePartie;

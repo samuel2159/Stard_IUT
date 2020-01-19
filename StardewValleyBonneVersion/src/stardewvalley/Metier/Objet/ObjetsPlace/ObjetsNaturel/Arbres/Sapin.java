@@ -25,7 +25,7 @@ public class Sapin extends Arbre{
      * @return String
      */
     public String getType() {
-        return "Sapin";
+        return "sapin";
     }
 
     @Override

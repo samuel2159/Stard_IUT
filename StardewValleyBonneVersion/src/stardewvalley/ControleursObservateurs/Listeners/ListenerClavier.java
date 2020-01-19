@@ -22,6 +22,7 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
 
     private ControlerDeplacementClavier controleur;
     private Mouvement mouv;
+    private boolean inventaireOuvert;
     
     public ListenerClavier(){
         super();  
@@ -47,7 +48,7 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
                     
         }
         controleur.update();
-       // System.out.println(mouv);
+       
     }    
     
     
@@ -57,5 +58,8 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
     
     public void setControleur(ControlerDeplacementClavier c){
         controleur = c;
+    }
+    public boolean inventaireEstOuvert(){
+        return inventaireOuvert;
     }
 }

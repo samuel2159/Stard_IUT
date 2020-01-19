@@ -61,7 +61,8 @@ public class VueCaseEau extends VueCase {
         }    
         //terre droite
         else if((c.getVoisine(Direction.Droite) != null) && (c.getVoisine(Direction.Droite).getCaseType().equals("terre"))){
-             this.setViewport(new Rectangle2D(0,1248+32,16,16));  
+             this.setViewport(new Rectangle2D(0,1248,16,16));  
+             this.setRotate(180);
         }       
         //terre haut
         else if((c.getVoisine(Direction.Haut) != null) && (c.getVoisine(Direction.Haut).getCaseType().equals("terre"))){

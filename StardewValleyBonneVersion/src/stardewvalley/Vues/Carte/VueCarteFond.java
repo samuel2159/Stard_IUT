@@ -20,8 +20,7 @@ public class VueCarteFond extends GridPane {
     private VueCarte vueCarte;
     
     public VueCarteFond(VueCarte vueCarte) {
-        
-        this.setStyle("-fx-background-color:yellow");
+                
         
         this.vueCarte = vueCarte;
         this.prefHeightProperty().bind(vueCarte.heightProperty());

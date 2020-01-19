@@ -6,6 +6,7 @@
 package stardewvalley.Metier.Personnages;
 
 import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Mouvement;
 
 /**
  *
@@ -44,6 +45,19 @@ public abstract class Personnage {
     /*public Inventaire getInventaire(){
         return inventaire;
     }*/
+
+    public void deplacer(Mouvement mouvement) {
+         switch(mouvement){
+            case Haut : position.setY(position.getY()-1);
+                break;
+            case Bas : position.setY(position.getY()+1);
+                break;
+            case Droite : position.setX(position.getX()+1);
+                break;
+            case Gauche : position.setX(position.getX()-1);
+                break;  
+        }      
+    }
     
     
     

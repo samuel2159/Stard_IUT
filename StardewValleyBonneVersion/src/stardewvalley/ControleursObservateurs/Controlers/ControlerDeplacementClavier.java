@@ -27,9 +27,9 @@ public class ControlerDeplacementClavier extends Controler{
     
     public void update(){
          //on change la position en metier
-        //personnage.deplacer(listener.getMouvement());
+        personnage.deplacer(listener.getMouvement());
         //on change la vue de position aussi
-        observer.update();
+        observer.update(listener.getMouvement());
         
         
     }

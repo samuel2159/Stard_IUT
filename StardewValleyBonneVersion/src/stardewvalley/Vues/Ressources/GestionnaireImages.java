@@ -32,6 +32,7 @@ public class GestionnaireImages {
         this.addImage("Sebastian","Personnages/Sebastian.png");
         //Map
         this.addImage("Cases", "Map/spring.png");
+        this.addImage("ObjetPlaces", "Map/spring.png");
     }
     
     //ajout d'une image dans la bibliothèque

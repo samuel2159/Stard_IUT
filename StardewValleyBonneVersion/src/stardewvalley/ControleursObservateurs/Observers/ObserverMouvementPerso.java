@@ -5,6 +5,7 @@
  */
 package stardewvalley.ControleursObservateurs.Observers;
 
+import stardewvalley.Metier.Mouvement;
 import stardewvalley.Vues.VuePersonnage;
 import stardewvalley.Metier.Personnages.Personnage;
 
@@ -25,9 +26,17 @@ public class ObserverMouvementPerso extends Observer{
     
     @Override
     public void update(){
+       
         vue.setTranslateX((double)personnage.getPosition().getX());
         vue.setTranslateY((double)personnage.getPosition().getY());
-       
+        //vue.updateFace();
     }
+    
+    public void update(Mouvement m){
+       
+        vue.setTranslateX((double)personnage.getPosition().getX());
+        vue.setTranslateY((double)personnage.getPosition().getY());
+        vue.updateFace(m);
+    }    
     
 }

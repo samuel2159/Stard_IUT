@@ -14,7 +14,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Objects;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Arbres.Sapin;
-import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.HerbeSauvage;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Rocher;
 
 /**
@@ -45,14 +44,16 @@ public class Niveau {
                                     if((lettre = file.read()) != -1){
                                         coord = new Coordonnee(colonne, ligne);
                                         c = CreationCase(coord, (char)lettre); 
-                                        if(ligne == 15 && colonne == 12)
+                                        
+                                        //test sapin
+                                        if(ligne == 20 && colonne == 20)
                                             c.setObjetCorrespondant(new Sapin());
                                         if(ligne == 12 && colonne == 10)
                                             c.setObjetCorrespondant(new Sapin());
                                         if(ligne == 10 && colonne == 10)
                                             c.setObjetCorrespondant(new Rocher());
-                                        if(ligne == 10 && colonne == 12)
-                                            c.setObjetCorrespondant(new HerbeSauvage());                                        
+                                        /*if(ligne == 10 && colonne == 12)
+                                            c.setObjetCorrespondant(new HerbeSauvage());     */                                   
                                     }
 
                                     if(c != null){

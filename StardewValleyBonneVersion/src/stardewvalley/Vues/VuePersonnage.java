@@ -5,8 +5,10 @@
  */
 package stardewvalley.Vues;
 
+import javafx.geometry.Rectangle2D;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
+import stardewvalley.Metier.Mouvement;
 import stardewvalley.Metier.Personnages.NomPersonnage;
 import stardewvalley.Metier.Personnages.Personnage;
 import stardewvalley.Vues.Ressources.GestionnaireImages;
@@ -15,31 +17,51 @@ import stardewvalley.Vues.Ressources.GestionnaireImages;
  *
  * @author ea058452
  */
-public class VuePersonnage extends Pane{
+public class VuePersonnage extends ImageView{
     
     private Personnage personnageModel;
-    private ImageView sprite;
     
     public VuePersonnage(Personnage personnage){
-        this.personnageModel = personnage;
-        this.sprite = new ImageView();
-        this.selectionImageSprite();
+        this.personnageModel = personnage;        
+        //ajout du sprite
+        this.selectionImageSprite();         
+       
     }
     
     private void selectionImageSprite() {
+        Image sprite = null;
         NomPersonnage nom = this.personnageModel.getNom();
         switch(nom) {
-            case Joueur: this.sprite.setImage(GestionnaireImages.getImage("Sebastian"));
+            case Joueur: sprite = GestionnaireImages.getImage("Sebastian");
                     break;
-            case Emily: this.sprite.setImage(GestionnaireImages.getImage("Emily"));
+            case Emily: sprite = GestionnaireImages.getImage("Emily");
                 break;
         }
-        this.sprite = sprite;
-        this.getChildren().add(sprite);
+        this.setImage(sprite);
+    }
+
+
+    public void updateFace(Mouvement m) {
+         switch(m){
+            case Bas:
+                this.setViewport(new Rectangle2D(0, 0, 16, 32));
+            break;
+            case Gauche:
+                this.setViewport(new Rectangle2D(0, 97, 16, 32));
+            break;
+            case Droite:
+                this.setViewport(new Rectangle2D(0, 33, 16, 32));
+            break;
+            case Haut:
+                this.setViewport(new Rectangle2D(0, 65, 16, 32));
+            break;            
+        }
+        if(getScene() != null){
+            this.fitWidthProperty().bind(this.getScene().heightProperty().multiply(0.05));
+            this.fitHeightProperty().bind(this.getScene().heightProperty().multiply(0.10));
+        }
+            
+        
     }
     
-    public ImageView getSprite(){
-        return sprite;
-    }
-   
 }
