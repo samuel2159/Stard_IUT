@@ -55,6 +55,24 @@ public class VueCaseEau extends VueCase {
         else if((c.getVoisine(Direction.Droite) != null) && (c.getVoisine(Direction.Droite).getCaseType().equals("terre")) && (c.getVoisine(Direction.Bas) != null) && (c.getVoisine(Direction.Bas).getCaseType().equals("terre")) && (c.getVoisine(Direction.BasDroite) != null) && (c.getVoisine(Direction.BasDroite).getCaseType().equals("terre"))){
              this.setViewport(new Rectangle2D(64,1231,16,16));  
         }
+        //terre gauche
+        else if((c.getVoisine(Direction.Gauche) != null) && (c.getVoisine(Direction.Gauche).getCaseType().equals("terre"))){
+             this.setViewport(new Rectangle2D(0,1248,16,16));  
+        }    
+        //terre droite
+        else if((c.getVoisine(Direction.Droite) != null) && (c.getVoisine(Direction.Droite).getCaseType().equals("terre"))){
+             this.setViewport(new Rectangle2D(0,1248+32,16,16));  
+        }       
+        //terre haut
+        else if((c.getVoisine(Direction.Haut) != null) && (c.getVoisine(Direction.Haut).getCaseType().equals("terre"))){
+             this.setViewport(new Rectangle2D(16,1217,16,16));  
+             
+        }  
+        //terre Bas
+        else if((c.getVoisine(Direction.Bas) != null) && (c.getVoisine(Direction.Bas).getCaseType().equals("terre"))){
+             this.setViewport(new Rectangle2D(16,1264,16,16));  
+             
+        }          
     }      
     
 }
