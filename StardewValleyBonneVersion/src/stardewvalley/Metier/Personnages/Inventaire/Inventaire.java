@@ -7,7 +7,7 @@ package stardewvalley.Metier.Personnages.Inventaire;
 
 import java.util.ArrayList;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
-import stardewvalley.Vues.Inventaire.Stack;
+
 
 /**
  * Inventaire d'un personnage
