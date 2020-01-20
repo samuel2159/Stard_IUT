@@ -13,6 +13,10 @@ import stardewvalley.Metier.Carte.Coordonnee;
  */
 public class CasePlancher extends Case{
 
+    /**
+     * @author Kevin Lamblin
+     * @param c Coordonne
+     */
     public CasePlancher(Coordonnee c) {
         super(c);
     }
@@ -23,6 +27,10 @@ public class CasePlancher extends Case{
     }
 
     @Override
+    /**
+     * @author Kevin Lamblin
+     * @return String
+     */
     public String getCaseType() {
         return "plancher";
     }

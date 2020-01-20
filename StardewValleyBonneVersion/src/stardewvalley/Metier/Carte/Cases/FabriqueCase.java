@@ -13,6 +13,13 @@ import stardewvalley.Metier.Carte.Coordonnee;
  */
 public class FabriqueCase {
     
+    /**
+     * @author Kevin Lamblin
+     * Créer une case en fonction d'un caractère
+     * @param coord Coordonee
+     * @param s char
+     * @return Case
+     */
     public static Case CreationCase(Coordonnee coord, char s){
         Case c;
         

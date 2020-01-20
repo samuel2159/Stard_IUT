@@ -5,7 +5,7 @@
  */
 package stardewvalley.Vues.Carte.ObjetsPlaces;
 
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import stardewvalley.Vues.Carte.VueCarteObjets;
 
 /**

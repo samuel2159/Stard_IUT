@@ -6,7 +6,7 @@
 package stardewvalley.Metier.Carte;
 
 /**
- *
+ * Liste des directions
  * @author Kevin Lamblin
  */
 public enum Direction {

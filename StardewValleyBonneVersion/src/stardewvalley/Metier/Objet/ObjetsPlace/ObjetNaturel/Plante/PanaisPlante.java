@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Plante;
 
 /**
  * @author Kevin Lamblin
@@ -36,6 +36,5 @@ public class PanaisPlante extends Plante{
     @Override
     public String getType() {
         return "Panais";
-    }
-    
+    }   
 }

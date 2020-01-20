@@ -9,12 +9,12 @@ import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Coordonnee;
 import stardewvalley.Metier.Carte.Direction;
 import stardewvalley.Metier.Carte.Niveau;
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import java.util.Objects;
 
 
 /**
- * Case général
+ * Ue case général
  * @author Kevin Lamblin 
  */
 public abstract class Case {
@@ -24,6 +24,7 @@ public abstract class Case {
     
     /**
      * @author Kevin Lamblin
+     * Constructeur de case
      * @param c Coordonnee
      */
     public Case(Coordonnee c){
@@ -64,7 +65,8 @@ public abstract class Case {
     
     /**
      * @author Kevin
-     * @return 
+     * Donne la position de la case sur la map
+     * @return Coordonnee
      */
     public Coordonnee getCoordonnee(){
         return position;
@@ -76,13 +78,14 @@ public abstract class Case {
      * @return Case
      */
     public Case getVoisine(Direction d){
-        Niveau n = Carte.getCarte().getNiveauActuel();
+        Niveau n = Carte.getNiveauActuel();
         Case c = n.getCaseProche(this, d);
         return c;
     }
     
     /**
      * @author Kevin Lamblin
+     * Donne le type de case
      * @return TypeCase
      */
     public abstract String getCaseType();

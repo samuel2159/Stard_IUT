@@ -6,7 +6,7 @@
 package stardewvalley.Metier.Objet.ObjetsPlace.AutreObjetsPlace;
 
 import stardewvalley.Metier.Carte.Carte;
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import static stardewvalley.Metier.Carte.EnumNiveau.*;
 
 /**
@@ -18,15 +18,16 @@ public class Porte extends ObjetPlace{
     @Override
     /**
      * @author Kevin Lamblin
+     * Ouverture de la porte
      */
     public void Interagir() {
-        if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals(Ferme))
+        if(Carte.getNiveauActuel().getNomNiveau().equals(Ferme))
         {
-            Carte.getCarte().setNiveauActuel(Maison);
+            Carte.setNiveauActuel(Maison);
         }
-        else if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals(Maison))
+        else if(Carte.getNiveauActuel().getNomNiveau().equals(Maison))
         {
-            Carte.getCarte().setNiveauActuel(Maison);
+            Carte.setNiveauActuel(Maison);
         }
         
     }

@@ -13,10 +13,14 @@ import static stardewvalley.Metier.Carte.EnumNiveau.*;
  */
 public class Carte {
 
-    private HashMap<EnumNiveau, Niveau> lNiveaux = new HashMap();
-    private Niveau niveauActuel;
+    private HashMap<EnumNiveau, Niveau> lNiveaux = new HashMap(); //Liste des niveaux du jeu
+    private Niveau niveauActuel; //Niveau actuellement utilisé par le jeu
     private static Carte instance = null; //Unique instance de la carte
 
+    /**
+     * @author Kevin Lamblin
+     * Constructeur de Carte
+     */
     private Carte(){
         Niveau lvlFerme = new Niveau(Ferme,"Ferme.txt", 20, 45);
         Niveau lvlMaison = new Niveau(Maison, "Maison.txt", 10, 10);
@@ -38,10 +42,20 @@ public class Carte {
         return instance;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * Donne le niveauActuel
+     * @return Niveau
+     */
     public static Niveau getNiveauActuel(){
         return getCarte().niveauActuel;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * Change le niveauActuel
+     * @param niveau Niveau
+     */
     public static void setNiveauActuel(EnumNiveau niveau){
         getCarte().niveauActuel = getCarte().lNiveaux.get(niveau);
     }

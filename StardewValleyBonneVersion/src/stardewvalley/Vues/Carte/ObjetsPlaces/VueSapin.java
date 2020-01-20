@@ -6,7 +6,7 @@
 package stardewvalley.Vues.Carte.ObjetsPlaces;
 
 import javafx.geometry.Rectangle2D;
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import stardewvalley.Vues.Carte.VueCarteObjets;
 
 /**
