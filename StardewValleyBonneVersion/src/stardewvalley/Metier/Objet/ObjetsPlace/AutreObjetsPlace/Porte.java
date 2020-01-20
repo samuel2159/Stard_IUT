@@ -18,15 +18,16 @@ public class Porte extends ObjetPlace{
     @Override
     /**
      * @author Kevin Lamblin
+     * Ouverture de la porte
      */
     public void Interagir() {
-        if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals(Ferme))
+        if(Carte.getNiveauActuel().getNomNiveau().equals(Ferme))
         {
-            Carte.getCarte().setNiveauActuel(Maison);
+            Carte.setNiveauActuel(Maison);
         }
-        else if(Carte.getCarte().getNiveauActuel().getNomNiveau().equals(Maison))
+        else if(Carte.getNiveauActuel().getNomNiveau().equals(Maison))
         {
-            Carte.getCarte().setNiveauActuel(Maison);
+            Carte.setNiveauActuel(Maison);
         }
         
     }

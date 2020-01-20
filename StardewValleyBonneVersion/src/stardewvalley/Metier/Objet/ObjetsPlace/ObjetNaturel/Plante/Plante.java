@@ -8,7 +8,7 @@ package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Plante;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.ObjetNaturel;
 
 /**
- *
+ * Plante dans la ferme
  * @author Kevin Lamblin
  */
 public abstract class Plante extends ObjetNaturel{
@@ -47,6 +47,7 @@ public abstract class Plante extends ObjetNaturel{
      * Donne la famille des plantes
      * @return String
      */
+    @Override
     public String getFamille(){
         return "plante";
     }

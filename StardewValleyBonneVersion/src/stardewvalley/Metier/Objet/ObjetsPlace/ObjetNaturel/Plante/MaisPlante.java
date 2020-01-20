@@ -37,5 +37,4 @@ public class MaisPlante extends Plante{
     public String getType() {
         return "Mais";
     }
-    
 }

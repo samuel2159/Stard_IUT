@@ -36,6 +36,5 @@ public class PanaisPlante extends Plante{
     @Override
     public String getType() {
         return "Panais";
-    }
-    
+    }   
 }
