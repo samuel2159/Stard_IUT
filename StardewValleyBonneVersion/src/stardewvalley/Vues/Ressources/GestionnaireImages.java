@@ -33,8 +33,14 @@ public class GestionnaireImages {
         //Map
         this.addImage("Cases", "Map/spring.png");
         this.addImage("ObjetPlaces", "Map/spring.png");
-        //Inventaire
-        this.addImage("Items","Personnages/items.png");
+        //EcranPERSO
+        this.addImage("BackgroundPerso","MenuPerso/fond.png");
+        this.addImage("SebastianSprites","MenuPerso/perso.png");
+        this.addImage("SebastianPortrait","MenuPerso/Sebastian.png");
+        this.addImage("Ok","MenuPerso/ok.png");
+        //EcranHISTOIRE
+        this.addImage("Grandpere", "MenuHistoire/GrandPere.png");
+        this.addImage("Fleche", "MenuHistoire/fleche.png");
     }
     
     //ajout d'une image dans la bibliothèque

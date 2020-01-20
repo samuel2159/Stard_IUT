@@ -7,6 +7,8 @@ package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Arbres;
 
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.ObjetNaturel;
 
+
+
 /**
  * Arbre du jeu
  * @author Kevin Lamblin
