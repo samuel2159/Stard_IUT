@@ -5,7 +5,7 @@
  */
 package stardewvalley.Metier.Objet.ObjetsPlace.AutreObjetsPlace;
 
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 
 /**
  *

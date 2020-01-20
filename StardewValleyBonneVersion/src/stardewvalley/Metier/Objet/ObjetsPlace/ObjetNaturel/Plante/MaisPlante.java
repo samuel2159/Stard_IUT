@@ -3,31 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel;
-
-import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Plante;
 
 /**
- * Herbe sauvage du jeu
  * @author Kevin Lamblin
+ * Correspond à un plant de mais
  */
-public class HerbeSauvage extends ObjetNaturel{
+public class MaisPlante extends Plante{
 
-    @Override
     /**
      * @author Kevin Lamblin
+     * Constructeur de mais
      */
+    public MaisPlante(){
+        super();
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Interaction avec un plant de mais
+     */
+    @Override
     public void Interagir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     /**
      * @author Kevin Lamblin
+     * Renvoie le type
      * @return String
      */
+    @Override
     public String getType() {
-       return "herbe";
+        return "Mais";
     }
     
 }

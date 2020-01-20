@@ -3,23 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Arbres;
+
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.ObjetNaturel;
 
 /**
- * Objet placé sur la carte
+ * Arbre du jeu
  * @author Kevin Lamblin
  */
-public abstract class ObjetPlace {
 
-    public abstract void Interagir();
-    public abstract String getType();
+public abstract class Arbre extends ObjetNaturel{
     
     /**
      * @author Kevin Lamblin
-     * Donne la famille objet
+     * Donne la famille arbre
      * @return String
      */
+    @Override
     public String getFamille(){
-        return "objet";
+        return "arbre";
     }
 }

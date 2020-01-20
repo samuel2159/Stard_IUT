@@ -6,7 +6,7 @@
 package stardewvalley.Metier.Objet.ObjetsPlace.AutreObjetsPlace;
 
 import stardewvalley.Metier.Carte.Carte;
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import static stardewvalley.Metier.Carte.EnumNiveau.*;
 
 /**

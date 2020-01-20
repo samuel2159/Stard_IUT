@@ -9,7 +9,7 @@ import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Coordonnee;
 import stardewvalley.Metier.Carte.Direction;
 import stardewvalley.Metier.Carte.Niveau;
-import stardewvalley.Metier.Objet.ObjetPlace;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetPlace;
 import java.util.Objects;
 
 
