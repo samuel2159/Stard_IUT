@@ -11,12 +11,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import stardewvalley.ControleursObservateurs.Controlers.Controler;
-import stardewvalley.ControleursObservateurs.Controlers.ControleurCreerPartie;
+import stardewvalley.ControleursObservateurs.Controlers.ControleurMenuPerso;
 import stardewvalley.ControleursObservateurs.Listeners.Controlable;
 import stardewvalley.ControleursObservateurs.Observers.ObserverChangementScene;
 import stardewvalley.Vues.Ressources.GestionnaireImages;
 import stardewvalley.Vues.Scenes.pSceneMenu.SceneMenu;
-import stardewvalley.Vues.Scenes.pScenePartie.ScenePartie;
+import stardewvalley.Vues.Scenes.pScenePerso.ScenePerso;
 
 
 /**
@@ -34,11 +34,12 @@ public class BoutonCreerPartie extends ImageView implements Controlable {
         this.scene = scene;
         this.fitWidthProperty().bind(scene.widthProperty().multiply(0.2));
         this.fitHeightProperty().bind(scene.heightProperty().divide(6)); 
+        
         //Controleurs
-        Controler controleurCreerPartie = new ControleurCreerPartie();
-        this.addControleur(controleurCreerPartie);
+        Controler controleurMenuPerso = new ControleurMenuPerso();
+        this.addControleur(controleurMenuPerso);
         //Observeur
-        controleurCreerPartie.addObserver(new ObserverChangementScene(new ScenePartie(new Pane(), 1100, 662)));
+        controleurMenuPerso.addObserver(new ObserverChangementScene(new ScenePerso(new Pane(), 1100, 662)));
         
         //Gestion du click
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {

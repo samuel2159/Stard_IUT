@@ -27,24 +27,27 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
     public ListenerClavier(){
         super();  
         mouv = Mouvement.Statique;
+        inventaireOuvert = false;
     }
     
     @Override
     public void handle(KeyEvent event) {
         
         switch(event.getText()){
-            //Haut
+            //Deplacements
+            
             case "z" : this.mouv = Mouvement.Haut;
             break;
-            //Gauche
+            
             case "q" : this.mouv = Mouvement.Gauche;
             break;
-            //Bas
+           
             case "s" : this.mouv = Mouvement.Bas;
             break;
-            //Droite
+            
             case "d" : this.mouv = Mouvement.Droite;
             break;
+            //Inventaire
             case "i" :
                 if(inventaireOuvert)
                     inventaireOuvert = false;
