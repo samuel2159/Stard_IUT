@@ -26,7 +26,7 @@ public class Inventaire {
     public Inventaire(){
         inventaire = new ArrayList<>();
         for(int i = 1; i <= 36; i++){
-            inventaire.add(i, new Stack(new NullItem()));
+            inventaire.add(i, null);
         }
         objetCourant = inventaire.get(1);
     }
@@ -55,6 +55,20 @@ public class Inventaire {
      * @throws Exception 
      */
     public void Ajout(Objet item) throws Exception{
+        
+        for(Stack s : inventaire)
+        {
+            if(s.getItem().getType().equals(item.getType()))
+                s.ajoutQuantite(1);
+            else{
+                if(inventaire.size() <= 36)
+                    inventaire.add(new Stack(item));
+                else    
+                    throw new Exception("inventaire plein");
+            }
+                
+        }
+        /*
         int position = 1;
         int size = inventaire.size();
         boolean exit = false;
@@ -82,7 +96,7 @@ public class Inventaire {
             else{
                 throw new Exception("Inventory full");
             }
-        }
+        }*/
     }
     
     /**
