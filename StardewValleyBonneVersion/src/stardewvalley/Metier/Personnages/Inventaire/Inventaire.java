@@ -69,7 +69,7 @@ public class Inventaire {
                 
         }*/
         
-        int position = 1;
+        int position = 0;
         int size = inventaire.size();
         boolean exit = false;
         boolean exit2 = false;
