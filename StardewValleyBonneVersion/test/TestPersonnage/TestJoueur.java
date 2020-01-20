@@ -5,10 +5,11 @@
  */
 package TestPersonnage;
 
-import Metier.Carte.Coordonnee;
-import Metier.Personnage.Joueur;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
+import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Personnages.Joueur;
 
 /**
  *
@@ -22,7 +23,7 @@ public class TestJoueur {
      */
     public void TestGetSetEnergie(){
         //Créer un joueur avec son énergie maximal
-        Joueur j = new Joueur(new Coordonnee(10,10));
+        Joueur j = new Joueur();
         
         //Vérifie les valeurs de l'énergie de base
         assertEquals(1000, j.getEnergie());

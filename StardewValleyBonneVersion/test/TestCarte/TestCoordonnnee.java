@@ -5,9 +5,9 @@
  */
 package TestCarte;
 
-import Metier.Carte.Coordonnee;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import stardewvalley.Metier.Carte.Coordonnee;
 
 /**
  *

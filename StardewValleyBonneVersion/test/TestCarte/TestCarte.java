@@ -5,9 +5,9 @@
  */
 package TestCarte;
 
-import Metier.Carte.Carte;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import stardewvalley.Metier.Carte.Carte;
 
 /**
  *

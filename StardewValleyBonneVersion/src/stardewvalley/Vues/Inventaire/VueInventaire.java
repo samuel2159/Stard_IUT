@@ -6,7 +6,7 @@
 package stardewvalley.Vues.Inventaire;
 
 import stardewvalley.Metier.Personnages.Inventaire.Inventaire;
-import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
+import stardewvalley.Metier.Personnages.Inventaire.Stack;
 
 /**
  *
@@ -21,7 +21,7 @@ public class VueInventaire {
     }
     
     private void afficher(){
-        for(Objet o : inventaire.getObjets()){
+        for(Stack s : inventaire.getInventaire()){
             
         }
     }

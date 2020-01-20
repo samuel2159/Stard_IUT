@@ -5,11 +5,12 @@
  */
 package TestPersonnage.TestItem;
 
-import Metier.Personnage.Item.Plantes.Mais;
-import Metier.Personnage.Item.Plantes.Panais;
-import Metier.Personnage.Stack;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Mais;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Panais;
+import stardewvalley.Metier.Personnages.Inventaire.Stack;
 
 /**
  *Test de la classe stack 

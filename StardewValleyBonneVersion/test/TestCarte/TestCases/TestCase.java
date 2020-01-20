@@ -5,11 +5,11 @@
  */
 package TestCarte.TestCases;
 
-import Metier.Carte.Cases.CaseEau;
-import Metier.Carte.Coordonnee;
-import Metier.Objet.Porte;
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import static org.junit.Assert.*;
+import stardewvalley.Metier.Carte.Cases.CaseEau;
+import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Objet.ObjetsPlace.AutreObjetsPlace.Porte;
 
 /**
  *

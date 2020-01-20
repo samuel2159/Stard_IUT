@@ -5,12 +5,12 @@
  */
 package TestPersonnage;
 
-import Metier.Carte.Coordonnee;
-import Metier.Personnage.Joueur;
-import Metier.Personnage.Personnage;
+
 import org.junit.Assert;
-import static org.junit.Assert.fail;
 import org.junit.Test;
+import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Personnages.Joueur;
+import stardewvalley.Metier.Personnages.Personnage;
 
 /**
  *
@@ -25,7 +25,7 @@ public class TestPersonnage{
     public void TestDeplacement(){
        
         //Création d'un personnage
-        Personnage p = new Joueur( new Coordonnee(5,5));
+        Personnage p = new Joueur();
         
         //Vérifie que le joueur est à la bonne position intiale  
         Coordonnee c = new Coordonnee(5,5);

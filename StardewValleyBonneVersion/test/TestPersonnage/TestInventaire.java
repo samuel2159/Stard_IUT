@@ -5,11 +5,12 @@
  */
 package TestPersonnage;
 
-import Metier.Personnage.Inventaire;
-import Metier.Personnage.Item.Mais;
-import Metier.Personnage.Item.Panais;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import stardewvalley.Metier.Personnages.Inventaire.Inventaire;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Mais;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Panais;
 
 /**
  *
@@ -24,14 +25,14 @@ public class TestInventaire{
         Mais m = new Mais();
         Mais m1 = new Mais();
         Inventaire inv = new Inventaire();
-        inv.ajouter(m);
-        inv.ajouter(m1);
+        inv.Ajout(m);
+        inv.Ajout(m1);
         
          for(int i = 1; i<=36; i++)
          {
-             if (inv.getStacks().get(i).getItem().getType().equals(m.getType()))
+             if (inv.getInventaire().get(i).getItem().getType().equals(m.getType()))
              {
-                 assertEquals(2,inv.getStacks().get(i).getQuantite());
+                 assertEquals(2,inv.getInventaire().get(i).getQuantite());
                 
              }
          }
@@ -44,10 +45,10 @@ public class TestInventaire{
         Mais m = new Mais();
         Panais p = new Panais();
         Inventaire inv = new Inventaire();
-        inv.ajouter(p);
-        inv.ajouter(m);
+        inv.Ajout(p);
+        inv.Ajout(m);
         
-        assertEquals(m, inv.getStacks().get(2).getItem());/*
+        assertEquals(m, inv.getInventaire().get(2).getItem());/*
          for(int i = 1; i<=36; i++)
          {
              if (inv.getItem().get(i).getItem().getType().equals(m.getType()))

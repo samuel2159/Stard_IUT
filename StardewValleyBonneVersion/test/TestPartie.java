@@ -1,10 +1,11 @@
 
-import Metier.Carte.Coordonnee;
-import Metier.Partie;
-import Metier.Personnage.Joueur;
-import Metier.Personnage.Personnage;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
+import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Partie;
+import stardewvalley.Metier.Personnages.Joueur;
+import stardewvalley.Metier.Personnages.Personnage;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,7 +24,7 @@ public class TestPartie{
      * @author Kevin Lamblin
      */
     public void TestPartie(){
-        Partie p = new Partie();
+        Partie p = Partie.getPartie();
         
         //Vérifie qu'un joueur est bien créer lors de la création d'une partie
         assertEquals(p.getPersonnages().get(0), p.getJoueur());
@@ -35,8 +36,8 @@ public class TestPartie{
      */
     public void TestAddPersonnage(){
         
-        Partie p = new Partie();
-        Personnage perso = new Joueur(new Coordonnee(10,10)); 
+        Partie p = Partie.getPartie();
+        Personnage perso = new Joueur(); 
         p.addPersonnage(perso); //Ajout d'un personnage à la partie
         
         //Vérifie la présence de perso dans notre liste

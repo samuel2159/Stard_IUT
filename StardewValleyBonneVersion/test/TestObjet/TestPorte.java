@@ -5,9 +5,9 @@
  */
 package TestObjet;
 
-import Metier.Objet.Porte;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import stardewvalley.Metier.Objet.ObjetsPlace.AutreObjetsPlace.Porte;
 
 /**
  *

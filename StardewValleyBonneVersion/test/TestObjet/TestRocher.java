@@ -5,9 +5,9 @@
  */
 package TestObjet;
 
-import Metier.Objet.Rocher;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Rocher;
 
 /**
  *

@@ -5,11 +5,14 @@
  */
 package TestCarte;
 
-import Metier.Carte.Cases.CasePlancher;
-import Metier.Carte.Direction;
-import Metier.Carte.Niveaux;
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import stardewvalley.Metier.Carte.Cases.CasePlancher;
+import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Carte.Direction;
+import stardewvalley.Metier.Carte.EnumNiveau;
+import stardewvalley.Metier.Carte.Niveau;
 
 /**
  *
@@ -18,25 +21,27 @@ import static org.junit.Assert.assertEquals;
 public class TestNiveaux {
     @Test
     public void TestGetCases() {
-        Niveaux lvlMaison = new Niveaux("Maison","Maison.txt", 10, 10);
+        Niveau lvlMaison = new Niveau(EnumNiveau.Maison,"Maison.txt", 10, 10);
         assertEquals(100,lvlMaison.getCases().size());
     }
     
     @Test
     public void TestGetCase(){
-        Niveaux lvlMaison = new Niveaux("Maison","Maison.txt", 10, 10);
-        assertEquals(CasePlancher.class, lvlMaison.getCase(0, 0).getClass());
+        Niveau lvlMaison = new Niveau(EnumNiveau.Maison,"Maison.txt", 10, 10);
+        Coordonnee coord = new Coordonnee(0,0);
+        assertEquals(CasePlancher.class, lvlMaison.getCase(coord).getClass());
     }
     
     @Test
     public void TestGetCaseProche(){
-        Niveaux lvlMaison = new Niveaux("Maison","Maison.txt", 10, 10);
-        assertEquals(CasePlancher.class, lvlMaison.getCaseProche(lvlMaison.getCase(1,1), Direction.Bas).getClass());
+        Niveau lvlMaison = new Niveau(EnumNiveau.Maison,"Maison.txt", 10, 10);
+        Coordonnee coord = new Coordonnee(1,1);
+        assertEquals(CasePlancher.class, lvlMaison.getCaseProche(lvlMaison.getCase(coord), Direction.Bas).getClass());
     }
     
     @Test
     public void TestGetNomNiveau(){
-        Niveaux lvlMaison = new Niveaux("Maison","Maison.txt", 10, 10);
+        Niveau lvlMaison = new Niveau(EnumNiveau.Maison,"Maison.txt", 10, 10);
         assertEquals("Maison",lvlMaison.getNomNiveau());
     }
 }
