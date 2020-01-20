@@ -30,6 +30,29 @@ public class Inventaire {
         objetCourant = inventaire.get(1);
     }
     
+    /**
+     * @author Kevin Lamblin
+     * Donne la liste des objets de l'inventaire
+     * @return ArrayList
+     */
+    public ArrayList<Stack> getInventaire(){
+        return inventaire;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Donne l'objet tenu par le joueur
+     * @return Stack
+     */
+    public Stack getObjetCourant(){
+        return objetCourant;
+    }
+    
+    /**
+     * @author Kevin Lamblin && Vincent Tantet
+     * @param item Objet
+     * @throws Exception 
+     */
     public void Ajout(Objet item) throws Exception{
         int position = 1;
         int size = inventaire.size();
@@ -85,6 +108,11 @@ public class Inventaire {
         }
     }
     
+    /**
+     * @author Kevin Lamblin && Vincent Tantet
+     * @param aDeplacer Stack
+     * @param posVoulue int
+     */
     public void deplacer(Stack aDeplacer, int posVoulue){
         int oldPos = 0;
         Stack newStack;
