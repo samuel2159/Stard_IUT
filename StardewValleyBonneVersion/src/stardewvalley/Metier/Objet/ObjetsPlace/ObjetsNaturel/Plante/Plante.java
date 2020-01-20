@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Plante;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante;
 
-import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.ObjetNaturel;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.ObjetNaturel;
 
 /**
  * Plante dans la ferme

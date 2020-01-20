@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Arbres;
 
 /**
- * Herbe sauvage du jeu
+ * Sapin du jeu
  * @author Kevin Lamblin
  */
-public class HerbeSauvage extends ObjetNaturel{
+public class Sapin extends Arbre{
 
     @Override
     /**
@@ -25,7 +25,29 @@ public class HerbeSauvage extends ObjetNaturel{
      * @return String
      */
     public String getType() {
-       return "herbe";
+        return "sapin";
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;        
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Sapin other = (Sapin) obj;
+
+        return true;
     }
     
 }
