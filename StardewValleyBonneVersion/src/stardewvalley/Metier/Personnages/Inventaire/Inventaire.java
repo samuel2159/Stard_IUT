@@ -26,7 +26,7 @@ public class Inventaire {
     public Inventaire(){
         inventaire = new ArrayList<>();
         for(int i = 1; i <= 36; i++){
-            inventaire.add(i, null);
+            inventaire.add(null);
         }
         objetCourant = inventaire.get(1);
     }
@@ -55,7 +55,7 @@ public class Inventaire {
      * @throws Exception 
      */
     public void Ajout(Objet item) throws Exception{
-        
+        /*
         for(Stack s : inventaire)
         {
             if(s.getItem().getType().equals(item.getType()))
@@ -67,36 +67,37 @@ public class Inventaire {
                     throw new Exception("inventaire plein");
             }
                 
-        }
-        /*
+        }*/
+        
         int position = 1;
         int size = inventaire.size();
         boolean exit = false;
         boolean exit2 = false;
         
-        do{
-            if(inventaire.get(position).getItem().getType().equals(item.getType())){
-                inventaire.get(position).ajoutQuantite(1);
-                exit = true;
+        if(!inventaire.isEmpty()){ 
+            do{
+                if(inventaire.get(position).getItem().getType().equals(item.getType())){
+                    inventaire.get(position).ajoutQuantite(1);
+                    exit = true;
+                }
+                position ++;
+            }while( position != size && !exit);
+            if(!exit){
+                position = 1;
+                if(size <= 36){
+                    do{
+                        if(inventaire.get(position).equals(null)){
+                            inventaire.set(position, new Stack(item));
+                            exit2 = true;
+                        }
+                        position ++;
+                    }while(!exit2);
+                }
+                else{
+                    throw new Exception("Inventory full");
+                }
             }
-            position ++;
-        }while( position != size && !exit);
-        if(!exit){
-            position = 1;
-            if(size <= 36){
-                do{
-                    if(inventaire.get(position).getItem().getType().equals("null")){
-                        inventaire.remove(position);
-                        inventaire.add(position, new Stack(item));
-                        exit2 = true;
-                    }
-                    position ++;
-                }while(!exit2);
-            }
-            else{
-                throw new Exception("Inventory full");
-            }
-        }*/
+        }
     }
     
     /**
