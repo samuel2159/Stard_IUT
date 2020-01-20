@@ -25,9 +25,8 @@ public class Inventaire {
      */
     public Inventaire(){
         inventaire = new ArrayList<>();
-        NullItem nullItem = new NullItem();
         for(int i = 1; i <= 36; i++){
-            inventaire.add(i, new Stack(nullItem));
+            inventaire.add(i, new Stack(new NullItem()));
         }
         objetCourant = inventaire.get(1);
     }
