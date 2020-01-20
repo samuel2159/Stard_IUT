@@ -15,6 +15,7 @@ public class VuePanais extends VueObjet {
 
     public VuePanais(Objet o) {
         super(o);
+        
     }
     
 }
