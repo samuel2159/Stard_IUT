@@ -52,9 +52,9 @@ public abstract class Personnage {
         return this.nom;
     }
     
-    /*public Inventaire getInventaire(){
+    public Inventaire getInventaire(){
         return inventaire;
-    }*/
+    }
 
     public void deplacer(Mouvement mouvement) {
          switch(mouvement){
