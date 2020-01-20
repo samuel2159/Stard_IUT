@@ -82,7 +82,6 @@ public class Inventaire {
         if(!exit){
             position = 0;
             if(size < 36){
-                    if(inventaire.get(position).equals(null)){
                         inventaire.add(new Stack(item));                 
                 }
             }
