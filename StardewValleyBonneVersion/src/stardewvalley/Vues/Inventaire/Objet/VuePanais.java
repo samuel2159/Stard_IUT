@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Personnages.Inventaire;
+package stardewvalley.Vues.Inventaire.Objet;
 
-import java.util.ArrayList;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 /**
  *
  * @author telli
  */
-public class Inventaire {
-    
-    public ArrayList<Objet> getObjets(){
-        return new ArrayList<>();
+public class VuePanais extends VueObjet {
+
+    public VuePanais(Objet o) {
+        super(o);
     }
     
 }

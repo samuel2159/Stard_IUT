@@ -5,10 +5,25 @@
  */
 package stardewvalley.Vues.Inventaire;
 
+import stardewvalley.Metier.Personnages.Inventaire.Inventaire;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
+
 /**
  *
  * @author telli
  */
 public class VueInventaire {
+    
+    Inventaire inventaire;
+    
+    public VueInventaire(Inventaire i){
+        inventaire = i;
+    }
+    
+    private void afficher(){
+        for(Objet o : inventaire.getObjets()){
+            
+        }
+    }
     
 }

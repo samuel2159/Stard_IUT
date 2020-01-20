@@ -3,14 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Vues.Inventaire;
+package stardewvalley.Vues.Inventaire.Objet;
+
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 /**
  *
  * @author telli
  */
-public class FabriqueVueObjet {
-    
-    
+public class VueMais extends VueObjet {
+
+    public VueMais(Objet o) {
+        super(o);
+    }
     
 }
