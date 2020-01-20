@@ -10,7 +10,7 @@ import static stardewvalley.Metier.Personnages.NomPersonnage.*;
 
 /**
  *
- * @author simonetma
+ * @author Simonet
  */
 public class GestionnairePersonnages {
     

@@ -7,7 +7,7 @@ package stardewvalley.Metier.Personnages;
 
 /**
  *
- * @author simonetma
+ * @author Simonet
  */
 public enum NomPersonnage {
     Joueur,Emily;

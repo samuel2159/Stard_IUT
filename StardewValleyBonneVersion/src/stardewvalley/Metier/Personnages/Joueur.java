@@ -9,11 +9,11 @@ import static stardewvalley.Metier.Personnages.NomPersonnage.Joueur;
 
 /**
  *
- * @author simonetma
+ * @author Kevin Lamblin
  */
 public class Joueur extends Personnage {
     
-    private String nomJoueur;
+    private String nomJoueur; //Nom du joueur
     private int energie; //Energie du joueur
     private int ENERGIE_MAX; //Energie maximale du joueur
     
@@ -23,13 +23,22 @@ public class Joueur extends Personnage {
         this.setEnergie(ENERGIE_MAX);
     }
     
-    
+    /**
+     * @author Kevin Lamblin
+     * Renvoie le nom du joueur
+     * @return String
+     */
     public String getNomJoueur() {
         return this.nomJoueur;
     }
     
-    public void setNomJoueur(String nomJoueur) {
-        this.nomJoueur = nomJoueur;
+    /**
+     * @author Kevin Lamblin
+     * Change le nom du joueur
+     * @param s String 
+     */
+    public void setNomJoueur(String s){
+        nomJoueur = s;
     }
     
     /**

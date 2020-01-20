@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 package stardewvalley.Metier.Personnages.Inventaire.Objets;
-
+;
 /**
- *
- * @author Lamblin Kévin
+ * Panais sous forme d'item
+ * @author Kevin Lamblin
  */
-public abstract class Objet {
-    
-    public abstract String getType();
-    
+public class Panais extends Objet{
+
+    @Override
+    public String getType() {
+        return "panais";
+    }
 }

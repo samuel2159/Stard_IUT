@@ -7,7 +7,7 @@ package stardewvalley.Metier.Personnages;
 
 /**
  *
- * @author simonetma
+ * @author Simonet
  */
 public class NPC extends Personnage {
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel;
+package stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel;
 
 /**
  * Herbe sauvage du jeu

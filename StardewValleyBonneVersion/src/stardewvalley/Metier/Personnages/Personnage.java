@@ -7,24 +7,34 @@ package stardewvalley.Metier.Personnages;
 
 import stardewvalley.Metier.Carte.Coordonnee;
 import stardewvalley.Metier.Mouvement;
+import stardewvalley.Metier.Personnages.Inventaire.Inventaire;
 
 /**
  *
- * @kevin
+ * @Kevin Lamblin
  */
 public abstract class Personnage {
     
-    private Coordonnee position;    //Position d'un personnage sur la carte
-    //TODO//private Inventaire inventaire;  //Inventaire du personnage
-    private NomPersonnage nom;      //Nom du personnage
+    private Coordonnee position; //Position d'un personnage sur la carte
+    private Inventaire inventaire;  //Inventaire du personnage
+    private NomPersonnage nom; //Nom du personnage
     
     
-    
+    /**
+     * @author Kevin Lamblin
+     * Création d'un personnage
+     * @param nom String
+     */
     public Personnage(NomPersonnage nom) {
         this.nom = nom;
-        //this.inventaire = new Inventaire();
+        this.inventaire = new Inventaire();
     }
     
+    /**
+     * @author Kevin Lamblin
+     * Change la position d'un personnage
+     * @param c 
+     */
     public void setPosition(Coordonnee c) {
         this.position = c;
     }

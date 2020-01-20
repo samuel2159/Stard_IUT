@@ -5,9 +5,10 @@
  */
 package stardewvalley.Metier.Personnages.Inventaire.Objets;
 
+
 /**
- *
- * @author telli
+ * Mais sous forme item
+ * @author Kevin Lamblin
  */
 public class Mais extends Objet{
 
