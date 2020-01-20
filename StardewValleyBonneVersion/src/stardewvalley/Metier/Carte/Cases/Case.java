@@ -20,7 +20,7 @@ import java.util.Objects;
 public abstract class Case {
     
     private Coordonnee position;
-    private ObjetPlace objetCorrespondant;
+    private ObjetPlace objetCorrespondant = null;
     
     /**
      * @author Kevin Lamblin
