@@ -6,8 +6,8 @@
 package stardewvalley.Metier.Carte;
 
 /**
- *
- * @author simonetma
+ * Liste des niveaux
+ * @author Simonet
  */
 public enum EnumNiveau {
     Ferme,Maison;

@@ -17,16 +17,21 @@ import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Arbres.Sapin;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Rocher;
 
 /**
- *
+ * Un niveau du jeu
  * @author Kevin Lamblin
  */
 public class Niveau {
     
     private HashMap<Coordonnee,Case> cases = new HashMap<>(); //Liste des cases composant la carte du niveau
-    private EnumNiveau nom;
+    private EnumNiveau nom; //Nom d'un niveau
     
-    
-    //TODO déplacer le x,y dans le fichier
+    /**
+     * @author Kevin Lamblin
+     * @param nom EnumNiveau
+     * @param fichier String
+     * @param largeurNiveau int
+     * @param hauteurNiveau int
+     */
     public Niveau(EnumNiveau nom,String fichier, int largeurNiveau, int hauteurNiveau){
         this.nom = nom;
          //Génération du niveau
@@ -75,6 +80,7 @@ public class Niveau {
     
     /**
      * @author Kevin Lamblin
+     * Donne la liste des cases du niveau
      * @return HashMap 
      */
     public Collection<Case> getCases(){
@@ -83,21 +89,17 @@ public class Niveau {
     
     /**
      * @author Samuel Tellier
-     * @param x int
-     * @param y int
+     * Donne la case par rapport à ses coordonnees
+     * @param c Coordonnee
      * @return Case
      */
-    public Case getCase(int x,int y){
-        Coordonnee coordonnee = new Coordonnee(x,y);
-        return cases.get(coordonnee);
-    }
-    
     public Case getCase(Coordonnee c) {
         return cases.get(c);
     }
     
     /**
      * @author Samuel Tellier && Kévin Lamblin
+     * Donne une case voisine de la case d'une case
      * @param c Case   
      * @param d Direction
      * @return Case

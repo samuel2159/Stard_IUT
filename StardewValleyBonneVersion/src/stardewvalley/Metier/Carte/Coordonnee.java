@@ -17,6 +17,7 @@ public class Coordonnee {
     
     /**
      * @author Kevin Lamblin
+     * Constructeur de coordonnee
      * @param x int
      * @param y int
      */
@@ -27,6 +28,7 @@ public class Coordonnee {
     
     /**
      * @author Kevin Lamblin
+     * Donne la position x
      * @return int
      */
     public int getX(){
@@ -35,6 +37,7 @@ public class Coordonnee {
     
     /**
      * @author Kevin Lamblin
+     * Change la position x
      * @param x int
      */
     public void setX(int x){
@@ -43,6 +46,7 @@ public class Coordonnee {
     
     /**
      * @auhor Kevin Lamblin
+     * Donne la position y
      * @return int 
      */
     public int getY(){
@@ -51,6 +55,7 @@ public class Coordonnee {
     
     /**
      * @author Kevin Lamblin
+     * Change la position y
      * @param y int
      */
     public void setY(int y){
@@ -78,6 +83,12 @@ public class Coordonnee {
         return res;
     }
     
+    /**
+     * @author
+     * Donne les coordonne quand on se déplace dans une certaine direction
+     * @param direction Direction
+     * @return Coordonne
+     */
     public Coordonnee plusDirection(Direction direction) {
         Coordonnee resultat = new Coordonnee(this.x,this.y);
         switch(direction) {
