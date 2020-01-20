@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Objects;
-import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Arbres.Sapin;
-import stardewvalley.Metier.Objet.ObjetsPlace.ObjetNaturel.Rocher;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Arbres.Sapin;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Rocher;
 
 /**
  * Un niveau du jeu
