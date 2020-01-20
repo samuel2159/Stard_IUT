@@ -6,6 +6,7 @@
 package stardewvalley.Metier.Personnages.Inventaire;
 
 import java.util.ArrayList;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.NullItem;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 
@@ -24,8 +25,9 @@ public class Inventaire {
      */
     public Inventaire(){
         inventaire = new ArrayList<>();
+        NullItem nullItem = new NullItem();
         for(int i = 1; i <= 36; i++){
-            inventaire.add(i, new Stack(null));
+            inventaire.add(i, new Stack(nullItem));
         }
         objetCourant = inventaire.get(1);
     }
@@ -70,7 +72,7 @@ public class Inventaire {
             position = 1;
             if(size <= 36){
                 do{
-                    if(inventaire.get(position).getItem().equals(null)){
+                    if(inventaire.get(position).getItem().getType().equals("null")){
                         inventaire.remove(position);
                         inventaire.add(position, new Stack(item));
                         exit2 = true;
@@ -99,7 +101,7 @@ public class Inventaire {
             for(int i = 1; i <= 36; i++){
                 if(inventaire.get(i).equals(s)){
                     inventaire.remove(i);
-                    inventaire.add(i, new Stack(null));
+                    inventaire.add(i, new Stack(new NullItem()));
                 }
             }
         }
@@ -126,9 +128,9 @@ public class Inventaire {
             
         }while(compteur <= 36 && oldPos == 0);
         
-        if(inventaire.get(posVoulue).getItem().equals(null)){
+        if(inventaire.get(posVoulue).getItem().getType().equals("null")){
             inventaire.set(posVoulue, aDeplacer);
-            inventaire.remove(oldPos);
+            inventaire.set(oldPos, new Stack(new NullItem()));
         }
         else{
             newStack = inventaire.get(posVoulue);
