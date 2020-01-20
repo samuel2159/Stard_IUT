@@ -8,7 +8,7 @@ package stardewvalley.ControleursObservateurs.Listeners;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import stardewvalley.ControleursObservateurs.Controlers.ControlerClickSouris;
-import stardewvalley.Metier.Mouvement;
+import stardewvalley.Metier.Carte.Coordonnee;
 
 /**
  *
@@ -17,6 +17,7 @@ import stardewvalley.Metier.Mouvement;
 public class ListenerSouris implements EventHandler<MouseEvent>{
 
     private ControlerClickSouris controleur;
+    private Coordonnee coord;
     
     public ListenerSouris(){
         super();  
@@ -24,10 +25,18 @@ public class ListenerSouris implements EventHandler<MouseEvent>{
     
     @Override
     public void handle(MouseEvent event) {
-        //event.get
+        int x = (int)event.getSceneX()/35;
+        int y = (int)event.getSceneY()/35;
+        coord.setX(x);
+        coord.setY(y);
+        controleur.update();
     }
     
     public void setControleur(ControlerClickSouris c){
         controleur = c;
+    }
+    
+    public Coordonnee getCoordonnee(){
+        return coord;
     }
 }

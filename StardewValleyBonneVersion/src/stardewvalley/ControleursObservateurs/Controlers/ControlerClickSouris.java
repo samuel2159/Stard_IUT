@@ -5,10 +5,9 @@
  */
 package stardewvalley.ControleursObservateurs.Controlers;
 
-import stardewvalley.ControleursObservateurs.Listeners.ListenerClavier;
 import stardewvalley.ControleursObservateurs.Listeners.ListenerSouris;
-import stardewvalley.ControleursObservateurs.Observers.ObserverMouvementPerso;
-import stardewvalley.Metier.Personnages.Personnage;
+import stardewvalley.Metier.Carte.Carte;
+import stardewvalley.Metier.Carte.Cases.Case;
 
 /**
  *
@@ -23,12 +22,19 @@ public class ControlerClickSouris extends Controler{
     }
     
     public void update(){
-        //TODO
+        Case c = Carte.getCarte().getNiveauActuel().getCase(listener.getCoordonnee());
+        if (c.getObjetCorrespondant() == null){
+            c.InteragirCase();
+        }
+        else{
+            c.InteragirObjet();
+        }
     }
     
     @Override
     public void warn() {
         //TODO
+        throw new UnsupportedOperationException("Not supported yet.");
     }
     
 }

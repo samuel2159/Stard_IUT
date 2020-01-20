@@ -3,15 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/ControlerDeplacementClavier.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Observers/Observer.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Listeners/ListenerClavier.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Vues/VuePersonnage.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Observers/ObeserverChangementScene.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Observers/ObserverMouvementPerso.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Vues/Scenes/pScenePartie/ScenePartie.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/Controler.java</file>
-            <file>file:/C:/Users/telli/Desktop/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/ControleurCreerPartie.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestPersonnage/TestItem/TestStack.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestObjet/TestLit.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Listeners/ListenerSouris.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestPersonnage/TestInventaire.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/ControlerDeplacementClavier.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestObjet/TestPorte.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestCarte/TestCoordonnnee.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestCarte/TestCarte.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Listeners/ListenerClavier.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/ControlerClickSouris.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestCarte/TestCases/TestCase.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Metier/Carte/EnumNiveau.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/ControleursObservateurs/Controlers/Controler.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Vues/Scenes/pScenePartie/ScenePartie.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Metier/Carte/Niveau.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestCarte/TestNiveaux.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/test/TestObjet/TestRocher.java</file>
+            <file>file:/C:/Users/vince/OneDrive/Bureau/Stard_IUT/StardewValleyBonneVersion/src/stardewvalley/Metier/Carte/Carte.java</file>
         </group>
     </open-files>
 </project-private>

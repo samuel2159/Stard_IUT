@@ -28,7 +28,7 @@ public class TestInventaire{
         inv.Ajout(m);
         inv.Ajout(m1);
         
-         for(int i = 1; i<=36; i++)
+         for(int i = 0; i<inv.getInventaire().size(); i++)
          {
              if (inv.getInventaire().get(i).getItem().getType().equals(m.getType()))
              {
@@ -48,15 +48,7 @@ public class TestInventaire{
         inv.Ajout(p);
         inv.Ajout(m);
         
-        assertEquals(m, inv.getInventaire().get(2).getItem());/*
-         for(int i = 1; i<=36; i++)
-         {
-             if (inv.getItem().get(i).getItem().getType().equals(m.getType()))
-             {
-                 //assertEquals(1,inv.getItem().get(i).getQuantite());
-                 
-             }
-         }*/
+        assertEquals(p, inv.getInventaire().get(0).getItem());
     }
         
         
