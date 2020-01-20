@@ -26,7 +26,7 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
     
     public ListenerClavier(){
         super();  
-        mouv = Mouvement.Bas;
+        mouv = Mouvement.Statique;
     }
     
     @Override
@@ -45,6 +45,15 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
             //Droite
             case "d" : this.mouv = Mouvement.Droite;
             break;
+            case "i" :
+                if(inventaireOuvert)
+                    inventaireOuvert = false;
+                else
+                    inventaireOuvert = true;                
+            break;
+            default:
+                this.mouv = Mouvement.Statique;
+            break;
                     
         }
         controleur.update();
@@ -60,6 +69,6 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
         controleur = c;
     }
     public boolean inventaireEstOuvert(){
-        return inventaireOuvert;
-    }
+        return inventaireOuvert; 
+   }
 }

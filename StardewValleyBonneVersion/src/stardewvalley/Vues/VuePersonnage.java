@@ -5,6 +5,8 @@
  */
 package stardewvalley.Vues;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -41,10 +43,16 @@ public class VuePersonnage extends ImageView{
     }
 
 
-    public void updateFace(Mouvement m) {
+    public void animation(Mouvement m) {
+        
+        Timeline timeline = new Timeline();
+        KeyFrame etape1 = null;
+        KeyFrame etape2 = null;
+        
          switch(m){
             case Bas:
-                this.setViewport(new Rectangle2D(0, 0, 16, 32));
+                this.setViewport(new Rectangle2D(0, 1, 16, 32));
+                //etape1 = new KeyFrame(0., values)
             break;
             case Gauche:
                 this.setViewport(new Rectangle2D(0, 97, 16, 32));
@@ -60,6 +68,8 @@ public class VuePersonnage extends ImageView{
             this.fitWidthProperty().bind(this.getScene().heightProperty().multiply(0.05));
             this.fitHeightProperty().bind(this.getScene().heightProperty().multiply(0.10));
         }
+      //  timeline.getKeyFrames().addAll(etape1,etape2);
+      //  timeline.play();
             
         
     }

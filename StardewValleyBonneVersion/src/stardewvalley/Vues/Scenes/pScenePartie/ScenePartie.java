@@ -46,7 +46,7 @@ public class ScenePartie extends Scene {
         c_clavier.addObserver(omp);
         
         ferme.getChildren().add(vuePersonnage);
-        vuePersonnage.updateFace(Mouvement.Bas);
+        vuePersonnage.animation(Mouvement.Bas);
         
     }
 }

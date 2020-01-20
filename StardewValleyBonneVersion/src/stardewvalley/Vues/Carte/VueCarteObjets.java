@@ -26,6 +26,7 @@ public class VueCarteObjets extends Pane {
         this.prefWidthProperty().bind(vueCarte.widthProperty());
         
         affichage();
+        System.out.println(widthProperty());
     }
     
     private void affichage(){
@@ -39,9 +40,9 @@ public class VueCarteObjets extends Pane {
 
                 //binding et positionnement
                 vue.setSmooth(true);
-                //vue.xProperty().bind(this.widthProperty().multiply(0.05*c.getCoordonnee().getX()));
-                vue.setX(c.getCoordonnee().getX()*this.getWidth()*0.05);
-                //vue.setY(c.getCoordonnee().getY());
+                
+                vue.setX(c.getCoordonnee().getX()*50);
+                vue.setY(c.getCoordonnee().getY()*50);
                 this.getChildren().add(vue); 
             }
             

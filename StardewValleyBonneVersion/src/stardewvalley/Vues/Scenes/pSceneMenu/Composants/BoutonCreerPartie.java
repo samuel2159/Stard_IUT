@@ -13,7 +13,7 @@ import javafx.scene.layout.Pane;
 import stardewvalley.ControleursObservateurs.Controlers.Controler;
 import stardewvalley.ControleursObservateurs.Controlers.ControleurCreerPartie;
 import stardewvalley.ControleursObservateurs.Listeners.Controlable;
-import stardewvalley.ControleursObservateurs.Observers.ObeserverChangementScene;
+import stardewvalley.ControleursObservateurs.Observers.ObserverChangementScene;
 import stardewvalley.Vues.Ressources.GestionnaireImages;
 import stardewvalley.Vues.Scenes.pSceneMenu.SceneMenu;
 import stardewvalley.Vues.Scenes.pScenePartie.ScenePartie;
@@ -38,7 +38,7 @@ public class BoutonCreerPartie extends ImageView implements Controlable {
         Controler controleurCreerPartie = new ControleurCreerPartie();
         this.addControleur(controleurCreerPartie);
         //Observeur
-        controleurCreerPartie.addObserver(new ObeserverChangementScene(new ScenePartie(new Pane(), 1100, 662)));
+        controleurCreerPartie.addObserver(new ObserverChangementScene(new ScenePartie(new Pane(), 1100, 662)));
         
         //Gestion du click
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {

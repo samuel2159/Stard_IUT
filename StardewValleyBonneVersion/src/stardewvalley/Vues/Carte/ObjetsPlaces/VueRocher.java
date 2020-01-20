@@ -17,9 +17,9 @@ public class VueRocher extends VueObjetPlace{
     
     public VueRocher(ObjetPlace o,VueCarteObjets vueCarteObjet) {
         super(o, vueCarteObjet);
-        this.setViewport(new Rectangle2D(368, 1056, 16, 32));       
+        this.setViewport(new Rectangle2D(368, 1056, 16, 16));       
         this.fitWidthProperty().bind(vueCarteObjet.heightProperty().multiply(0.05));  
-        this.fitHeightProperty().bind(vueCarteObjet.heightProperty().multiply(0.10));         
+        this.fitHeightProperty().bind(vueCarteObjet.heightProperty().multiply(0.05));         
     }
     
 }

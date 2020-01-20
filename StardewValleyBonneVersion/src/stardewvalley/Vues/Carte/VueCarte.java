@@ -28,7 +28,9 @@ public class VueCarte extends Pane {
         this.vueCarteFond = new VueCarteFond(this);
         this.vueCarteObjets = new VueCarteObjets(this);
         
+        
         this.getChildren().addAll(this.vueCarteFond,this.vueCarteObjets);
+        
     }
     
 }

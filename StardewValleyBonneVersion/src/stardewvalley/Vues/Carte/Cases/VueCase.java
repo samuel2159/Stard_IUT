@@ -5,8 +5,6 @@
  */
 package stardewvalley.Vues.Carte.Cases;
 
-import javafx.scene.image.Image;
-import stardewvalley.Metier.Carte.Cases.CaseTerre;
 import javafx.scene.image.ImageView;
 import stardewvalley.Metier.Carte.Cases.Case;
 import stardewvalley.Vues.Ressources.GestionnaireImages;
