@@ -27,7 +27,7 @@ public abstract class Personnage {
      */
     public Personnage(NomPersonnage nom) {
         this.nom = nom;
-        this.inventaire = new Inventaire();
+       //this.inventaire = new Inventaire();
     }
     
     /**

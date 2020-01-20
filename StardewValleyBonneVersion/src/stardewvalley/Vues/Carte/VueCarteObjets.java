@@ -41,8 +41,8 @@ public class VueCarteObjets extends Pane {
                 //binding et positionnement
                 vue.setSmooth(true);
                 
-                vue.setX(c.getCoordonnee().getX()*50);
-                vue.setY(c.getCoordonnee().getY()*50);
+                vue.setX(c.getCoordonnee().getX()*35);
+                vue.setY(c.getCoordonnee().getY()*35);
                 this.getChildren().add(vue); 
             }
             
