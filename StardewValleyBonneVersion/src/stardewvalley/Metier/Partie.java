@@ -6,13 +6,11 @@
 package stardewvalley.Metier;
 
 import stardewvalley.Metier.Carte.Carte;
-import static stardewvalley.Metier.Carte.Carte.getCarte;
 import stardewvalley.Metier.Carte.Coordonnee;
 import stardewvalley.Metier.Personnages.Joueur;
 import stardewvalley.Metier.Personnages.Personnage;
 import java.util.ArrayList;
 import stardewvalley.Metier.Personnages.GestionnairePersonnages;
-import stardewvalley.Metier.Personnages.NomPersonnage;
 
 /**
  * Correspond à une partie du jeu

@@ -7,7 +7,7 @@ package stardewvalley.Metier;
 
 /**
  *
- * @author simonetma
+ * @author Kevin Lamblin
  */
 public enum Mouvement {
     Haut,Bas,Droite,Gauche,HautDroite,HautGauche,BasDroite,BasGauche,Statique;
