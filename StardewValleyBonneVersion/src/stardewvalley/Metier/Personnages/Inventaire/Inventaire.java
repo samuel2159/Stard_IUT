@@ -6,7 +6,6 @@
 package stardewvalley.Metier.Personnages.Inventaire;
 
 import java.util.ArrayList;
-import stardewvalley.Metier.Personnages.Inventaire.Objets.NullItem;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 
@@ -68,7 +67,6 @@ public class Inventaire {
         int position = 0;
         int size = inventaire.size();
         boolean exit = false;
-        boolean exit2 = false;
         
         if(!inventaire.isEmpty()){ 
             do{
@@ -82,8 +80,7 @@ public class Inventaire {
         if(!exit){
             position = 0;
             if(size < 36){
-                        inventaire.add(new Stack(item));                 
-                }
+                inventaire.add(new Stack(item));
             }
             else{
                 throw new Exception("Inventory full");
@@ -103,10 +100,9 @@ public class Inventaire {
             throw new Exception("Invalid value");
         }
         else if(s.getQuantite() == quantite){
-            for(int i = 1; i <= 36; i++){
+            for(int i = 0; i < 36; i++){
                 if(inventaire.get(i).equals(s)){
                     inventaire.remove(i);
-                    inventaire.add(i, new Stack(new NullItem()));
                 }
             }
         }
@@ -121,21 +117,21 @@ public class Inventaire {
      * @param posVoulue int
      */
     public void deplacer(Stack aDeplacer, int posVoulue){
-        int oldPos = 0;
+        int oldPos = -1;
         Stack newStack;
         
-        int compteur = 1;
+        int compteur = 0;
         do{
             if(inventaire.get(compteur).equals(aDeplacer)){
                 oldPos = compteur;
             }
             compteur ++;
             
-        }while(compteur <= 36 && oldPos == 0);
+        }while(compteur < 36 && oldPos == -1);
         
-        if(inventaire.get(posVoulue).getItem().getType().equals("null")){
+        if(inventaire.get(posVoulue).equals(null)){
             inventaire.set(posVoulue, aDeplacer);
-            inventaire.set(oldPos, new Stack(new NullItem()));
+            inventaire.remove(oldPos);
         }
         else{
             newStack = inventaire.get(posVoulue);
