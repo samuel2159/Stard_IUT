@@ -31,7 +31,7 @@ public class Inventaire {
      * Donne la liste des objets de l'inventaire
      * @return ArrayList
      */
-    public ArrayList<Stack> getStacks(){
+    public ArrayList<Stack> getInventaire(){
         return inventaire;
     }
     
