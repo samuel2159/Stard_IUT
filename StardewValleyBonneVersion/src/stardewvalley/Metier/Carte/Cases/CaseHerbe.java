@@ -6,6 +6,7 @@
 package stardewvalley.Metier.Carte.Cases;
 
 import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Partie;
 
 /**
  * Case herbe
@@ -13,6 +14,8 @@ import stardewvalley.Metier.Carte.Coordonnee;
  */
 public class CaseHerbe extends Case{
 
+    public boolean becher = false; //Indique si la case d'herbe est bêchée
+    
     /**
      * @author Kevin Lamblin
      * @param c Coordonnee
@@ -26,7 +29,9 @@ public class CaseHerbe extends Case{
      * @author Kevin Lamblin
      */
     public void InteragirCase() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("beche")){
+            becher = true;
+        }
     }
 
     @Override
@@ -36,6 +41,14 @@ public class CaseHerbe extends Case{
      */
     public String getCaseType() {
         return "herbe";
+    }
+    
+    /**
+     * @author Kevin Lamblin    
+     * @return boolean
+     */
+    public boolean getBecher(){
+        return becher;
     }
     
 }

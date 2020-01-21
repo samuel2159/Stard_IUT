@@ -7,11 +7,13 @@ package stardewvalley.Vues.Scenes.pScenePartie;
 
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import stardewvalley.ControleursObservateurs.Controlers.ControlerClickSouris;
 import stardewvalley.ControleursObservateurs.Listeners.ListenerClavier;
 import stardewvalley.ControleursObservateurs.Observers.ObserverMouvementPerso;
 import stardewvalley.Metier.Partie;
 import stardewvalley.Vues.Carte.VueCarte;
 import stardewvalley.ControleursObservateurs.Controlers.ControlerDeplacementClavier;
+import stardewvalley.ControleursObservateurs.Listeners.ListenerSouris;
 import stardewvalley.Metier.Mouvement;
 import stardewvalley.Metier.Personnages.GestionnairePersonnages;
 import stardewvalley.Metier.Personnages.NomPersonnage;
@@ -33,17 +35,24 @@ public class ScenePartie extends Scene {
         ferme.getChildren().add(vueCarte);
         
         //ajout listener
-        ListenerClavier monListener = new ListenerClavier();
-        this.setOnKeyPressed(monListener);
+        ListenerClavier listenerClavier = new ListenerClavier();
+        this.setOnKeyPressed(listenerClavier);
+        
+        ListenerSouris listenerSouris = new ListenerSouris();
+        this.setOnMouseClicked(listenerSouris);
        
         //ajout du joueur
         this.vuePersonnage = new VuePersonnage(GestionnairePersonnages.getPersonnage(NomPersonnage.Joueur));        
         
         ObserverMouvementPerso omp = new ObserverMouvementPerso(vuePersonnage,Partie.getPartie().getJoueur());
-        ControlerDeplacementClavier c_clavier = new ControlerDeplacementClavier(monListener,omp,Partie.getPartie().getJoueur());     
-           
-        monListener.setControleur(c_clavier);        
+        ControlerDeplacementClavier c_clavier = new ControlerDeplacementClavier(listenerClavier,omp,Partie.getPartie().getJoueur());     
+        
+        ControlerClickSouris c_souris = new ControlerClickSouris(listenerSouris);
+        
+        listenerClavier.setControleur(c_clavier);        
         c_clavier.addObserver(omp);
+        
+        listenerSouris.setControleur(c_souris);
         
         ferme.getChildren().add(vuePersonnage);
         vuePersonnage.animation(Mouvement.Bas);
