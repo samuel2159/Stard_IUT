@@ -7,6 +7,9 @@ package stardewvalley.Vues.Inventaire;
 
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import stardewvalley.Metier.Personnages.Inventaire.Inventaire;
 import stardewvalley.Metier.Personnages.Inventaire.Stack;
 import stardewvalley.Vues.Inventaire.Objet.FabriqueVueObjet;
@@ -35,12 +38,21 @@ public class VueInventaire extends Pane{
         //System.out.println(inventaire);
         this.getChildren().add(new ImageView(GestionnaireImages.getImage("Inventaire")));
         
-        
+        int x = 55;
+        int y = 58;
         //ajout des stacks
         for(Stack s : inventaire.getStacks()){
             VueObjet v = FabriqueVueObjet.create(s.getObjet());
-            v.layoutXProperty().set(55);
-            v.layoutYProperty().set(58);
+            v.layoutXProperty().set(x);
+            v.layoutYProperty().set(y);
+            //ajout du texte nombre d'objets dans le stack     
+            //System.out.println(String.valueOf(s.getQuantite()));
+            Text t = new Text(x+40, y+65, String.valueOf(s.getQuantite()));
+            t.setFont(Font.font ("Verdana", 25));
+            t.setFill(Color.BROWN);
+            
+            this.getChildren().add(t);
+            x += 79;
             this.getChildren().add(v);
         }
         ScenePartie.addVue(this);

@@ -21,6 +21,8 @@ public class VueObjet extends ImageView{
         this.o = o;
         this.setImage(GestionnaireImages.getImage("Items"));
         this.setSmooth(true);
+        this.setFitHeight(65);
+        this.setFitWidth(65);        
     }
     
     public Objet getObjet(){

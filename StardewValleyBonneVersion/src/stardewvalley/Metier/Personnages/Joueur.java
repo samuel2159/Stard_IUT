@@ -24,11 +24,14 @@ public class Joueur extends Personnage {
         this.setEnergie(ENERGIE_MAX);
         //********************A SUPPRIMER TEST INVENTAIRE********************
         try{
-            this.getInventaire().Ajout(new Panais());
+            for(int i =0;i<10;i++)
+                this.getInventaire().Ajout(new Panais());
+            //this.getInventaire().Ajout(new Mais());
         }
         catch(Exception e){
             System.err.println("erreur inventaire");
         }
+        
     }
     
     /**
