@@ -14,13 +14,23 @@ import stardewvalley.Vues.Inventaire.VueInventaire;
  */
 public class ObserverInventaire extends Observer{
 
+    private VueInventaire vue;
+    
     public ObserverInventaire(VueInventaire vue,Inventaire i){
-        
+        this.vue = vue;
     }
     
     @Override
     public void update() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+    }
+    
+    public void update(boolean isOuvert){
+        if(isOuvert){
+            vue.afficher();
+        }
+        else
+            vue.fermer();
     }
     
 }

@@ -24,7 +24,7 @@ public class TestStack {
     public void TestgetItem(){
         Mais m = new Mais();
         Stack s = new Stack(m);
-        assertEquals(s.getItem(),m);
+        assertEquals(s.getObjet(),m);
     }
     /**
      * test de la méthode getQuantité 
@@ -45,7 +45,7 @@ public class TestStack {
         Panais p = new Panais();
         Stack s = new Stack(m);
         s.setItem(p);        
-       assertEquals(s.getItem(),p);
+       assertEquals(s.getObjet(),p);
     }
     
     /**

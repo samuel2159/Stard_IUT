@@ -39,7 +39,7 @@ public class BoutonOk extends ImageView implements Controlable {
         Controler controleurMenuHistoire = new ControleurMenuHistoire();
         this.addControleur(controleurMenuHistoire);
         //Observeur
-        controleurMenuHistoire.addObserver(new ObserverChangementScene(new SceneHistoire(new Pane(), 1100, 662)));
+        controleurMenuHistoire.addObserver(new ObserverChangementScene(new SceneHistoire(new Pane(), 1500, 844)));
         
         //Gestion du click
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {

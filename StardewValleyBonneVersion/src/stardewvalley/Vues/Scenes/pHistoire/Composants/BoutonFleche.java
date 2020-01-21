@@ -43,7 +43,7 @@ public class BoutonFleche extends ImageView implements Controlable {
         Controler controleurCreerPartie = new ControleurCreerPartie();
         this.addControleur(controleurCreerPartie);
         //Observeur
-        controleurCreerPartie.addObserver(new ObserverChangementScene(new ScenePartie(new Pane(), 1100, 662)));
+        controleurCreerPartie.addObserver(new ObserverChangementScene(new ScenePartie(new Pane(), 1500, 844)));
         
         //Gestion du click
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {

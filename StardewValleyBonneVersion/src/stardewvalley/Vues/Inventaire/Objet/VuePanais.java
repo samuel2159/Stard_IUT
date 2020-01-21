@@ -5,6 +5,7 @@
  */
 package stardewvalley.Vues.Inventaire.Objet;
 
+import javafx.geometry.Rectangle2D;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 /**
@@ -15,7 +16,9 @@ public class VuePanais extends VueObjet {
 
     public VuePanais(Objet o) {
         super(o);
-        
+        this.setViewport(new Rectangle2D(0, 16, 16, 16));
+        this.setFitHeight(65);
+        this.setFitWidth(65);
     }
     
 }

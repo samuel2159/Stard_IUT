@@ -30,7 +30,7 @@ public class Stack {
      * Donne l'item
      * @return Item
      */
-    public Objet getItem(){
+    public Objet getObjet(){
         return item;
     }
     

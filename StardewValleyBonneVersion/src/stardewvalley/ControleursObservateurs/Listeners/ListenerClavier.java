@@ -8,6 +8,7 @@ package stardewvalley.ControleursObservateurs.Listeners;
 import javafx.event.EventHandler;
 import javafx.scene.input.KeyEvent;
 import stardewvalley.ControleursObservateurs.Controlers.ControlerDeplacementClavier;
+import stardewvalley.ControleursObservateurs.Controlers.ControleurInventaire;
 import stardewvalley.Metier.Mouvement;
 
 /**
@@ -21,6 +22,7 @@ import stardewvalley.Metier.Mouvement;
 public class ListenerClavier implements EventHandler<KeyEvent>{
 
     private ControlerDeplacementClavier controleur;
+    private ControleurInventaire controleurInventaire;
     private Mouvement mouv;
     private boolean inventaireOuvert;
     
@@ -52,7 +54,10 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
                 if(inventaireOuvert)
                     inventaireOuvert = false;
                 else
-                    inventaireOuvert = true;                
+                    inventaireOuvert = true;    
+                System.out.println(inventaireOuvert);
+                mouv = Mouvement.Statique;
+                controleurInventaire.update();
             break;
             default:
                 this.mouv = Mouvement.Statique;
@@ -71,6 +76,11 @@ public class ListenerClavier implements EventHandler<KeyEvent>{
     public void setControleur(ControlerDeplacementClavier c){
         controleur = c;
     }
+
+    public void setControleurInventaire(ControleurInventaire c){
+        controleurInventaire = c;
+    }
+
     public boolean inventaireEstOuvert(){
         return inventaireOuvert; 
    }

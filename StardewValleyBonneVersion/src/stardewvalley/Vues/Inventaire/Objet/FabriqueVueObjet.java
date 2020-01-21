@@ -5,7 +5,6 @@
  */
 package stardewvalley.Vues.Inventaire.Objet;
 
-import stardewvalley.Metier.Personnages.Inventaire.Objets.Mais;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 /**
@@ -22,7 +21,7 @@ public class FabriqueVueObjet {
                 vue = new VueMais(o);
             break;
             case "panais":
-                vue = new VuePanais(o);
+                vue = new VuePanais(o);                
             break;
         }
         return vue;

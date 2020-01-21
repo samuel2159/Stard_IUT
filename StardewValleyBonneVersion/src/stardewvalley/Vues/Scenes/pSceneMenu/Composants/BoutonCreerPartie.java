@@ -41,7 +41,7 @@ public class BoutonCreerPartie extends ImageView implements Controlable {
         Controler controleurMenuPerso = new ControleurMenuPerso();
         this.addControleur(controleurMenuPerso);
         //Observeur
-        controleurMenuPerso.addObserver(new ObserverChangementScene(new ScenePerso(new Pane(), 1100, 662)));
+        controleurMenuPerso.addObserver(new ObserverChangementScene(new ScenePerso(new Pane(), 1500, 844)));
         
         //Gestion du click
         this.setOnMouseClicked(new EventHandler<MouseEvent>() {

@@ -31,7 +31,7 @@ public class Inventaire {
      * Donne la liste des objets de l'inventaire
      * @return ArrayList
      */
-    public ArrayList<Stack> getObjets(){
+    public ArrayList<Stack> getStacks(){
         return inventaire;
     }
     
@@ -70,7 +70,7 @@ public class Inventaire {
         
         if(!inventaire.isEmpty()){ 
             do{
-                if(inventaire.get(position).getItem().getType().equals(item.getType())){
+                if(inventaire.get(position).getObjet().getType().equals(item.getType())){
                     inventaire.get(position).ajoutQuantite(1);
                     exit = true;
                 }

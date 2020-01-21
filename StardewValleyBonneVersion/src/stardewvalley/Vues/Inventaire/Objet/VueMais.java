@@ -5,6 +5,7 @@
  */
 package stardewvalley.Vues.Inventaire.Objet;
 
+import javafx.geometry.Rectangle2D;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 /**
@@ -15,6 +16,7 @@ public class VueMais extends VueObjet {
 
     public VueMais(Objet o) {
         super(o);
+        this.setViewport(new Rectangle2D(344, 544, 16, 16));
     }
     
 }

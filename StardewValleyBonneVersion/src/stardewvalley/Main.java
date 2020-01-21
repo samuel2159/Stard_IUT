@@ -27,7 +27,7 @@ public class Main extends Application {
         Main.primaryStage = primaryStage;
         
         //creation de la scène
-        this.sceneCourante = new SceneMenu(new Pane(), 1100, 662); 
+        this.sceneCourante = new SceneMenu(new Pane(), 1500, 844); 
         
         //création de la fenêtre
         primaryStage.setTitle("Stardew Valley");

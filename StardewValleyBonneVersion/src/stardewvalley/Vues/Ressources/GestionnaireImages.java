@@ -41,6 +41,9 @@ public class GestionnaireImages {
         //EcranHISTOIRE
         this.addImage("Grandpere", "MenuHistoire/GrandPere.png");
         this.addImage("Fleche", "MenuHistoire/fleche.png");
+        //Inventaire
+        this.addImage("Items","Personnages/items.png");
+        this.addImage("Inventaire","Personnages/inventaire.png");
     }
     
     //ajout d'une image dans la bibliothèque

@@ -5,6 +5,7 @@
  */
 package stardewvalley.Metier.Personnages;
 
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Panais;
 import static stardewvalley.Metier.Personnages.NomPersonnage.Joueur;
 
 /**
@@ -21,6 +22,13 @@ public class Joueur extends Personnage {
         super(Joueur);
         this.ENERGIE_MAX = 1000;
         this.setEnergie(ENERGIE_MAX);
+        //********************A SUPPRIMER TEST INVENTAIRE********************
+        try{
+            this.getInventaire().Ajout(new Panais());
+        }
+        catch(Exception e){
+            System.err.println("erreur inventaire");
+        }
     }
     
     /**
