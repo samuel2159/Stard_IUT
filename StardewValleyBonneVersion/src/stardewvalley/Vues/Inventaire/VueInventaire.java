@@ -41,7 +41,7 @@ public class VueInventaire extends Pane{
         int x = 55;
         int y = 58;
         //ajout des stacks
-        for(Stack s : inventaire.getStacks()){
+        for(Stack s : inventaire.getInventaire()){
             VueObjet v = FabriqueVueObjet.create(s.getObjet());
             v.layoutXProperty().set(x);
             v.layoutYProperty().set(y);

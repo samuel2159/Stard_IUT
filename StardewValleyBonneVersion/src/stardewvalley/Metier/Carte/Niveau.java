@@ -48,17 +48,7 @@ public class Niveau {
                                     c = null;
                                     if((lettre = file.read()) != -1){
                                         coord = new Coordonnee(colonne, ligne);
-                                        c = CreationCase(coord, (char)lettre); 
-                                        
-                                        //test sapin
-                                        if(ligne == 20 && colonne == 20)
-                                            c.setObjetCorrespondant(new Sapin());
-                                        if(ligne == 12 && colonne == 10)
-                                            c.setObjetCorrespondant(new Sapin());
-                                        if(ligne == 0 && colonne == 0)
-                                            c.setObjetCorrespondant(new Rocher());
-                                        /*if(ligne == 10 && colonne == 12)
-                                            c.setObjetCorrespondant(new HerbeSauvage());     */                                   
+                                        c = CreationCase(coord, (char)lettre);                                    
                                     }
 
                                     if(c != null){
