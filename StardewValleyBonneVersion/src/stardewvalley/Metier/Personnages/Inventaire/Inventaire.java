@@ -50,19 +50,6 @@ public class Inventaire {
      * @throws Exception 
      */
     public void Ajout(Objet item) throws Exception{
-        /*
-        for(Stack s : inventaire)
-        {
-            if(s.getItem().getType().equals(item.getType()))
-                s.ajoutQuantite(1);
-            else{
-                if(inventaire.size() <= 36)
-                    inventaire.add(new Stack(item));
-                else    
-                    throw new Exception("inventaire plein");
-            }
-                
-        }*/
         
         int position = 0;
         int size = inventaire.size();

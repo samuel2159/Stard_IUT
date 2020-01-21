@@ -5,7 +5,11 @@
  */
 package stardewvalley.Metier.Carte.Cases;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante.MaisPlante;
+import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante.PanaisPlante;
 import stardewvalley.Metier.Partie;
 
 /**
@@ -39,7 +43,25 @@ public class CaseHerbe extends Case{
         }
         
         if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getFamille().equals("graine")){
-            ////////////////////////////////////////////////////////////////:
+                
+            switch(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType()){
+                case "graineMais" :
+                    this.setObjetCorrespondant(new MaisPlante());
+                    try {
+                        Partie.getPartie().getJoueur().getInventaire().Supprimer(Partie.getPartie().getJoueur().getInventaire().getObjetCourant(), 1);
+                    } catch (Exception ex) {
+
+                    }
+                    break;
+                case "grainePanais" :
+                    this.setObjetCorrespondant(new PanaisPlante());
+                    try {
+                        Partie.getPartie().getJoueur().getInventaire().Supprimer(Partie.getPartie().getJoueur().getInventaire().getObjetCourant(), 1);
+                    } catch (Exception ex) {
+
+                    }
+                    break;
+            }
         }
     }
 
