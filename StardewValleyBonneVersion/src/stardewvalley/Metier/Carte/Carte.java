@@ -26,7 +26,7 @@ public class Carte {
         Niveau lvlMaison = new Niveau(Maison, "Maison.txt", 10, 10);
         lNiveaux.put(Ferme, lvlFerme);
         lNiveaux.put(Maison, lvlMaison);
-        Environnement envFerme = new Environnement(Ferme, "envFerme.txt", 45, 45);
+        //Environnement envFerme = new Environnement(Ferme, "envFerme.txt", 45, 45);
         niveauActuel = lNiveaux.get(Ferme);
     }
     
