@@ -37,7 +37,7 @@ public class CaseHerbe extends Case{
      */
     public void InteragirCase() {
 
-        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getObjet().getType().equals("beche")){
+       // if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getObjet().getType().equals("beche")){
 
             becher = true;
         //}

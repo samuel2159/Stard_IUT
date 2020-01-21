@@ -16,6 +16,7 @@ import stardewvalley.Vues.Carte.VueCarte;
 import stardewvalley.ControleursObservateurs.Controlers.ControlerDeplacementClavier;
 import stardewvalley.ControleursObservateurs.Controlers.ControleurInventaire;
 import stardewvalley.ControleursObservateurs.Listeners.ListenerSouris;
+import stardewvalley.ControleursObservateurs.Observers.ObserverCase;
 import stardewvalley.ControleursObservateurs.Observers.ObserverInventaire;
 import stardewvalley.Metier.Mouvement;
 import stardewvalley.Metier.Personnages.GestionnairePersonnages;
@@ -55,7 +56,7 @@ public class ScenePartie extends Scene {
         Joueur joueur = Partie.getPartie().getJoueur();        
         ObserverMouvementPerso omp = new ObserverMouvementPerso(vuePersonnage,joueur);
         ControlerDeplacementClavier c_clavier = new ControlerDeplacementClavier(listenerClavier,omp,joueur);  
-        
+        ObserverCase oc = new ObserverCase(vueCarte.getVueCarteFond().getVuesCase());
         
         //************Inventaire*****************
         Inventaire inventaire = joueur.getInventaire();
@@ -64,7 +65,8 @@ public class ScenePartie extends Scene {
         ControleurInventaire c_inventaire = new ControleurInventaire(listenerClavier,observerInventaire,inventaire);
         listenerClavier.setControleurInventaire(c_inventaire);
         
-        ControlerClickSouris c_souris = new ControlerClickSouris(listenerSouris);
+        ControlerClickSouris c_souris = new ControlerClickSouris(listenerSouris, oc);
+        oc.setControler(c_souris);
         
         listenerClavier.setControleur(c_clavier);        
         c_clavier.addObserver(omp);
