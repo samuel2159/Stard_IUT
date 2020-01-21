@@ -36,11 +36,11 @@ public class CaseHerbe extends Case{
      * @author Kevin Lamblin
      */
     public void InteragirCase() {
-        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("beche")){
+        //if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("beche")){
             becher = true;
-        }
+        //}
         
-        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("arrosoir")){
+        /*if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("arrosoir")){
             arroser = true;
         }
         
@@ -87,7 +87,7 @@ public class CaseHerbe extends Case{
                 default :
                     break;
             }
-        }
+        }*/
     }
 
     @Override
