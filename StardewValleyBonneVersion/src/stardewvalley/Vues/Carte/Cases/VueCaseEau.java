@@ -7,19 +7,19 @@ package stardewvalley.Vues.Carte.Cases;
 
 //import MVC.Vue.Arbres.VueObjetPlace;
 import javafx.geometry.Rectangle2D;
-import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Cases.Case;
+import stardewvalley.Metier.Carte.Cases.CaseEau;
 import stardewvalley.Metier.Carte.Direction;
-import stardewvalley.Vues.Ressources.GestionnaireImages;
 
 /**
  *
  * @author telli
  */
 public class VueCaseEau extends VueCase {
-    
+    private CaseEau c;
     public VueCaseEau(Case c){
-        super(c);
+        super();
+        this.c = (CaseEau)c;
         
         this.setViewport(new Rectangle2D(16,1232,16,16)); 
         
@@ -75,5 +75,22 @@ public class VueCaseEau extends VueCase {
              
         }          
     }      
+
+    /**
+     * Ne fait rien car pas d'interaction avec une case d'eau.
+     */
+    @Override
+    public void update(){
+        
+    }
+
+    @Override
+    public Case getCase() {
+        return c;
+    }
     
+    @Override
+    public void setCase(Case c) {
+        this.c = (CaseEau)c;
+    }
 }

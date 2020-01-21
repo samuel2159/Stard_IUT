@@ -21,14 +21,15 @@ public class ListenerSouris implements EventHandler<MouseEvent>{
     
     public ListenerSouris(){
         super();  
+        coord = new Coordonnee(0,0);
     }
     
     @Override
     public void handle(MouseEvent event) {
-        int x = (int)event.getSceneX()/35;
-        int y = (int)event.getSceneY()/35;
-        coord.setX(x);
-        coord.setY(y);
+        double x = event.getSceneX()/35;
+        double y = event.getSceneY()/35;
+        coord.setX((int)x);
+        coord.setY((int)y);
         controleur.update();
     }
     

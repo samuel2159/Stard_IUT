@@ -6,6 +6,7 @@
 package stardewvalley.ControleursObservateurs.Controlers;
 
 import stardewvalley.ControleursObservateurs.Listeners.ListenerSouris;
+import stardewvalley.ControleursObservateurs.Observers.ObserverCase;
 import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Cases.Case;
 
@@ -15,16 +16,19 @@ import stardewvalley.Metier.Carte.Cases.Case;
  */
 public class ControlerClickSouris extends Controler{
 
+    private ObserverCase observer;
     private ListenerSouris listener;
     
-    public ControlerClickSouris(ListenerSouris listener){
+    public ControlerClickSouris(ListenerSouris listener, ObserverCase o){
         this.listener = listener;
+        this.observer = o;
     }
     
     public void update(){
         Case c = Carte.getCarte().getNiveauActuel().getCase(listener.getCoordonnee());
         if (c.getObjetCorrespondant() == null){
             c.InteragirCase();
+            observer.update();
         }
         else{
             c.InteragirObjet();
@@ -37,4 +41,7 @@ public class ControlerClickSouris extends Controler{
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+    public ListenerSouris getListener(){
+        return this.listener;
+    }
 }

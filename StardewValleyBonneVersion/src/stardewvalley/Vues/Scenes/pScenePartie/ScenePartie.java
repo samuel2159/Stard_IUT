@@ -14,6 +14,7 @@ import stardewvalley.Metier.Partie;
 import stardewvalley.Vues.Carte.VueCarte;
 import stardewvalley.ControleursObservateurs.Controlers.ControlerDeplacementClavier;
 import stardewvalley.ControleursObservateurs.Listeners.ListenerSouris;
+import stardewvalley.ControleursObservateurs.Observers.ObserverCase;
 import stardewvalley.Metier.Mouvement;
 import stardewvalley.Metier.Personnages.GestionnairePersonnages;
 import stardewvalley.Metier.Personnages.NomPersonnage;
@@ -47,7 +48,9 @@ public class ScenePartie extends Scene {
         ObserverMouvementPerso omp = new ObserverMouvementPerso(vuePersonnage,Partie.getPartie().getJoueur());
         ControlerDeplacementClavier c_clavier = new ControlerDeplacementClavier(listenerClavier,omp,Partie.getPartie().getJoueur());     
         
-        ControlerClickSouris c_souris = new ControlerClickSouris(listenerSouris);
+        ObserverCase oc = new ObserverCase(vueCarte.getVueCarteFond().getVuesCase());
+        ControlerClickSouris c_souris = new ControlerClickSouris(listenerSouris, oc);
+        oc.setControler(c_souris);
         
         listenerClavier.setControleur(c_clavier);        
         c_clavier.addObserver(omp);

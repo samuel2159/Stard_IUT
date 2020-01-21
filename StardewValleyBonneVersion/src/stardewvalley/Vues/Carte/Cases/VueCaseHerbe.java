@@ -9,15 +9,18 @@ import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Direction;
 import javafx.geometry.Rectangle2D;
 import stardewvalley.Metier.Carte.Cases.Case;
+import stardewvalley.Metier.Carte.Cases.CaseHerbe;
 
 /**
  *
  * @author telli
  */
 public class VueCaseHerbe extends VueCase{
-    
+    private CaseHerbe c;
+
     public VueCaseHerbe(Case c){
-        super(c);       
+        super();   
+        CaseHerbe ca = (CaseHerbe)c;
         
         //angle haut droit
         if((c.getVoisine(Direction.Bas) != null) && (c.getVoisine(Direction.Bas).getCaseType().equals("herbe")) && (c.getVoisine(Direction.Gauche) != null) && (c.getVoisine(Direction.Gauche).getCaseType().equals("herbe")) && (c.getVoisine(Direction.BasGauche) != null) && (c.getVoisine(Direction.BasGauche).getCaseType().equals("terre"))){
@@ -72,5 +75,21 @@ public class VueCaseHerbe extends VueCase{
         else
              this.setViewport(new Rectangle2D(0,112,14,14)); 
     }    
+
+    @Override
+    public void update() {
+        if (c.getBecher()){
+            this.setViewport(new Rectangle2D(80, 432, 16, 16));
+        }
+    }
+
+    @Override 
+    public Case getCase() {
+        return c;
+    }
     
+    @Override
+    public void setCase(Case c) {
+        this.c = (CaseHerbe)c;
+    }
 }
