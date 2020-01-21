@@ -5,12 +5,14 @@
  */
 package stardewvalley.Metier.Carte.Cases;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import stardewvalley.Metier.Carte.Coordonnee;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante.MaisPlante;
 import stardewvalley.Metier.Objet.ObjetsPlace.ObjetsNaturel.Plante.PanaisPlante;
 import stardewvalley.Metier.Partie;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Graines.GraineMais;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Graines.GrainePanais;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Mais;
+import stardewvalley.Metier.Personnages.Inventaire.Objets.Panais;
 
 /**
  * Case herbe
@@ -42,6 +44,27 @@ public class CaseHerbe extends Case{
             arroser = true;
         }
         
+        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals(null)){
+            try{
+                switch(this.getObjetCorrespondant().getType()){
+                    case "Mais" :
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new Mais());
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new GraineMais());
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new GraineMais());
+                        break;
+                    case "Panais" :
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new Panais());
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new GrainePanais());
+                        Partie.getPartie().getJoueur().getInventaire().Ajout(new GrainePanais());
+                        break;
+                    default :
+                        break;
+            }
+            }catch(Exception ex){
+                
+            }
+        }
+        
         if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getFamille().equals("graine")){
                 
             switch(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType()){
@@ -60,6 +83,8 @@ public class CaseHerbe extends Case{
                     } catch (Exception ex) {
 
                     }
+                    break;
+                default :
                     break;
             }
         }
