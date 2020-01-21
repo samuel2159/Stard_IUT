@@ -33,4 +33,7 @@ public class VueCarte extends Pane {
         
     }
     
+    public VueCarteFond getVueCarteFond(){
+        return vueCarteFond;
+    }
 }

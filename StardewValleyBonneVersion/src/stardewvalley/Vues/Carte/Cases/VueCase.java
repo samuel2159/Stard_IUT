@@ -15,16 +15,14 @@ import stardewvalley.Vues.Ressources.GestionnaireImages;
  */
 public abstract class VueCase extends ImageView {
 
-    private Case c;
-    
-    public VueCase(Case c){
-        this.c=c;
+    public VueCase(){
         this.setImage(GestionnaireImages.getImage("Cases"));
         this.setSmooth(true);
     }
     
-    public Case getCase() {
-        return c;
-    }
+    public abstract Case getCase();
     
+    public abstract void update();
+    
+    public abstract void setCase(Case c);
 }

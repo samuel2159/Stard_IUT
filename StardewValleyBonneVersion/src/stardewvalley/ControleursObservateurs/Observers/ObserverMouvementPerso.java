@@ -26,14 +26,12 @@ public class ObserverMouvementPerso extends Observer{
     
     @Override
     public void update(){
-       
         vue.setTranslateX((double)personnage.getPosition().getX());
         vue.setTranslateY((double)personnage.getPosition().getY());
         //vue.updateFace();
     }
     
     public void update(Mouvement m){
-
         vue.animation(m);
     }    
     

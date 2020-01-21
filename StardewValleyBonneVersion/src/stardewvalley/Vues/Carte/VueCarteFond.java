@@ -5,6 +5,7 @@
  */
 package stardewvalley.Vues.Carte;
 
+import java.util.ArrayList;
 import javafx.scene.layout.GridPane;
 import stardewvalley.Metier.Carte.Carte;
 import stardewvalley.Metier.Carte.Cases.Case;
@@ -18,10 +19,11 @@ import stardewvalley.Vues.Carte.Cases.VueCaseFabrique;
 public class VueCarteFond extends GridPane {
     
     private VueCarte vueCarte;
+    private ArrayList<VueCase> vuesCase;
     
     public VueCarteFond(VueCarte vueCarte) {
                 
-        
+        vuesCase = new ArrayList<>();
         this.vueCarte = vueCarte;
         this.prefHeightProperty().bind(vueCarte.heightProperty());
         this.prefWidthProperty().bind(vueCarte.widthProperty());
@@ -35,12 +37,17 @@ public class VueCarteFond extends GridPane {
     private void affichage() {
         for(Case c : Carte.getNiveauActuel().getCases()) {
             VueCase vue = VueCaseFabrique.create(c);
+            vue.setCase(c);
             vue.setFitWidth(35);
             vue.setFitHeight(35);
+            vuesCase.add(vue);
             //vue.fitHeightProperty().bind(this.heightProperty().multiply(0.05));
             //vue.fitWidthProperty().bind(this.heightProperty().multiply(0.05));
             this.add(vue, c.getCoordonnee().getX(), c.getCoordonnee().getY());
         }
     }
     
+    public ArrayList<VueCase> getVuesCase(){
+        return vuesCase;
+    }
 }

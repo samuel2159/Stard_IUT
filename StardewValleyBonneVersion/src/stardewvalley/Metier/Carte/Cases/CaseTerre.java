@@ -6,6 +6,7 @@
 package stardewvalley.Metier.Carte.Cases;
 
 import stardewvalley.Metier.Carte.Coordonnee;
+import stardewvalley.Metier.Partie;
 
 /**
  * Case de terre
@@ -35,6 +36,6 @@ public class CaseTerre extends Case{
      * @author Kevin Lamblin
      */
     public void InteragirCase() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 }
