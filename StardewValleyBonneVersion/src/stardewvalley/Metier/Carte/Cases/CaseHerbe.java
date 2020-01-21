@@ -15,6 +15,7 @@ import stardewvalley.Metier.Partie;
 public class CaseHerbe extends Case{
 
     public boolean becher = false; //Indique si la case d'herbe est bêchée
+    public boolean arroser = false; //Indique si la case est arrosée
     
     /**
      * @author Kevin Lamblin
@@ -31,6 +32,14 @@ public class CaseHerbe extends Case{
     public void InteragirCase() {
         if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("beche")){
             becher = true;
+        }
+        
+        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getType().equals("arrosoir")){
+            arroser = true;
+        }
+        
+        if(Partie.getPartie().getJoueur().getInventaire().getObjetCourant().getItem().getFamille().equals("graine")){
+            ////////////////////////////////////////////////////////////////:
         }
     }
 
@@ -49,6 +58,14 @@ public class CaseHerbe extends Case{
      */
     public boolean getBecher(){
         return becher;
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * @return boolean
+     */
+    public boolean getArroser(){
+        return arroser;
     }
     
 }
