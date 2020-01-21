@@ -24,13 +24,18 @@ import stardewvalley.Vues.Ressources.GestionnaireImages;
  */
 public class VuePersonnage extends ImageView{
     
-    private Personnage personnageModel;
-   
+   private Personnage personnageModel;
+   private boolean isReady;
+   private int etat;
     
     public VuePersonnage(Personnage personnage){
         this.personnageModel = personnage;        
         //ajout du sprite
-        this.selectionImageSprite();         
+        this.selectionImageSprite();    
+        etat = 0;
+        isReady = true;
+        this.fitWidthProperty().set(35);
+        this.fitHeightProperty().set(70);
        
     }
     
@@ -51,116 +56,83 @@ public class VuePersonnage extends ImageView{
 
     public void animation(Mouvement m) {
         
-        
-        
-      KeyFrame etape1 =null;
-      KeyFrame etape2 =null;
-      KeyFrame etape3 =null;
-      KeyFrame etape4 =null;
-      KeyFrame etape5 =null;
-      
-        
-         switch(m){
-            case Bas:
-                this.setViewport(new Rectangle2D(0, 1, 16, 32)); 
-                this.deplacement(m);
-                
-                etape1 = new KeyFrame( Duration.millis(150), e->this.setViewport(new Rectangle2D(0, 1, 16, 32)));  
-                this.deplacement(m);
-                etape2 = new KeyFrame( Duration.millis(300), e->this.setViewport(new Rectangle2D(17, 1, 16, 32)));
-                this.deplacement(m);
-                etape3 = new KeyFrame( Duration.millis(450), e->this.setViewport(new Rectangle2D(33, 1, 16, 32)));
-                this.deplacement(m);
-                etape4 = new KeyFrame( Duration.millis(600), e->this.setViewport(new Rectangle2D(49, 1, 16, 32))); 
-                this.deplacement(m);
-                etape5 = new KeyFrame( Duration.millis(750), e->this.setViewport(new Rectangle2D(0, 1, 16, 32)));  
-                
-              
-                
-                break;
-            case Gauche:
-                this.setViewport(new Rectangle2D(0, 97, 16, 32));
-                etape1 = new KeyFrame( Duration.millis(150), e->this.setViewport(new Rectangle2D(0, 97, 16, 32)));               
-                etape2 = new KeyFrame( Duration.millis(300), e->this.setViewport(new Rectangle2D(17, 97, 16, 32)));
-                etape3 = new KeyFrame( Duration.millis(450), e->this.setViewport(new Rectangle2D(33, 97, 16, 32)));
-                etape4 = new KeyFrame( Duration.millis(600), e->this.setViewport(new Rectangle2D(49, 97, 16, 32)));    
-                etape5 = new KeyFrame( Duration.millis(750), e->this.setViewport(new Rectangle2D(0, 97, 16, 32)));  
-                 
-                
-                this.deplacement(m);             
-            break;
-            case Droite:
-                this.setViewport(new Rectangle2D(0,33,16,32));//(0, 33, 16, 32));//mettre le sprite de mouvement 
-                etape1 = new KeyFrame( Duration.millis(150), e->this.setViewport(new Rectangle2D(0, 33, 16, 32)));               
-                etape2 = new KeyFrame( Duration.millis(300), e->this.setViewport(new Rectangle2D(17, 33, 16, 32)));
-                etape3 = new KeyFrame( Duration.millis(450), e->this.setViewport(new Rectangle2D(33, 33, 16, 32)));
-                etape4 = new KeyFrame( Duration.millis(600), e->this.setViewport(new Rectangle2D(49, 33, 16, 32)));    
-                etape5 = new KeyFrame( Duration.millis(750), e->this.setViewport(new Rectangle2D(0, 33, 16, 32)));  
-                this.deplacement(m);           
-            break;
-            case Haut:
-                this.setViewport(new Rectangle2D(0, 65, 16, 32));
-                etape1 = new KeyFrame( Duration.millis(150), e->this.setViewport(new Rectangle2D(0, 65, 16, 32)));               
-                etape2 = new KeyFrame( Duration.millis(300), e->this.setViewport(new Rectangle2D(17, 65, 16, 32)));
-                etape3 = new KeyFrame( Duration.millis(450), e->this.setViewport(new Rectangle2D(33, 65, 16, 32)));
-                etape4 = new KeyFrame( Duration.millis(600), e->this.setViewport(new Rectangle2D(49, 65, 16, 32)));    
-                etape5 = new KeyFrame( Duration.millis(750), e->this.setViewport(new Rectangle2D(0, 65, 16, 32)));  
-                this.deplacement(m);             
-            break;            
-        }
-                etape1 = new KeyFrame( Duration.millis(150), e->this.setViewport(new Rectangle2D(0, 97, 16, 32)));               
-                etape2 = new KeyFrame( Duration.millis(300), e->this.setViewport(new Rectangle2D(17, 97, 16, 32)));
-                etape3 = new KeyFrame( Duration.millis(450), e->this.setViewport(new Rectangle2D(33, 97, 16, 32)));
-                etape4 = new KeyFrame( Duration.millis(600), e->this.setViewport(new Rectangle2D(49, 97, 16, 32)));    
-                etape5 = new KeyFrame( Duration.millis(750), e->this.setViewport(new Rectangle2D(0, 97, 16, 32))); 
-                
-         Timeline t = new Timeline(etape1,etape2,etape3,etape4,etape5);  
-         t.play();         
-        if(getScene() != null){
-            this.fitWidthProperty().bind(this.getScene().heightProperty().multiply(0.05));
-            this.fitHeightProperty().bind(this.getScene().heightProperty().multiply(0.10));
-        }
-      
-            
-      
+        if (this.isReady){
+            this.isReady = false;
+            Timeline timeline = new Timeline();
+            KeyFrame frame =new KeyFrame(Duration.millis(100), ae-> deplacement(m));
+            timeline.getKeyFrames().add(frame);
+            timeline.setCycleCount(4);
+            timeline.setOnFinished(ae -> finAnimation(m));
+            timeline.play(); 
+        }   
     }
       
       public void deplacement(Mouvement m ){
-          
+          double vitesse = 4;
           switch(m){
-            case Bas:
-               
-                this.setTranslateY((double)personnageModel.getPosition().getY()*10);
-            break;
-            case Gauche:
-                this.setViewport(new Rectangle2D(0, 97, 16, 32));
-                this.setTranslateX((double)personnageModel.getPosition().getX()*10);
-            break;
-            case Droite:
-               this.setViewport(new Rectangle2D(0,33,16,32));//(0, 33, 16, 32));//mettre le sprite de mouvement 
-                this.setTranslateX((double)personnageModel.getPosition().getX()*10);
-               
-                break;
-            case Haut:
-                this.setViewport(new Rectangle2D(0, 65, 16, 32));
-                 this.setTranslateY((double)personnageModel.getPosition().getY()*10);
-                
-            break;            
+            case Bas:this.setTranslateY(personnageModel.getPosition().getY()*vitesse);break;
+            case Gauche: this.setTranslateX(personnageModel.getPosition().getX()*vitesse); break;
+            case Droite: this.setTranslateX(personnageModel.getPosition().getX()*vitesse);break;
+            case Haut:this.setTranslateY(personnageModel.getPosition().getY()*vitesse); break;            
         }
+          changeEtat(m);
           
       }
     
-      public void changeSprite(){
-         this.setViewport(new Rectangle2D(32, 290, 16, 32));
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(VuePersonnage.class.getName()).log(Level.SEVERE, null, ex);
+      public void changeEtat(Mouvement m){
+        
+        switch(m){
+            case Bas:
+            switch(this.etat) {
+            case 0: this.setViewport(new Rectangle2D(0,1,16,32)); ; break;
+            case 1:this.setViewport(new Rectangle2D(16,1,16,32)); break;
+            case 2:this.setViewport(new Rectangle2D(32,1,16,32));  break;
+            case 3: this.setViewport(new Rectangle2D(48,1,16,32)); break;
+             }
+            break;
+            case Droite:
+            switch(this.etat) {
+            case 0: this.setViewport(new Rectangle2D(0,33,16,32));  break;
+            case 1:this.setViewport(new Rectangle2D(16,33,16,32)); break;
+            case 2:this.setViewport(new Rectangle2D(32,33,16,32));  break;
+            case 3: this.setViewport(new Rectangle2D(48,33,16,32)); break;
+             }
+            break;
+            case Haut:
+            switch(this.etat) {
+            case 0: this.setViewport(new Rectangle2D(0,65,16,32));  break;
+            case 1:this.setViewport(new Rectangle2D(16,65,16,32)); break;
+            case 2:this.setViewport(new Rectangle2D(32,65,16,32));  break;
+            case 3: this.setViewport(new Rectangle2D(48,65,16,32)); break;
+             }
+            break;
+            case Gauche:
+            switch(this.etat) {
+            case 0: this.setViewport(new Rectangle2D(0,97,16,32));  break;
+            case 1:this.setViewport(new Rectangle2D(16,97,16,32)); break;
+            case 2:this.setViewport(new Rectangle2D(32,97,16,32));  break;
+            case 3: this.setViewport(new Rectangle2D(48,97,16,32)); break;
+             }
+            break;
         }
-         this.setViewport(new Rectangle2D(16, 290, 16, 32));
-         
+        
+         this.etat = (this.etat + 1)%4;
          
           
-      }//test pour le changement de sprite 
-    
+      }
+      
+
+      
+      private void setReady(){
+          this.isReady = true;
+           }
+      private void finAnimation(Mouvement m) {
+          
+          
+           
+          setReady();
+          etat = 0;
+          changeEtat(m);
+          System.out.println("remise a zero");
+}
 }
