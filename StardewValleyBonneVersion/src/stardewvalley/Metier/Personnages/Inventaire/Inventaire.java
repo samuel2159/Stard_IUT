@@ -6,7 +6,6 @@
 package stardewvalley.Metier.Personnages.Inventaire;
 
 import java.util.ArrayList;
-import stardewvalley.Metier.Personnages.Inventaire.Objets.NullItem;
 import stardewvalley.Metier.Personnages.Inventaire.Objets.Objet;
 
 
@@ -25,10 +24,6 @@ public class Inventaire {
      */
     public Inventaire(){
         inventaire = new ArrayList<>();
-        for(int i = 1; i <= 36; i++){
-            inventaire.add(i, null);
-        }
-        objetCourant = inventaire.get(1);
     }
     
     /**
@@ -40,4 +35,109 @@ public class Inventaire {
         return inventaire;
     }
     
+    /**
+     * @author Kevin Lamblin
+     * Donne l'objet tenu par le joueur
+     * @return Stack
+     */
+    public Stack getObjetCourant(){
+        return objetCourant;
+    }
+    
+    /**
+     * @author Kevin Lamblin && Vincent Tantet
+     * @param item Objet
+     * @throws Exception 
+     */
+    public void Ajout(Objet item) throws Exception{
+        /*
+        for(Stack s : inventaire)
+        {
+            if(s.getItem().getType().equals(item.getType()))
+                s.ajoutQuantite(1);
+            else{
+                if(inventaire.size() <= 36)
+                    inventaire.add(new Stack(item));
+                else    
+                    throw new Exception("inventaire plein");
+            }
+                
+        }*/
+        
+        int position = 0;
+        int size = inventaire.size();
+        boolean exit = false;
+        
+        if(!inventaire.isEmpty()){ 
+            do{
+                if(inventaire.get(position).getItem().getType().equals(item.getType())){
+                    inventaire.get(position).ajoutQuantite(1);
+                    exit = true;
+                }
+                position ++;
+            }while( position != size && !exit);
+        }
+        if(!exit){
+            position = 0;
+            if(size < 36){
+                inventaire.add(new Stack(item));
+            }
+            else{
+                throw new Exception("Inventory full");
+            }
+        }
+    }
+    
+    /**
+     * @author Kevin Lamblin
+     * Supprime un stack de l'inventaire
+     * @param s Stack
+     * @param quantite int
+     * @throws Exception 
+     */
+    public void Supprimer(Stack s, int quantite) throws Exception{
+        if(s.getQuantite() < quantite){
+            throw new Exception("Invalid value");
+        }
+        else if(s.getQuantite() == quantite){
+            for(int i = 0; i < 36; i++){
+                if(inventaire.get(i).equals(s)){
+                    inventaire.remove(i);
+                }
+            }
+        }
+        else{
+            s.ajoutQuantite(-quantite);
+        }
+    }
+    
+    /**
+     * @author Kevin Lamblin && Vincent Tantet
+     * @param aDeplacer Stack
+     * @param posVoulue int
+     */
+    public void deplacer(Stack aDeplacer, int posVoulue){
+        int oldPos = -1;
+        Stack newStack;
+        
+        int compteur = 0;
+        do{
+            if(inventaire.get(compteur).equals(aDeplacer)){
+                oldPos = compteur;
+            }
+            compteur ++;
+            
+        }while(compteur < 36 && oldPos == -1);
+        
+        if(inventaire.get(posVoulue).equals(null)){
+            inventaire.set(posVoulue, aDeplacer);
+            inventaire.remove(oldPos);
+        }
+        else{
+            newStack = inventaire.get(posVoulue);
+            inventaire.set(posVoulue, aDeplacer);
+            inventaire.set(oldPos, newStack);
+        }
+    }
+
 }

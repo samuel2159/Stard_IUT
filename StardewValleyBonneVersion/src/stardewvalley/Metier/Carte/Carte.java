@@ -47,7 +47,7 @@ public class Carte {
      * Donne le niveauActuel
      * @return Niveau
      */
-    public static Niveau getNiveauActuel(){
+    public Niveau getNiveauActuel(){
         return getCarte().niveauActuel;
     }
     
@@ -56,7 +56,7 @@ public class Carte {
      * Change le niveauActuel
      * @param niveau Niveau
      */
-    public static void setNiveauActuel(EnumNiveau niveau){
+    public void setNiveauActuel(EnumNiveau niveau){
         getCarte().niveauActuel = getCarte().lNiveaux.get(niveau);
     }
 }
