@@ -21,9 +21,9 @@ public class VueInventaire {
     }
     
     private void afficher(){
-        for(Stack s : inventaire.getInventaire()){
+       /* for(Stack s : inventaire.getInventaire()){
             
-        }
+        }*/
     }
     
 }

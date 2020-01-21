@@ -35,8 +35,10 @@ public class VueCarteFond extends GridPane {
     private void affichage() {
         for(Case c : Carte.getNiveauActuel().getCases()) {
             VueCase vue = VueCaseFabrique.create(c);
-            vue.fitHeightProperty().bind(this.heightProperty().multiply(0.05));
-            vue.fitWidthProperty().bind(this.heightProperty().multiply(0.05));
+            vue.setFitWidth(35);
+            vue.setFitHeight(35);
+            //vue.fitHeightProperty().bind(this.heightProperty().multiply(0.05));
+            //vue.fitWidthProperty().bind(this.heightProperty().multiply(0.05));
             this.add(vue, c.getCoordonnee().getX(), c.getCoordonnee().getY());
         }
     }

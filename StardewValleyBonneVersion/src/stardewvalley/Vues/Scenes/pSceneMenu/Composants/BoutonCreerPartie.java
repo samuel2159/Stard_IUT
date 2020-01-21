@@ -7,6 +7,7 @@ package stardewvalley.Vues.Scenes.pSceneMenu.Composants;
 
 import java.util.ArrayList;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -30,6 +31,7 @@ public class BoutonCreerPartie extends ImageView implements Controlable {
     
     public BoutonCreerPartie(SceneMenu scene) {
         super(GestionnaireImages.getImage("Creer"));
+        this.setViewport(new Rectangle2D(0,0,270,121));
         //Gestion de la taille
         this.scene = scene;
         this.fitWidthProperty().bind(scene.widthProperty().multiply(0.2));
@@ -48,7 +50,11 @@ public class BoutonCreerPartie extends ImageView implements Controlable {
                     update();
                 }
             });
-              
+        
+        int test;
+        //survol de la souris        
+        this.setOnMouseExited(e -> this.setViewport(new Rectangle2D(0,0,270,121)));
+        this.setOnMouseEntered(e -> this.setViewport(new Rectangle2D(0,122,270,121)));
     }
 
     @Override

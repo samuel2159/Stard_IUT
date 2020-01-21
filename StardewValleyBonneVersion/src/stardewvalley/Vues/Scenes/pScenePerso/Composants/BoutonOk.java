@@ -7,6 +7,7 @@ package stardewvalley.Vues.Scenes.pScenePerso.Composants;
 
 import java.util.ArrayList;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -29,6 +30,7 @@ public class BoutonOk extends ImageView implements Controlable {
     
     public BoutonOk(ScenePerso scene) {
         super(GestionnaireImages.getImage("Ok"));
+        this.setViewport(new Rectangle2D(0,0,168,124));
         //Gestion de la taille
         this.scene = scene;
         this.fitWidthProperty().bind(scene.widthProperty().multiply(0.1));
@@ -46,7 +48,8 @@ public class BoutonOk extends ImageView implements Controlable {
                     update();
                 }
             });
-              
+        this.setOnMouseExited(e -> this.setViewport(new Rectangle2D(0,0,168,124)));
+        this.setOnMouseEntered(e -> this.setViewport(new Rectangle2D(0,121,168,125)));              
     }
 
     @Override

@@ -55,7 +55,7 @@ public class Niveau {
                                             c.setObjetCorrespondant(new Sapin());
                                         if(ligne == 12 && colonne == 10)
                                             c.setObjetCorrespondant(new Sapin());
-                                        if(ligne == 10 && colonne == 10)
+                                        if(ligne == 0 && colonne == 0)
                                             c.setObjetCorrespondant(new Rocher());
                                         /*if(ligne == 10 && colonne == 12)
                                             c.setObjetCorrespondant(new HerbeSauvage());     */                                   

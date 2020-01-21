@@ -7,6 +7,7 @@ package stardewvalley.Vues.Scenes.pHistoire.Composants;
 
 import java.util.ArrayList;
 import javafx.event.EventHandler;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -34,6 +35,8 @@ public class BoutonFleche extends ImageView implements Controlable {
         super(GestionnaireImages.getImage("Fleche"));
         //Gestion de la taille
         this.scene = scene;
+        this.setViewport(new Rectangle2D(62,28,42,38));
+                
         this.fitWidthProperty().bind(scene.widthProperty().multiply(0.05));
         this.fitHeightProperty().bind(scene.heightProperty().divide(16)); 
         //Controleurs
@@ -49,6 +52,8 @@ public class BoutonFleche extends ImageView implements Controlable {
                     update();
                 }
             });
+        this.setOnMouseExited(e -> this.setViewport(new Rectangle2D(62,28,42,38)));
+        this.setOnMouseEntered(e -> this.setViewport(new Rectangle2D(60,93,42,38)));        
               
     }
 

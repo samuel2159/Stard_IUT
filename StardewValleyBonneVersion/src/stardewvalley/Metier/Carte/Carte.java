@@ -22,7 +22,7 @@ public class Carte {
      * Constructeur de Carte
      */
     private Carte(){
-        Niveau lvlFerme = new Niveau(Ferme,"Ferme.txt", 20, 45);
+        Niveau lvlFerme = new Niveau(Ferme,"Ferme.txt", 45, 45);
         Niveau lvlMaison = new Niveau(Maison, "Maison.txt", 10, 10);
         lNiveaux.put(Ferme, lvlFerme);
         lNiveaux.put(Maison, lvlMaison);

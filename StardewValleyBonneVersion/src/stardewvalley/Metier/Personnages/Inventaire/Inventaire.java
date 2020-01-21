@@ -31,7 +31,7 @@ public class Inventaire {
      * Donne la liste des objets de l'inventaire
      * @return ArrayList
      */
-    public ArrayList<Stack> getInventaire(){
+    public ArrayList<Stack> getObjets(){
         return inventaire;
     }
     
@@ -139,4 +139,5 @@ public class Inventaire {
             inventaire.set(oldPos, newStack);
         }
     }
+
 }
